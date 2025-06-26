@@ -1,6 +1,8 @@
-# sv
+# RootCause Landing Page
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern, responsive landing page for RootCause - a health and wellness app that helps users understand the connection between emotional trauma and physical well-being.
+
+Built with SvelteKit and Tailwind CSS for optimal performance and beautiful design.
 
 ## Creating a project
 
@@ -36,3 +38,7 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## About RootCause
+
+RootCause helps users go beyond just managing symptoms to understanding them. The app provides tools to map the powerful connection between emotional trauma and physical well-being, offering GNM-inspired insights and personalized healing support.
