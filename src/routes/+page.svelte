@@ -67,14 +67,27 @@
     <!-- Free Reports Badge -->
     <div class="px-3 lg:px-4 py-2 lg:py-2.5 absolute left-1/2 transform -translate-x-1/2 top-[580px] sm:top-[620px] lg:top-[628px] bg-teal-600/5 rounded-full outline outline-1 outline-offset-[-1px] outline-black/5 backdrop-blur-[2px] inline-flex justify-center items-center gap-2.5 max-w-[90%]">
       <img class="w-8 h-8" src="/RootCause.png" alt="RootCause icon" />
-      <div class="text-center justify-start text-black text-sm lg:text-base font-normal font-['Nunito_Sans'] leading-7">get 5 free health signal reports!</div>
+      <div class="text-center justify-start text-black text-sm lg:text-body-italic font-normal font-['Nunito_Sans'] italic leading-7">get 5 free health signal reports!</div>
     </div>
     
     <!-- Hero Image -->
-    <div class="w-[1090px] h-96 absolute left-[175px] top-[718px] rounded-3xl">
-      <div class="w-[973px] h-[563px] absolute left-[59px] top-[60px] rounded-3xl shadow-[0px_25px_68px_0px_rgba(0,0,0,0.05)] outline outline-1 outline-offset-[-1px] outline-pure-white overflow-hidden">
-        <div class="w-[973px] h-[563px] absolute left-0 top-0 bg-pure-white/20 rounded-2xl blur-[2px]"></div>
-        <img class="w-[940px] h-[533px] absolute left-[17px] top-[15px] rounded-2xl" src="https://placehold.co/940x533" alt="RootCause app preview" />
+  
+    <div class="hidden lg:block w-[1090px] h-96 absolute left-[175px] top-[718px] rounded-3xl">
+      <div class="w-[973px] h-[563px] left-[59px] top-[60px] absolute rounded-3xl shadow-[0px_25px_68px_0px_rgba(0,0,0,0.05)] outline outline-1 outline-offset-[-1px] outline-white overflow-hidden"
+           style="background-image: url('/hero-image-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="w-[973px] h-[563px] left-0 top-0 absolute bg-white/20 rounded-2xl blur-[2px]"></div>
+        <video 
+          class="w-[940px] h-[533px] left-[17px] top-[15px] absolute rounded-2xl object-cover"
+          autoplay 
+          muted 
+          loop 
+          playsinline
+          poster="/hero-image-bg.jpg"
+        >
+          <source src="https://cdn.shopify.com/videos/c/o/v/1b165b0df6cb43e1b59fd2f582f9c559.mp4" type="video/mp4">
+          <!-- Fallback image if video doesn't load -->
+          <img class="w-[940px] h-[533px] left-[17px] top-[15px] absolute rounded-2xl object-cover" src="/hero-image-bg.jpg" alt="RootCause app preview" />
+        </video>
       </div>
     </div>
   </div>
@@ -143,9 +156,9 @@
         <div class="w-96 lg:self-stretch p-4 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
           <div class="self-stretch inline-flex justify-start items-start gap-2.5">
             <div class="p-1.5 bg-teal-600/5 rounded-full flex justify-start items-center gap-2.5">
-              <img class="w-10 lg:w-12 h-10 lg:h-12" src="https://placehold.co/42x42" alt="Feature icon" />
+              <img class="w-[42px] lg:w-[50px] h-[42px] lg:h-[50px]" src="/gif-1.gif" alt="Feature icon" />
             </div>
-            <div class="flex-1 justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">My Tests Are Normal, But My Pain is REAL</div>
+            <div class="flex-1 justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-8 italic">My Tests Are Normal, But My Pain is REAL</div>
           </div>
           <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">
             You've spent $400+ per specialist visit only to hear "everything looks fine." But your chronic fatigue, migraines, and flare-ups don't feel fine. You're one of 30 million Americans dismissed by a system that's missing the bigger picture. Your symptoms are real, but no one seems equipped to help you understand why.
@@ -155,21 +168,21 @@
         <div class="w-96 lg:self-stretch p-4 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
           <div class="self-stretch inline-flex justify-start items-start gap-2.5">
             <div class="p-1.5 bg-teal-600/5 rounded-full flex justify-start items-center gap-2.5">
-              <img class="w-10 lg:w-12 h-10 lg:h-12" src="https://placehold.co/42x42" alt="Feature icon" />
+              <img class="w-[42px] lg:w-[50px] h-[42px] lg:h-[50px]" src="/gif-2.gif" alt="Feature icon" />
             </div>
-            <div class="flex-1 justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">My Emotions and Symptoms Are Connected</div>
+            <div class="flex-1 justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-8 italic">I'm Tired of Being Told It's 'All in My Head.</div>
           </div>
           <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">
             Stressful week = migraines. Anxiety = stomach knots. You see the pattern, but doctors don't. 60-80% of doctor visits are stress-related, yet medicine treats your body like separate, unconnected parts. You're left knowing there's a deeper story, but with no way to decode it.
           </div>
         </div>
         
-        <div class="w-96 lg:self-stretch p-4 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+        <div class="w-96 lg:self-stretch p-4 rounded-2xl outline-1 outline-offset-[-1px] outline-black/5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
           <div class="self-stretch inline-flex justify-start items-start gap-2.5">
             <div class="p-1.5 bg-teal-600/5 rounded-full flex justify-start items-center gap-2.5">
-              <img class="w-10 lg:w-12 h-10 lg:h-12" src="https://placehold.co/42x42" alt="Feature icon" />
+              <img class="w-[42px] lg:w-[50px] h-[42px] lg:h-[50px]" src="/gif-3.gif" alt="Feature icon" />
             </div>
-            <div class="flex-1 justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">Understanding Your Body's Language</div>
+            <div class="flex-1 justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-8 italic">Understanding Your Body's Language</div>
           </div>
           <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">
             Your body is constantly communicating with you through symptoms. RootCause helps you decode these messages, understand the emotional roots, and work with your body's natural healing processes rather than against them.
