@@ -25,39 +25,49 @@
     
     <!-- Hero Content -->
     <div class="w-full absolute left-1/2 transform -translate-x-1/2 top-[120px] sm:top-[160px] lg:top-[217px] text-center px-4 sm:px-8 lg:px-16">
-      <h1 class="font-nunito text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-h1-xl text-pure-black leading-tight max-w-6xl mx-auto">
-        Your Body Speaks RootCause 
-        <span class="text-teal">Helps</span>
-        You Listen
-      </h1>
+      <div class="text-center lg:w-[1036px] lg:mx-auto">
+        <span class="text-black text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">Your Body Speaks RootCause </span>
+        <span class="text-teal-600 text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">Helps</span>
+        <span class="text-black text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]"> You Listen</span>
+      </div>
     </div>
     
     <div class="w-full absolute left-1/2 transform -translate-x-1/2 top-[280px] sm:top-[320px] lg:top-[398px] text-center px-4 sm:px-8 lg:px-16">
-      <p class="font-nunito text-base sm:text-lg lg:text-xl xl:text-h3-nunito text-pure-black leading-relaxed max-w-4xl mx-auto">
+      <p class="text-black text-sm lg:text-xl font-normal font-['Nunito_Sans'] leading-snug lg:leading-7 lg:w-[884px] mx-auto">
         Go beyond just managing your symptoms and start understanding them. RootCause gives you the tools to map the powerful connection between emotional trauma and your physical well-being.
       </p>
     </div>
     
     <!-- CTA Buttons -->
     <div class="w-full absolute left-1/2 transform -translate-x-1/2 top-[420px] sm:top-[460px] lg:top-[516px] flex flex-col sm:flex-row justify-center items-center gap-4 px-4 sm:px-8 lg:px-16">
-      <button class="w-full sm:w-auto sm:min-w-[280px] h-12 sm:h-16 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-teal to-teal-dark rounded-full flex justify-center items-center gap-3">
-        <div class="w-5 h-5 relative overflow-hidden">
-          <div class="w-4 h-4 left-[2px] top-0 absolute bg-pure-white"></div>
+      <button class="self-stretch p-4 lg:px-4 lg:py-2 bg-gradient-to-r from-teal-600 to-teal-950 rounded-full inline-flex justify-center items-center gap-2.5">
+        <div class="w-6 h-6 relative overflow-hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+            <path d="M12.524 2.8125C12.732 2.00692 13.202 1.29338 13.86 0.784213C14.518 0.275046 15.3267 -0.000833469 16.1587 1.89152e-06H16.2524C16.4513 1.89152e-06 16.6421 0.0790195 16.7827 0.219672C16.9234 0.360324 17.0024 0.55109 17.0024 0.750002C17.0024 0.948914 16.9234 1.13968 16.7827 1.28033C16.6421 1.42098 16.4513 1.5 16.2524 1.5H16.1587C15.6598 1.49996 15.1751 1.6657 14.7807 1.97116C14.3863 2.27662 14.1046 2.70449 13.9799 3.1875C13.9302 3.3802 13.8059 3.54525 13.6345 3.64634C13.4631 3.74744 13.2585 3.77629 13.0658 3.72656C12.8731 3.67684 12.7081 3.5526 12.607 3.38118C12.5059 3.20976 12.4771 3.0052 12.5268 2.8125H12.524ZM21.4368 15.8991C21.3805 15.7705 21.2896 15.6602 21.1743 15.5803C19.5833 14.4872 19.2524 12.6225 19.2524 11.25C19.2524 9.59344 20.5152 8.15063 21.268 7.43719C21.3421 7.3671 21.4011 7.28265 21.4414 7.189C21.4817 7.09535 21.5025 6.99446 21.5025 6.8925C21.5025 6.79054 21.4817 6.68966 21.4414 6.59601C21.4011 6.50235 21.3421 6.4179 21.268 6.34781C20.0793 5.22563 18.1105 4.5 16.2524 4.5C14.9176 4.50119 13.613 4.89683 12.5024 5.63719C11.2069 4.76847 9.64916 4.37832 8.09711 4.53385C6.54507 4.68938 5.09572 5.38086 3.99834 6.48938C3.34232 7.15912 2.82758 7.95387 2.48471 8.82643C2.14183 9.69899 1.97782 10.6316 2.00241 11.5688C2.03921 13.1506 2.39096 14.7093 3.03709 16.1537C3.68322 17.5981 4.61077 18.8992 5.76553 19.9809C6.46097 20.638 7.38223 21.0028 8.33897 21H16.559C17.0705 21.001 17.5767 20.8969 18.0463 20.6942C18.5159 20.4915 18.9389 20.1945 19.289 19.8216C19.9375 19.1236 20.4985 18.3491 20.9596 17.5153C21.6177 16.3125 21.5333 16.125 21.4368 15.8991Z" fill="white"/>
+          </svg>
         </div>
-        <span class="font-montserrat text-sm sm:text-base lg:text-lg text-pure-white">Download for iOS</span>
+        <div class="text-center justify-start text-white text-base lg:text-xl font-medium font-['Montserrat'] leading-7">Download for iOS</div>
       </button>
-      <button class="w-full sm:w-auto sm:min-w-[280px] h-12 sm:h-16 px-6 sm:px-8 py-3 sm:py-4 rounded-full border border-teal bg-pure-white flex justify-center items-center gap-3">
-        <div class="w-5 h-5 relative overflow-hidden">
-          <div class="w-4 h-4 left-[2px] top-[1px] absolute bg-gradient-to-r from-teal to-blue-dark"></div>
+      <button class="self-stretch p-4 lg:h-16 lg:px-4 lg:py-2 rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 inline-flex justify-center items-center gap-2.5">
+        <div class="w-6 h-6 relative overflow-hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+            <path d="M22.4832 11.2044L6.75003 2.20252C6.52067 2.06877 6.25992 1.99829 5.99441 1.99829C5.7289 1.99829 5.46815 2.06877 5.23878 2.20252C5.01281 2.33209 4.82532 2.51938 4.69552 2.74523C4.56571 2.97107 4.49825 3.22735 4.50003 3.48783V21.5122C4.49929 21.7724 4.56764 22.0282 4.69809 22.2533C4.82854 22.4785 5.01642 22.665 5.24253 22.7938C5.4719 22.9275 5.73265 22.998 5.99816 22.998C6.26367 22.998 6.52442 22.9275 6.75378 22.7938L22.4832 13.7938C22.7155 13.6664 22.9093 13.479 23.0443 13.251C23.1792 13.0231 23.2505 12.7631 23.2505 12.4981C23.2505 12.2332 23.1792 11.9732 23.0443 11.7452C22.9093 11.5173 22.7155 11.3299 22.4832 11.2025V11.2044ZM15 13.5603L16.7738 15.3341L8.47691 20.0835L15 13.5603ZM8.47503 4.91564L16.7747 9.66595L15 11.4397L8.47503 4.91564ZM18.1228 14.5625L16.0603 12.5L18.1228 10.4375L21.7257 12.5L18.1228 14.5625Z" fill="url(#paint0_linear_6945_72430)"/>
+            <defs>
+              <linearGradient id="paint0_linear_6945_72430" x1="4.5" y1="12.4981" x2="23.2505" y2="12.4981" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#2B9C8E"/>
+                <stop offset="1" stop-color="#264653"/>
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
-        <span class="font-montserrat text-sm sm:text-base lg:text-lg text-teal">Download for Android</span>
+        <div class="text-center justify-start text-teal-600 text-base lg:text-xl font-medium font-['Montserrat'] leading-7">Download for Android</div>
       </button>
     </div>
     
     <!-- Free Reports Badge -->
-    <div class="px-4 py-2 absolute left-1/2 transform -translate-x-1/2 top-[580px] sm:top-[620px] lg:top-[628px] bg-teal-light rounded-full outline outline-1 outline-offset-[-1px] outline-black/5 backdrop-blur-[2px] inline-flex justify-center items-center gap-2 max-w-[90%]">
-      <img class="w-6 h-6 sm:w-8 sm:h-8" src="https://placehold.co/32x31" alt="RootCause icon" />
-      <span class="font-nunito text-sm sm:text-base text-pure-black">get 5 free health signal reports!</span>
+    <div class="px-3 lg:px-4 py-2 lg:py-2.5 absolute left-1/2 transform -translate-x-1/2 top-[580px] sm:top-[620px] lg:top-[628px] bg-teal-600/5 rounded-full outline outline-1 outline-offset-[-1px] outline-black/5 backdrop-blur-[2px] inline-flex justify-center items-center gap-2.5 max-w-[90%]">
+      <img class="w-8 h-8" src="/RootCause.png" alt="RootCause icon" />
+      <div class="text-center justify-start text-black text-sm lg:text-base font-normal font-['Nunito_Sans'] leading-7">get 5 free health signal reports!</div>
     </div>
     
     <!-- Hero Image -->
