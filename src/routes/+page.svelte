@@ -151,127 +151,202 @@
 
     <!-- Why RootCause Section -->
     <section class="self-stretch flex flex-col justify-start items-center gap-8 lg:gap-lg-16">
-      <div class="self-stretch text-center justify-start text-black text-2xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-10">Why RootCause?</div>
+      <div class="self-stretch text-center justify-start text-black font-nunito text-h2 lg:text-h1-md text-pure-black">Why RootCause?</div>
       <div class="self-stretch grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-lg-16">
-        <div class="w-96 lg:self-stretch p-4 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-          <div class="self-stretch inline-flex justify-start items-start gap-2.5">
-            <div class="p-1.5 bg-teal-600/5 rounded-full flex justify-start items-center gap-2.5">
-              <img class="w-[42px] lg:w-[50px] h-[42px] lg:h-[50px]" src="/gif-1.gif" alt="Feature icon" />
-            </div>
-            <div class="flex-1 justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-8 italic">My Tests Are Normal, But My Pain is REAL</div>
-          </div>
-          <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">
-            You've spent $400+ per specialist visit only to hear "everything looks fine." But your chronic fatigue, migraines, and flare-ups don't feel fine. You're one of 30 million Americans dismissed by a system that's missing the bigger picture. Your symptoms are real, but no one seems equipped to help you understand why.
-          </div>
+        <div class="self-stretch py-4 inline-flex flex-col justify-start items-start gap-2">
+          <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-7">My Tests Are Normal, But My Pain is REAL</div>
+          <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">You've spent $400+ per specialist visit only to hear "everything looks fine." But your chronic fatigue, migraines, and flare-ups don't feel fine. You're one of 30 million Americans dismissed by a system that's missing the bigger picture. Your symptoms are real, but no one seems equipped to help you understand why.</div>
         </div>
         
-        <div class="w-96 lg:self-stretch p-4 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-          <div class="self-stretch inline-flex justify-start items-start gap-2.5">
-            <div class="p-1.5 bg-teal-600/5 rounded-full flex justify-start items-center gap-2.5">
-              <img class="w-[42px] lg:w-[50px] h-[42px] lg:h-[50px]" src="/gif-2.gif" alt="Feature icon" />
-            </div>
-            <div class="flex-1 justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-8 italic">I'm Tired of Being Told It's 'All in My Head.</div>
-          </div>
-          <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">
-            Stressful week = migraines. Anxiety = stomach knots. You see the pattern, but doctors don't. 60-80% of doctor visits are stress-related, yet medicine treats your body like separate, unconnected parts. You're left knowing there's a deeper story, but with no way to decode it.
-          </div>
+        <div class="self-stretch py-4 inline-flex flex-col justify-start items-start gap-2">
+          <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-7">I'm Tired of Being Told It's 'All in My Head.</div>
+          <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">Stressful week = migraines. Anxiety = stomach knots. You see the pattern, but doctors don't. 60-80% of doctor visits are stress-related, yet medicine treats your body like separate, unconnected parts. You're left knowing there's a deeper story, but with no way to decode it.</div>
         </div>
         
-        <div class="w-96 lg:self-stretch p-4 rounded-2xl outline-1 outline-offset-[-1px] outline-black/5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
-          <div class="self-stretch inline-flex justify-start items-start gap-2.5">
-            <div class="p-1.5 bg-teal-600/5 rounded-full flex justify-start items-center gap-2.5">
-              <img class="w-[42px] lg:w-[50px] h-[42px] lg:h-[50px]" src="/gif-3.gif" alt="Feature icon" />
-            </div>
-            <div class="flex-1 justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-8 italic">Understanding Your Body's Language</div>
-          </div>
-          <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">
-            Your body is constantly communicating with you through symptoms. RootCause helps you decode these messages, understand the emotional roots, and work with your body's natural healing processes rather than against them.
-          </div>
+        <div class="self-stretch py-4 inline-flex flex-col justify-start items-start gap-2">
+          <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-7">Understanding Your Body's Language</div>
+          <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">Your body is constantly communicating with you through symptoms. RootCause helps you decode these messages, understand the emotional roots, and work with your body's natural healing processes rather than against them.</div>
         </div>
       </div>
     </section>
 
     <!-- How It Works Section -->
-    <section class="self-stretch flex flex-col justify-start items-center gap-lg-32">
-      <div class="self-stretch flex flex-col justify-start items-center gap-lg-16">
-        <h2 class="font-nunito text-h1-md text-pure-black text-center">How It Works</h2>
-        <p class="w-[611px] font-nunito text-body-medium text-pure-black text-center">From Symptom to Insight in Minutes</p>
+    <section class="self-stretch inline-flex flex-col justify-start items-center gap-8">
+      <div class="self-stretch flex flex-col justify-start items-center gap-4">
+        <div class="self-stretch text-center justify-start text-black text-4xl font-bold font-['Nunito_Sans'] leading-10">How It Works</div>
+        <div class="w-[611px] text-center justify-start text-black text-base font-normal font-['Nunito_Sans'] italic leading-snug">From Symptom to Insight in Minutes</div>
       </div>
-      
-      <div class="self-stretch p-lg-32 bg-teal-light rounded-3xl flex flex-col justify-center items-start gap-lg-16">
-        {#each [
-          {
-            title: "Pinpoint Your Body's Signals",
-            description: "Log recurring physical symptoms like fatigue, skin issues, gut discomfort, or chronic tension. Be as specific as you like."
-          },
-          {
-            title: "Receive GNM-Inspired Insights", 
-            description: "Our algorithm generates a report connecting your symptoms to potential emotional or biological conflicts based on German New Medicine frameworks."
-          },
-          {
-            title: "Identify Your Triggers",
-            description: "The app helps you recognize patterns between your symptoms and specific events, environments, or stressors in your life."
-          },
-          {
-            title: "Heal from Within",
-            description: "Use daily affirmations and guided journaling prompts (Coming Soon!) designed to help you process conflicts, reduce your emotional load, and support your body's innate healing capacity."
-          },
-          {
-            title: "Track Your Healing Progress",
-            description: "With Pattern Logging, monitor how your symptoms evolve over time as you address emotional conflicts. See recurring cycles, improvements, and get empowered by witnessing your body's natural healing journey."
-          }
-        ] as step}
-          <div class="self-stretch bg-teal-light rounded-2xl inline-flex justify-center items-center gap-lg-16 overflow-hidden">
-            <div class="w-lg-16 self-stretch bg-teal"></div>
-            <div class="flex-1 py-lg-16 inline-flex flex-col justify-start items-start gap-sm-8">
-              <h3 class="font-nunito text-h2 text-pure-black">{step.title}</h3>
-              <p class="font-nunito text-body-medium text-pure-black">{step.description}</p>
-            </div>
-            <div class="w-lg-16 self-stretch bg-teal"></div>
+      <div class="self-stretch p-8 bg-teal-600/5 rounded-3xl flex flex-col justify-center items-start gap-4">
+        <div class="self-stretch bg-teal-600/5 rounded-2xl inline-flex justify-center items-center gap-4 overflow-hidden">
+          <div class="w-4 self-stretch bg-teal-600"></div>
+          <div class="flex-1 py-4 inline-flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Pinpoint Your Body's Signals</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug">Log recurring physical symptoms like fatigue, skin issues, gut discomfort, or chronic tension. Be as specific as you like.</div>
           </div>
-        {/each}
+          <div class="w-4 self-stretch bg-teal-600"></div>
+        </div>
+        <div class="self-stretch bg-teal-600/5 rounded-2xl inline-flex justify-center items-center gap-4 overflow-hidden">
+          <div class="w-4 self-stretch bg-teal-600"></div>
+          <div class="flex-1 py-4 inline-flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Receive GNM-Inspired Insights</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug">Our algorithm generates a report connecting your symptoms to potential emotional or biological conflicts based on German New Medicine frameworks.</div>
+          </div>
+          <div class="w-4 self-stretch bg-teal-600"></div>
+        </div>
+        <div class="self-stretch bg-teal-600/5 rounded-2xl inline-flex justify-center items-center gap-4 overflow-hidden">
+          <div class="w-4 self-stretch bg-teal-600"></div>
+          <div class="flex-1 py-4 inline-flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Identify Your Triggers</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug">The app helps you recognize patterns between your symptoms and specific events, environments, or stressors in your life.</div>
+          </div>
+          <div class="w-4 self-stretch bg-teal-600"></div>
+        </div>
+        <div class="self-stretch bg-teal-600/5 rounded-2xl inline-flex justify-center items-center gap-4 overflow-hidden">
+          <div class="w-4 self-stretch bg-teal-600"></div>
+          <div class="flex-1 py-4 inline-flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Heal from Within</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug">Use daily affirmations and guided journaling prompts (Coming Soon!) designed to help you process conflicts, reduce your emotional load, and support your body's innate healing capacity.</div>
+          </div>
+          <div class="w-4 self-stretch bg-teal-600"></div>
+        </div>
+        <div class="self-stretch bg-teal-600/5 rounded-2xl inline-flex justify-center items-center gap-4 overflow-hidden">
+          <div class="w-4 self-stretch bg-teal-600"></div>
+          <div class="flex-1 py-4 inline-flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Track Your Healing Progress</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug">With Pattern Logging, monitor how your symptoms evolve over time as you address emotional conflicts. See recurring cycles, improvements, and get empowered by witnessing your body's natural healing journey.</div>
+          </div>
+          <div class="w-4 self-stretch bg-teal-600"></div>
+        </div>
       </div>
     </section>
 
     <!-- Who Is RootCause For Section -->
-    <section class="self-stretch flex flex-col justify-start items-center gap-lg-32">
-      <div class="self-stretch flex flex-col justify-start items-center gap-lg-16">
-        <h2 class="font-nunito text-h1-md text-pure-black text-center">Who Is RootCause For?</h2>
-        <p class="w-[611px] font-nunito text-body-medium text-pure-black text-center">If This Sounds Like You, You're in the Right Place.</p>
+    <section class="self-stretch flex flex-col justify-start items-center gap-8">
+      <div class="self-stretch inline-flex flex-col justify-start items-center gap-4">
+        <div class="self-stretch text-center justify-start text-black text-4xl font-bold font-['Nunito_Sans'] leading-10">Who Is Rootcause For?</div>
+        <div class="w-[611px] text-center justify-start text-black text-base font-normal font-['Nunito_Sans'] italic leading-snug">If This Sounds Like You, You're in the Right Place.</div>
       </div>
       
-      <div class="inline-flex justify-start items-start gap-lg-32">
-        <div class="w-[601px] p-lg-32 bg-teal-light rounded-3xl inline-flex flex-col justify-center items-start gap-lg-16">
-          {#each [
-            {
-              title: "The Medical Mystery",
-              description: "You've been to every specialist and tried every test, but you're still searching for answers. You're ready for a new, empowering perspective."
-            },
-            {
-              title: "The Conscious Seeker",
-              description: "You already know your mind and body are profoundly connected. You practice yoga, meditation, or holistic health and need a tool to deepen that connection."
-            },
-            {
-              title: "The GNM Explorer",
-              description: "You're familiar with German New Medicine and want a structured, self-paced way to apply its principles to your own life for reflection and learning."
-            }
-          ] as persona}
-            <div class="self-stretch p-lg-16 bg-pure-white rounded-2xl flex flex-col justify-center items-center gap-sm-8 overflow-hidden">
-              <h3 class="font-nunito text-h2 text-pure-black">{persona.title}</h3>
-              <p class="font-nunito text-body-medium text-pure-black">{persona.description}</p>
-            </div>
-          {/each}
+      <!-- Mobile Layout -->
+      <div class="w-96 inline-flex flex-col justify-start items-start gap-4 lg:hidden">
+        <div class="w-96 h-96 relative bg-teal-600/5 rounded-3xl overflow-hidden">
+          <div class="w-56 h-56 left-[163.56px] top-[58px] absolute origin-top-left rotate-[14.76deg] bg-emerald-50 rounded-2xl"></div>
+          <div class="w-56 h-56 left-[16px] top-[113.46px] absolute origin-top-left rotate-[-14.76deg] bg-emerald-50 rounded-2xl"></div>
+          <img class="w-60 h-72 left-[69.16px] top-[58px] absolute rounded-2xl" src="/discover.png" />
+        </div>
+        <div class="w-96 p-3 bg-teal-600/5 rounded-3xl flex flex-col justify-center items-start gap-4">
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-normal">The Medical Mystery</div>
+            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug"> You've been to every specialist and tried every test, but you're still searching for answers. You're ready for a new, empowering perspective.</div>
+          </div>
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-normal">The Conscious Seeker</div>
+            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug"> You already know your mind and body are profoundly connected. You practice yoga, meditation, or holistic health and need a tool to deepen that connection.</div>
+          </div>
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-snug">The GNM Explorer</div>
+            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug"> You're familiar with German New Medicine and want a structured, self-paced way to apply its principles to your own life for reflection and learning.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop Layout -->
+      <div class="hidden lg:inline-flex justify-start items-start gap-8">
+        <div class="w-[601px] p-8 bg-teal-600/5 rounded-3xl inline-flex flex-col justify-center items-start gap-4">
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">The Medical Mystery</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug"> You've been to every specialist and tried every test, but you're still searching for answers. You're ready for a new, empowering perspective.</div>
+          </div>
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">The Conscious Seeker</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug"> You already know your mind and body are profoundly connected. You practice yoga, meditation, or holistic health and need a tool to deepen that connection.</div>
+          </div>
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">The GNM Explorer</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug"> You're familiar with German New Medicine and want a structured, self-paced way to apply its principles to your own life for reflection and learning.</div>
+          </div>
         </div>
         
-        <div class="w-[601px] self-stretch relative bg-teal-light rounded-3xl overflow-hidden">
-          <div class="w-80 h-96 absolute left-[39.50px] top-[126.41px] origin-top-left rotate-[-14.76deg] bg-teal-vibrant-light rounded-3xl"></div>
-          <div class="w-80 h-96 absolute left-[230.21px] top-[39.01px] origin-top-left rotate-[14.76deg] bg-teal-vibrant-light rounded-tl-3xl rounded-bl-3xl rounded-br-3xl"></div>
-          <div class="w-80 h-96 absolute left-[130.50px] top-[86px] rounded-3xl overflow-hidden">
-            <img class="w-80 h-96 absolute left-0 top-[90px] rounded-3xl" src="https://placehold.co/343x385" alt="RootCause app interface" />
+        <div class="w-[601px] self-stretch relative bg-teal-600/5 rounded-3xl overflow-hidden">
+          <div class="w-80 h-96 left-[39.50px] top-[126.41px] absolute origin-top-left rotate-[-14.76deg] bg-[#E7F4F3] rounded-3xl"></div>
+          <div class="w-80 h-96 left-[230.21px] top-[39.01px] absolute origin-top-left rotate-[14.76deg] bg-[#E7F4F3] rounded-tl-3xl rounded-bl-3xl rounded-br-3xl"></div>
+          <div class="w-80 h-96 left-[130.50px] top-[86px] absolute rounded-3xl overflow-hidden">
+            <div data-property-1="Frame 1171276530" class="w-80 h-[613px] left-0 top-[-90px] absolute">
+              <img class="w-80 h-96 left-0 top-[90px] absolute rounded-3xl" src="/discover.png" />
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+
+    <!-- Who Is RootCause Differences Section -->
+    <section class="self-stretch flex flex-col justify-start items-center gap-8">
+      <div class="self-stretch inline-flex flex-col justify-start items-center gap-4">
+        <div class="self-stretch text-center justify-start text-black text-4xl font-bold font-['Nunito_Sans'] leading-10">Who Is Rootcause Differences</div>
+        <div class="w-[611px] text-center justify-start text-black text-base font-normal font-['Nunito_Sans'] italic leading-snug">More Than an App—It's a New Perspective.</div>
+      </div>
+      
+      <!-- Mobile Layout -->
+      <div class="w-96 inline-flex flex-col justify-start items-start gap-4 lg:hidden">
+        <div class="w-96 h-96 relative bg-teal-600/5 rounded-3xl overflow-hidden">
+          <div class="w-56 h-56 left-[131.19px] top-[82px] absolute bg-emerald-50 rounded-2xl"></div>
+          <div class="w-56 h-56 left-[41.19px] top-[82px] absolute bg-emerald-50 rounded-2xl"></div>
+          <img class="w-60 h-72 left-[71px] top-[47.84px] absolute rounded-3xl" src="/exploring-your-body-insight.png" />
+        </div>
+        
+        <div class="w-96 p-3 bg-teal-600/5 rounded-3xl flex flex-col justify-center items-start gap-4">
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-normal">Rooted in Wisdom</div>
+            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug"> We offer GNM-inspired insights—not medical advice—to serve as a powerful self-awareness tool.</div>
+          </div>
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-normal">Compassion First</div>
+            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">We start by validating your experience, not dismissing it. Your pain is real, and it has a message.</div>
+          </div>
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-snug">Personal Support Tools</div>
+            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">Gentle affirmations and guided journaling features support your emotional journey alongside your physical one.</div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <!-- Desktop Layout -->
+      <div class="hidden lg:inline-flex justify-start items-start gap-8">
+        <div class="w-[601px] self-stretch relative bg-teal-600/5 rounded-3xl">
+          <div class="w-60 h-80 left-[293.50px] top-[150px] absolute bg-[#E7F4F3] rounded-3xl"></div>
+          <div class="w-60 h-80 left-[58.50px] top-[138px] absolute bg-[#E7F4F3] rounded-3xl"></div>
+          <div class="w-96 h-[488px] left-[94.50px] top-[44px] absolute">
+              <div data-property-1="Screenshot 2024-12-30 at 7.17.56 PM" class="w-96 h-[459px] left-[19px] top-[19px] absolute">
+                  <img class="w-80 h-96 left-[16.97px] top-[17.49px] absolute rounded-3xl" src="/exploring-your-body-insight.png" />
+              </div>
+          </div>
+      </div>
+
+        <div class="w-[601px] p-8 bg-teal-600/5 rounded-3xl inline-flex flex-col justify-center items-start gap-4">
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Rooted in Wisdom</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug"> We offer GNM-inspired insights—not medical advice—to serve as a powerful self-awareness tool.</div>
+          </div>
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Compassion First</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug">We start by validating your experience, not dismissing it. Your pain is real, and it has a message.</div>
+          </div>
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Pattern Recognition</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug">Go beyond one-off symptoms. Our tools help you understand the triggers that keep your issues recurring.</div>
+          </div>
+          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
+            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Personal Support Tools</div>
+            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug"> Gentle affirmations and guided journaling features support your emotional journey alongside your physical one.</div>
+          </div>
+        </div>
+        
+       
+      </div>
+    </section> 
 
     <!-- Features Section -->
     <section class="self-stretch flex flex-col justify-start items-center gap-lg-16">
