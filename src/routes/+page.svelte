@@ -1,5 +1,5 @@
 <script>
-  import Header from '$lib/Header.svelte';
+  import { Header, Footer } from '$lib';
 </script>
 
 <!-- RootCause Landing Page -->
@@ -572,7 +572,7 @@
     </section>
 
     <!-- Final CTA Section -->
-    <section class="flex flex-col justify-start items-center gap-4 lg:gap-6">
+    <section class="flex flex-col justify-start items-center gap-4 lg:gap-6 mb-[45px] lg:mb-[119px]">
       <div class="self-stretch lg:w-[965px] text-center justify-start">
         <span class="text-black text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">Your Symptoms Tell a Story. It's </span>
         <span class="text-teal-600 text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">Time</span>
@@ -611,26 +611,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="w-full py-sm-6 border-t border-black/5 inline-flex flex-col justify-start items-center gap-lg-32">
-    <div class="self-stretch flex flex-col justify-start items-center gap-lg-32">
-      <img class="w-64 h-20" src="https://placehold.co/251x85" alt="RootCause logo" />
-      <nav class="self-stretch inline-flex justify-center items-center gap-md-16">
-        <a href="#contact" class="font-nunito text-body-medium text-pure-black">Contact</a>
-        <a href="#affiliate" class="font-nunito text-body-medium text-pure-black">Affiliate</a>
-        <a href="#privacy" class="font-nunito text-body-medium text-pure-black">Privacy Policy</a>
-        <a href="#terms" class="font-nunito text-body-medium text-pure-black">Terms and Conditions</a>
-        <a href="#newsletter" class="font-nunito text-body-medium text-pure-black">News Letter</a>
-      </nav>
-    </div>
-    <div class="inline-flex justify-start items-center gap-md-12">
-      {#each Array(4) as _, i}
-        <div class="w-sm-6 h-sm-6 relative overflow-hidden">
-          <div class="w-5 h-5 left-[2.25px] top-[2.25px] absolute bg-teal"></div>
-        </div>
-      {/each}
-    </div>
-    <div class="self-stretch font-nunito text-body-medium text-pure-black text-center">© 2025 rootcause</div>
-  </footer>
+  <Footer />
 
   <!-- Navigation Header -->
   <div class="absolute left-0 top-4 sm:top-6 lg:top-[77px] z-50 w-full px-4 sm:px-8 lg:px-16">
