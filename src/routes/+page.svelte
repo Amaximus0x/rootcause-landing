@@ -349,183 +349,262 @@
     </section> 
 
     <!-- Features Section -->
-    <section class="self-stretch flex flex-col justify-start items-center gap-lg-16">
-      <h2 class="font-nunito text-h1-md text-pure-black text-center">Feature Highlights</h2>
-      <div class="self-stretch h-64 inline-flex justify-start items-center gap-lg-16">
-        {#each [
-          {
-            icon: "bg-vibrant-pink-dark",
-            title: "Body Signal Tracker",
-            description: "Log symptoms and the emotional context to see the full picture."
-          },
-          {
-            icon: "bg-blue-vibrant-dark",
-            title: "Insight Reports", 
-            description: "Get GNM-style analysis tailored to your unique experience and history."
-          },
-          {
-            icon: "bg-vibrant-yellow-light",
-            title: "Daily Affirmations",
-            description: "Receive affirmations auto-generated based on your symptom patterns to support healing."
-          },
-          {
-            icon: "bg-vibrant-orange",
-            title: "Healing Journal",
-            description: "A private space to reflect, process emotions, and build resilience. (Coming Soon!)"
-          },
-          {
-            icon: "bg-vibrant-green",
-            title: "Pattern Log",
-            description: "Monitor your progress and see how your physical symptoms shift as you resolve emotional conflicts. (Coming Soon!)"
-          }
-        ] as feature}
-          <div class="flex-1 self-stretch p-lg-16 bg-teal-light rounded-2xl inline-flex flex-col justify-between items-start overflow-hidden">
-            <div class="w-lg-32 h-lg-32 relative overflow-hidden">
-              <div class="w-sm-6 h-sm-6 left-[3px] top-[4px] absolute {feature.icon}"></div>
-            </div>
-            <div class="self-stretch flex flex-col justify-start items-start gap-sm-8">
-              <h3 class="font-nunito text-h2 text-pure-black">{feature.title}</h3>
-              <p class="font-nunito text-small text-pure-black">{feature.description}</p>
-            </div>
+    <section class="self-stretch flex flex-col justify-start items-center gap-8 lg:gap-lg-16">
+      <div class="self-stretch flex flex-col justify-start items-center gap-2 lg:gap-4">
+        <div class="self-stretch text-center justify-start text-black text-2xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-10">Feature Highlights</div>
+      </div>
+      
+      <!-- Responsive container that switches from vertical (mobile) to horizontal (desktop) -->
+      <div class="w-full lg:self-stretch flex flex-col lg:flex-row lg:h-64 justify-center lg:justify-start items-center lg:items-center gap-4">
+        <!-- Body Signal Tracker -->
+        <div class="w-full lg:flex-1 h-32 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
+          <div class="w-8 h-8 relative overflow-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M29 26C29 26.2652 28.8946 26.5196 28.7071 26.7071C28.5196 26.8946 28.2652 27 28 27H4C3.73478 27 3.48043 26.8946 3.29289 26.7071C3.10536 26.5196 3 26.2652 3 26C3 25.7348 3.10536 25.4804 3.29289 25.2929C3.48043 25.1054 3.73478 25 4 25H5V17C5 16.7348 5.10536 16.4804 5.29289 16.2929C5.48043 16.1054 5.73478 16 6 16H9C9.26522 16 9.51957 16.1054 9.70711 16.2929C9.89464 16.4804 10 16.7348 10 17V25H12V11C12 10.7348 12.1054 10.4804 12.2929 10.2929C12.4804 10.1054 12.7348 10 13 10H17C17.2652 10 17.5196 10.1054 17.7071 10.2929C17.8946 10.4804 18 10.7348 18 11V25H20V5C20 4.73478 20.1054 4.48043 20.2929 4.29289C20.4804 4.10536 20.7348 4 21 4H26C26.2652 4 26.5196 4.10536 26.7071 4.29289C26.8946 4.48043 27 4.73478 27 5V25H28C28.2652 25 28.5196 25.1054 28.7071 25.2929C28.8946 25.4804 29 25.7348 29 26Z" fill="#800080"/>
+            </svg>
           </div>
-        {/each}
+          <div class="self-stretch flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">Body Signal Tracker</div>
+            <div class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug">Log symptoms and the emotional context to see the full picture.</div>
+          </div>
+        </div>
+        
+        <!-- Insight Reports -->
+        <div class="w-full lg:flex-1 h-32 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
+          <div class="w-8 h-8 relative overflow-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+              <path d="M27.3075 10.2925L20.3075 3.2925C20.2145 3.19967 20.1042 3.12605 19.9828 3.07586C19.8614 3.02568 19.7313 2.9999 19.6 3H7.59998C7.06954 3 6.56083 3.21071 6.18576 3.58579C5.81069 3.96086 5.59998 4.46957 5.59998 5V27C5.59998 27.5304 5.81069 28.0391 6.18576 28.4142C6.56083 28.7893 7.06954 29 7.59998 29H25.6C26.1304 29 26.6391 28.7893 27.0142 28.4142C27.3893 28.0391 27.6 27.5304 27.6 27V11C27.6001 10.8686 27.5743 10.7385 27.5241 10.6172C27.4739 10.4958 27.4003 10.3854 27.3075 10.2925ZM20.6 22H12.6C12.3348 22 12.0804 21.8946 11.8929 21.7071C11.7053 21.5196 11.6 21.2652 11.6 21C11.6 20.7348 11.7053 20.4804 11.8929 20.2929C12.0804 20.1054 12.3348 20 12.6 20H20.6C20.8652 20 21.1195 20.1054 21.3071 20.2929C21.4946 20.4804 21.6 20.7348 21.6 21C21.6 21.2652 21.4946 21.5196 21.3071 21.7071C21.1195 21.8946 20.8652 22 20.6 22ZM20.6 18H12.6C12.3348 18 12.0804 17.8946 11.8929 17.7071C11.7053 17.5196 11.6 17.2652 11.6 17C11.6 16.7348 11.7053 16.4804 11.8929 16.2929C12.0804 16.1054 12.3348 16 12.6 16H20.6C20.8652 16 21.1195 16.1054 21.3071 16.2929C21.4946 16.4804 21.6 16.7348 21.6 17C21.6 17.2652 21.4946 17.5196 21.3071 17.7071C21.1195 17.8946 20.8652 18 20.6 18ZM19.6 11V5.5L25.1 11H19.6Z" fill="#0000FF"/>
+            </svg>
+          </div>
+          <div class="self-stretch flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">Insight Reports</div>
+            <div class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug">Get GNM-style analysis tailored to your unique experience and history.</div>
+          </div>
+        </div>
+        
+        <!-- Daily Affirmations -->
+        <div class="w-full lg:flex-1 h-32 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
+          <div class="w-8 h-8 relative overflow-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+              <path d="M26.9312 15.6826L12.9312 30.6826C12.7829 30.8409 12.5871 30.9467 12.3733 30.984C12.1595 31.0213 11.9395 30.988 11.7463 30.8892C11.5531 30.7904 11.3973 30.6315 11.3023 30.4364C11.2074 30.2413 11.1785 30.0206 11.22 29.8076L13.0525 20.6414L5.84875 17.9364C5.69404 17.8785 5.55607 17.7832 5.44718 17.659C5.33828 17.5348 5.26185 17.3855 5.22471 17.2246C5.18756 17.0637 5.19087 16.896 5.23433 16.7366C5.27778 16.5773 5.36004 16.4312 5.47375 16.3114L19.4737 1.31136C19.6221 1.15303 19.8179 1.04725 20.0317 1.00998C20.2454 0.972711 20.4655 1.00598 20.6587 1.10476C20.8519 1.20354 21.0077 1.36248 21.1027 1.55759C21.1976 1.75269 21.2265 1.97338 21.185 2.18636L19.3475 11.3626L26.5512 14.0639C26.7048 14.1221 26.8417 14.2173 26.9497 14.341C27.0578 14.4647 27.1337 14.6131 27.1707 14.7732C27.2078 14.9332 27.2049 15.0998 27.1623 15.2585C27.1196 15.4171 27.0386 15.5628 26.9262 15.6826H26.9312Z" fill="#FFD700"/>
+            </svg>
+          </div>
+          <div class="self-stretch flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">Daily Affirmations</div>
+            <div class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug">Receive affirmations auto-generated based on your symptom patterns to support healing.</div>
+          </div>
+        </div>
+        
+        <!-- Healing Journal -->
+        <div class="w-full lg:flex-1 h-32 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
+          <div class="w-8 h-8 relative overflow-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+              <path d="M26.8 4H6.80005C6.26962 4 5.76091 4.21071 5.38584 4.58579C5.01076 4.96086 4.80005 5.46957 4.80005 6V26C4.80005 26.5304 5.01076 27.0391 5.38584 27.4142C5.76091 27.7893 6.26962 28 6.80005 28H26.8C27.3305 28 27.8392 27.7893 28.2143 27.4142C28.5893 27.0391 28.8 26.5304 28.8 26V6C28.8 5.46957 28.5893 4.96086 28.2143 4.58579C27.8392 4.21071 27.3305 4 26.8 4ZM10.8 26H6.80005V6H10.8V26ZM22.8 19H14.8C14.5348 19 14.2805 18.8946 14.0929 18.7071C13.9054 18.5196 13.8 18.2652 13.8 18C13.8 17.7348 13.9054 17.4804 14.0929 17.2929C14.2805 17.1054 14.5348 17 14.8 17H22.8C23.0653 17 23.3196 17.1054 23.5072 17.2929C23.6947 17.4804 23.8 17.7348 23.8 18C23.8 18.2652 23.6947 18.5196 23.5072 18.7071C23.3196 18.8946 23.0653 19 22.8 19ZM22.8 15H14.8C14.5348 15 14.2805 14.8946 14.0929 14.7071C13.9054 14.5196 13.8 14.2652 13.8 14C13.8 13.7348 13.9054 13.4804 14.0929 13.2929C14.2805 13.1054 14.5348 13 14.8 13H22.8C23.0653 13 23.3196 13.1054 23.5072 13.2929C23.6947 13.4804 23.8 13.7348 23.8 14C23.8 14.2652 23.6947 14.5196 23.5072 14.7071C23.3196 14.8946 23.0653 15 22.8 15Z" fill="#FFA500"/>
+            </svg>
+          </div>
+          <div class="self-stretch flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">Healing Journal</div>
+            <div class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug">A private space to reflect, process emotions, and build resilience. (Coming Soon!)</div>
+          </div>
+        </div>
+        
+        <!-- Pattern Log -->
+        <div class="w-full lg:flex-1 h-32 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
+          <div class="w-8 h-8 relative overflow-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+              <path d="M30.4 7V15C30.4001 15.1979 30.3416 15.3914 30.2317 15.556C30.1218 15.7206 29.9656 15.8489 29.7828 15.9246C29.5999 16.0004 29.3987 16.0202 29.2047 15.9815C29.0106 15.9429 28.8323 15.8475 28.6925 15.7075L25.4 12.4138L18.1075 19.7075C18.0146 19.8005 17.9043 19.8742 17.7829 19.9246C17.6615 19.9749 17.5314 20.0008 17.4 20.0008C17.2686 20.0008 17.1384 19.9749 17.017 19.9246C16.8956 19.8742 16.7853 19.8005 16.6925 19.7075L12.4 15.4137L4.10747 23.7075C3.91983 23.8951 3.66533 24.0006 3.39997 24.0006C3.13461 24.0006 2.88011 23.8951 2.69247 23.7075C2.50483 23.5199 2.39941 23.2654 2.39941 23C2.39941 22.7346 2.50483 22.4801 2.69247 22.2925L11.6925 13.2925C11.7853 13.1995 11.8956 13.1258 12.017 13.0754C12.1384 13.0251 12.2686 12.9992 12.4 12.9992C12.5314 12.9992 12.6615 13.0251 12.7829 13.0754C12.9043 13.1258 13.0146 13.1995 13.1075 13.2925L17.4 17.5863L23.9862 11L20.6925 7.7075C20.5525 7.56764 20.4571 7.38939 20.4184 7.19531C20.3798 7.00122 20.3996 6.80003 20.4753 6.61721C20.5511 6.43439 20.6794 6.27815 20.844 6.16828C21.0086 6.05841 21.2021 5.99984 21.4 6H29.4C29.6652 6 29.9195 6.10536 30.1071 6.29289C30.2946 6.48043 30.4 6.73478 30.4 7Z" fill="#008000"/>
+            </svg>
+          </div>
+          <div class="self-stretch flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">Pattern Log</div>
+            <div class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug">Monitor your progress and see how your physical symptoms shift as you resolve emotional conflicts. (Coming Soon!)</div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Pricing Section -->
-    <section class="self-stretch flex flex-col justify-start items-center gap-sm-6">
-      <h2 class="font-nunito text-h1-md text-pure-black text-center">Choose Your Right Plan</h2>
-      <div class="w-[1247px] inline-flex justify-start items-center gap-sm-8">
-        {#each [
-          {
-            name: "Free Plan",
-            price: "Free to Try",
-            description: "Enjoy 5 free reports to uncover the emotional roots of your symptoms. Perfect for getting started on your wellness journey!",
-            features: [],
-            highlight: false
-          },
-          {
-            name: "Pay-as-you-go",
-            price: "$0.99",
-            period: "/report",
-            description: "Flexibility for occasional users. Unlock individual insights whenever you need them. Perfect for those seeking quick targeted guidance.",
-            bundle: "Get a bundle of 10 reports for just $4.99 - Save 50% with this bundle",
-            bundlePrice: "$0.49/report",
-            features: [],
-            highlight: false
-          },
-          {
-            name: "Monthly Subscription", 
-            price: "$9.99",
-            period: "/month",
-            description: "Enjoy up to 50 insights per month - plenty to support your wellness journey. Ideal for those seeking consistent, proactive support.",
-            features: [
-              "Detailed emotional-physical health reports",
-              "Custom affirmations for personalized healing", 
-              "Additional reports are just $0.29 each."
-            ],
-            highlight: true
-          },
-          {
-            name: "Yearly Subscription",
-            price: "$99.99",
-            period: "/year", 
-            description: "Perfect for dedicated individuals seeking long-term growth and healing.",
-            badge: "Save over 70% compared to pay-as-you-go",
-            features: [
-              "Unlimited insights annually for comprehensive, year-round support",
-              "Detailed emotional-physical health reports",
-              "Custom affirmations for personalized healing",
-              "Additional reports are just $0.29 each."
-            ],
-            highlight: false
-          }
-        ] as plan}
-          <div class="flex-1 self-stretch p-sm-8 bg-gradient-to-l from-pure-white to-teal-light rounded-2xl {plan.highlight ? 'outline outline-1 outline-offset-[-1px] outline-teal' : 'outline outline-1 outline-offset-[-1px] outline-black/5'} inline-flex flex-col justify-between items-start overflow-hidden">
-            <div class="self-stretch flex flex-col justify-start items-start gap-lg-16">
-              <div class="self-stretch h-64 pb-lg-16 border-b border-black/5 flex flex-col justify-between items-start">
-                <div class="self-stretch flex flex-col justify-start items-start gap-lg-16">
-                  <div class="px-md-10 py-sm-8 bg-teal rounded-lg inline-flex justify-center items-center gap-md-10">
-                    <span class="font-nunito text-body-bold text-pure-white">{plan.name}</span>
-                  </div>
-                  {#if plan.badge}
-                    <div class="w-72 px-sm-8 py-xs-4 bg-teal-light rounded-2xl outline outline-1 outline-offset-[-1px] outline-teal/50 inline-flex justify-center items-center gap-md-10">
-                      <span class="font-nunito text-body-bold text-pure-black">{plan.badge}</span>
-                    </div>
-                  {/if}
-                  <div class="self-stretch px-sm-8 inline-flex justify-center items-center gap-md-10">
-                    <p class="flex-1 font-montserrat text-small-montserrat text-pure-black">{plan.description}</p>
-                  </div>
+    <section class="self-stretch flex flex-col justify-start items-center gap-4 lg:gap-6">
+      <h2 class="self-stretch text-center justify-start text-black text-2xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-10">Choose Your Right Plan</h2>
+      
+      <!-- Responsive container that switches from vertical (mobile) to horizontal (desktop) -->
+      <div class="w-full lg:w-[1247px] flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-4 lg:gap-2">
+        
+        <!-- Free Plan -->
+        <div class="w-full lg:flex-1 lg:self-stretch h-96 lg:h-auto p-2 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 flex flex-col justify-between items-start overflow-hidden" style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%);">
+          <div class="self-stretch flex flex-col justify-start items-start gap-4">
+            <div class="self-stretch lg:h-64 pb-4 border-b border-black/5 flex flex-col justify-between items-start">
+              <div class="self-stretch flex flex-col justify-start items-start gap-4 lg:gap-4">
+                <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
+                  <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Free Plan</div>
                 </div>
-                <div class="self-stretch px-sm-8 inline-flex justify-center items-center gap-md-10">
-                  <div class="flex-1 font-nunito text-h1-md text-pure-black">
-                    {plan.price}
-                    {#if plan.period}
-                      <span class="text-neutral-500 text-xl font-bold">{plan.period}</span>
-                    {/if}
-                  </div>
+                <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
+                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Enjoy 5 free reports to uncover the emotional roots of your symptoms. Perfect for getting started on your wellness journey!</div>
                 </div>
               </div>
-              {#if plan.bundle}
-                <div class="self-stretch pb-lg-16 flex flex-col justify-start items-start gap-lg-16">
-                  <div class="self-stretch flex flex-col justify-start items-start gap-sm-8">
-                    <div class="self-stretch px-sm-8 py-xs-4 bg-teal-light rounded-2xl outline outline-1 outline-offset-[-1px] outline-teal/50 inline-flex justify-center items-center gap-md-10">
-                      <span class="font-nunito text-body-bold text-pure-black">{plan.bundle}</span>
-                    </div>
-                    <div class="self-stretch px-sm-8 inline-flex justify-center items-center gap-md-10">
-                      <span class="font-nunito text-h1-md text-pure-black">{plan.bundlePrice}</span>
-                    </div>
-                  </div>
-                </div>
-              {/if}
-              {#if plan.features && plan.features.length > 0}
-                <div class="self-stretch pb-lg-16 flex flex-col justify-start items-start gap-lg-16">
-                  <div class="self-stretch inline-flex justify-center items-center gap-md-10">
-                    <div class="flex-1 font-montserrat text-small-montserrat text-pure-black">
-                      {#each plan.features as feature}
-                        {feature}<br />
-                      {/each}
-                    </div>
-                  </div>
-                </div>
-              {/if}
-            </div>
-            <div class="self-stretch pt-lg-16 border-t border-black/5 flex flex-col justify-start items-start gap-md-10">
-              <button class="self-stretch px-lg-32 py-md-12 bg-pure-white rounded-full outline outline-1 outline-offset-[-1px] outline-teal inline-flex justify-center items-center gap-md-10">
-                <span class="font-montserrat text-body-montserrat text-teal">Get Started for free</span>
-              </button>
+              <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
+                <div class="flex-1 justify-start text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10">Free to Try</div>
+              </div>
             </div>
           </div>
-        {/each}
+          <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
+            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 inline-flex justify-center items-center gap-2.5">
+              <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">Get Started for free</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Pay-as-you-go Plan -->
+        <div class="w-full lg:flex-1 lg:self-stretch h-96 lg:h-auto p-2 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 flex flex-col justify-between items-start overflow-hidden" style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%);">
+          <div class="self-stretch flex flex-col justify-start items-start gap-4">
+            <div class="self-stretch pb-4 border-b border-black/5 flex flex-col justify-start items-start gap-4 lg:gap-8">
+              <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
+                  <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Pay-as-you-go</div>
+                </div>
+                <div class="self-stretch justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Flexibility for occasional users.<br/>Unlock individual insights whenever you need them.<br/>Perfect for those seeking quick targeted guidance.</div>
+              </div>
+              <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
+                <div class="flex-1 justify-start">
+                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10">$0.9</span>
+                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10 tracking-[2.88px] lg:tracking-[3.60px]">9</span>
+                  <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/report</span>
+                </div>
+              </div>
+            </div>
+            <div class="self-stretch pb-2 lg:pb-4 flex flex-col justify-start items-start gap-4">
+              <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                <div class="self-stretch px-2 py-1 bg-teal-600/5 rounded-2xl outline outline-1 outline-offset-[-1px] outline-teal-600/50 inline-flex justify-center items-center gap-2.5">
+                  <div class="flex-1 justify-start text-black text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Get a bundle of 10 reports for just $4.99</div>
+                </div>
+                <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
+                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Save 50% with this bundle - Ideal for deeper exploration without a subscription.</div>
+                </div>
+              </div>
+              <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
+                <div class="flex-1 justify-start">
+                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10">$0.49</span>
+                  <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/report</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
+            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 inline-flex justify-center items-center gap-2.5">
+              <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">Get Started for free</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Monthly Subscription Plan -->
+        <div class="w-full lg:flex-1 lg:self-stretch h-96 lg:h-auto p-2 rounded-2xl outline outline-1 outline-offset-[-1px] outline-teal-600 flex flex-col justify-between items-start overflow-hidden" style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%);">
+          <div class="self-stretch flex flex-col justify-start items-start gap-4">
+            <div class="self-stretch lg:h-64 pb-4 border-b border-black/5 flex flex-col justify-between items-start">
+              <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
+                  <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Monthly Subscription</div>
+                </div>
+                <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
+                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Enjoy up to 50 insights per month - plenty to support your wellness journey. Ideal for those seeking consistent, proactive support.</div>
+                </div>
+              </div>
+              <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
+                <div class="flex-1 justify-start">
+                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10">$9.9</span>
+                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10 tracking-[2.88px] lg:tracking-[3.60px]">9</span>
+                  <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/month</span>
+                </div>
+              </div>
+            </div>
+            <div class="self-stretch h-28 lg:pb-4 lg:h-auto flex flex-col justify-start items-start gap-4">
+              <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                <div class="self-stretch inline-flex justify-center items-center gap-2.5">
+                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Detailed emotional-physical health reports<br/>Custom affirmations for personalized healing<br/>Additional reports are just $0.29 each.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
+            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 inline-flex justify-center items-center gap-2.5">
+              <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">Get Started for free</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Yearly Subscription Plan -->
+        <div class="w-full lg:flex-1 lg:self-stretch h-96 lg:h-auto p-2 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 flex flex-col justify-between items-start overflow-hidden" style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%);">
+          <div class="self-stretch flex flex-col justify-start items-start gap-4">
+            <div class="self-stretch lg:h-64 pb-4 border-b border-black/5 flex flex-col justify-between items-start">
+              <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
+                  <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Yearly Subscription</div>
+                </div>
+                <div class="self-stretch px-2 py-1 lg:px-0 lg:py-0 lg:flex lg:flex-col lg:gap-2 bg-teal-600/5 lg:bg-transparent rounded-2xl lg:rounded-none outline outline-1 lg:outline-none outline-offset-[-1px] outline-teal-600/50 inline-flex lg:block justify-center items-center gap-2.5">
+                  <div class="flex-1 lg:w-72 lg:px-2 lg:py-1 lg:bg-teal-600/5 lg:rounded-2xl lg:outline lg:outline-1 lg:outline-offset-[-1px] lg:outline-teal-600/50 lg:inline-flex lg:justify-center lg:items-center lg:gap-2.5 justify-start text-black text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Save over 70% compared to pay-as-you-go.</div>
+                </div>
+                <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
+                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Perfect for dedicated individuals seeking long-term growth and healing.</div>
+                </div>
+              </div>
+              <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
+                <div class="flex-1 justify-start">
+                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10">$99.9</span>
+                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10 tracking-[2.88px] lg:tracking-[3.60px]">9</span>
+                  <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/year</span>
+                </div>
+              </div>
+            </div>
+            <div class="self-stretch lg:pb-4 flex flex-col justify-start items-start gap-4">
+              <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                <div class="self-stretch inline-flex justify-center items-center gap-2.5">
+                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Unlimited insights annually for comprehensive, year-round support.<br/>Detailed emotional-physical health reports<br/>Custom affirmations for personalized healing<br/>Additional reports are just $0.29 each.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
+            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 inline-flex justify-center items-center gap-2.5">
+              <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">Get Started for free</div>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Final CTA Section -->
-    <section class="flex flex-col justify-start items-center gap-xl-48">
-      <div class="flex flex-col justify-start items-center gap-sm-6">
-        <h2 class="w-[965px] font-nunito text-h1-xl text-pure-black text-center">
-          Your Symptoms Tell a Story. It's 
-          <span class="text-teal">Time</span>
-          to 
-          <span class="text-teal">Read</span>
-          It
-        </h2>
-        <p class="w-[884px] font-nunito text-h3-nunito text-pure-black text-center">
-          Start understanding the emotional narrative behind your physical experiences. Download NOW and get 5 free health signal reports!
-        </p>
+    <section class="flex flex-col justify-start items-center gap-4 lg:gap-6">
+      <div class="self-stretch lg:w-[965px] text-center justify-start">
+        <span class="text-black text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">Your Symptoms Tell a Story. It's </span>
+        <span class="text-teal-600 text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">Time</span>
+        <span class="text-black text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]"> to </span>
+        <span class="text-teal-600 text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">Read</span>
+        <span class="text-black text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]"> It</span>
       </div>
-      <div class="w-[617px] h-md-16 inline-flex justify-start items-center gap-lg-20">
-        <button class="flex-1 self-stretch px-lg-16 py-sm-8 bg-gradient-to-r from-teal to-teal-dark rounded-full flex justify-center items-center gap-md-10">
-          <div class="w-sm-6 h-sm-6 relative overflow-hidden">
-            <div class="w-5 h-5 left-[1.50px] top-0 absolute bg-pure-white"></div>
+      <div class="self-stretch lg:w-[884px] text-center justify-start text-black text-sm lg:text-xl font-normal font-['Nunito_Sans'] leading-snug lg:leading-7">
+        Start understanding the emotional narrative behind your physical experiences. Download NOW and get 5 free health signal reports!
+      </div>
+      <div class="w-full lg:w-[617px] flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-4 lg:gap-5">
+        <button class="w-full lg:flex-1 lg:self-stretch px-4 lg:px-4 py-3 lg:py-2 bg-gradient-to-r from-teal-600 to-teal-900 rounded-full flex justify-center items-center gap-2.5">
+          <div class="w-6 h-6 relative overflow-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+              <path d="M12.524 2.8125C12.732 2.00692 13.202 1.29338 13.86 0.784213C14.518 0.275046 15.3267 -0.000833469 16.1587 1.89152e-06H16.2524C16.4513 1.89152e-06 16.6421 0.0790195 16.7827 0.219672C16.9234 0.360324 17.0024 0.55109 17.0024 0.750002C17.0024 0.948914 16.9234 1.13968 16.7827 1.28033C16.6421 1.42098 16.4513 1.5 16.2524 1.5H16.1587C15.6598 1.49996 15.1751 1.6657 14.7807 1.97116C14.3863 2.27662 14.1046 2.70449 13.9799 3.1875C13.9302 3.3802 13.8059 3.54525 13.6345 3.64634C13.4631 3.74744 13.2585 3.77629 13.0658 3.72656C12.8731 3.67684 12.7081 3.5526 12.607 3.38118C12.5059 3.20976 12.4771 3.0052 12.5268 2.8125H12.524ZM21.4368 15.8991C21.3805 15.7705 21.2896 15.6602 21.1743 15.5803C19.5833 14.4872 19.2524 12.6225 19.2524 11.25C19.2524 9.59344 20.5152 8.15063 21.268 7.43719C21.3421 7.3671 21.4011 7.28265 21.4414 7.189C21.4817 7.09535 21.5025 6.99446 21.5025 6.8925C21.5025 6.79054 21.4817 6.68966 21.4414 6.59601C21.4011 6.50235 21.3421 6.4179 21.268 6.34781C20.0793 5.22563 18.1105 4.5 16.2524 4.5C14.9176 4.50119 13.613 4.89683 12.5024 5.63719C11.2069 4.76847 9.64916 4.37832 8.09711 4.53385C6.54507 4.68938 5.09572 5.38086 3.99834 6.48938C3.34232 7.15912 2.82758 7.95387 2.48471 8.82643C2.14183 9.69899 1.97782 10.6316 2.00241 11.5688C2.03921 13.1506 2.39096 14.7093 3.03709 16.1537C3.68322 17.5981 4.61077 18.8992 5.76553 19.9809C6.46097 20.638 7.38223 21.0028 8.33897 21H16.559C17.0705 21.001 17.5767 20.8969 18.0463 20.6942C18.5159 20.4915 18.9389 20.1945 19.289 19.8216C19.9375 19.1236 20.4985 18.3491 20.9596 17.5153C21.6177 16.3125 21.5333 16.125 21.4368 15.8991Z" fill="white"/>
+            </svg>
           </div>
-          <span class="font-montserrat text-body-montserrat text-pure-white">Download for iOS</span>
+          <div class="text-center justify-start text-white text-base lg:text-xl font-medium font-['Montserrat'] leading-7">Download for iOS</div>
         </button>
-        <button class="flex-1 h-md-16 px-lg-16 py-sm-8 rounded-full outline outline-1 outline-offset-[-1px] outline-teal flex justify-center items-center gap-md-10">
-          <div class="w-sm-6 h-sm-6 relative overflow-hidden">
-            <div class="w-5 h-5 left-[4.50px] top-[1.50px] absolute bg-gradient-to-r from-teal to-blue-dark"></div>
+        <button class="w-full lg:flex-1 lg:h-16 px-4 lg:px-4 py-3 lg:py-2 rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 flex justify-center items-center gap-2.5">
+          <div class="w-6 h-6 relative overflow-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+              <path d="M22.4832 11.2044L6.75003 2.20252C6.52067 2.06877 6.25992 1.99829 5.99441 1.99829C5.7289 1.99829 5.46815 2.06877 5.23878 2.20252C5.01281 2.33209 4.82532 2.51938 4.69552 2.74523C4.56571 2.97107 4.49825 3.22735 4.50003 3.48783V21.5122C4.49929 21.7724 4.56764 22.0282 4.69809 22.2533C4.82854 22.4785 5.01642 22.665 5.24253 22.7938C5.4719 22.9275 5.73265 22.998 5.99816 22.998C6.26367 22.998 6.52442 22.9275 6.75378 22.7938L22.4832 13.7938C22.7155 13.6664 22.9093 13.479 23.0443 13.251C23.1792 13.0231 23.2505 12.7631 23.2505 12.4981C23.2505 12.2332 23.1792 11.9732 23.0443 11.7452C22.9093 11.5173 22.7155 11.3299 22.4832 11.2025V11.2044ZM15 13.5603L16.7738 15.3341L8.47691 20.0835L15 13.5603ZM8.47503 4.91564L16.7747 9.66595L15 11.4397L8.47503 4.91564ZM18.1228 14.5625L16.0603 12.5L18.1228 10.4375L21.7257 12.5L18.1228 14.5625Z" fill="url(#paint0_linear_6945_72430)"/>
+              <defs>
+                <linearGradient id="paint0_linear_6945_72430" x1="4.5" y1="12.4981" x2="23.2505" y2="12.4981" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#2B9C8E"/>
+                  <stop offset="1" stop-color="#264653"/>
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
-          <span class="font-montserrat text-body-montserrat text-teal">Download for Android</span>
+          <div class="text-center justify-start text-teal-600 text-base lg:text-xl font-medium font-['Montserrat'] leading-7">Download for Android</div>
         </button>
       </div>
     </section>
