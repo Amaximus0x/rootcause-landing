@@ -16,7 +16,7 @@
       <a href="/affiliate" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Affiliate</a>
       <a href="#privacy" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Privacy Policy</a>
       <a href="#terms" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Terms and Conditions</a>
-      <a href="#newsletter" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">News Letter</a>
+      <a href="/blog" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">News Letter</a>
     </nav>
   </div>
   <div class="inline-flex justify-start items-center gap-3.5">

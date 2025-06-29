@@ -3,6 +3,11 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+
+      screens: {
+        'lg': '1024px',
+      },
+
       // Custom Font Families
       fontFamily: {
         'nunito': ['Nunito Sans', 'sans-serif'],
