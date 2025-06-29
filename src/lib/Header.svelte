@@ -6,9 +6,9 @@
   <!-- Navigation -->
   <div class="flex items-center gap-2 sm:gap-4">
     <!-- Affiliate Button -->
-    <div class="h-10 sm:h-12 lg:h-16 px-3 sm:px-6 lg:px-8 py-1 sm:py-2 bg-white rounded-full flex justify-center items-center">
+    <a href="/affiliate" class="h-10 sm:h-12 lg:h-16 px-3 sm:px-6 lg:px-8 py-1 sm:py-2 bg-white rounded-full flex justify-center items-center hover:shadow-md transition-all duration-300">
       <div class="text-center text-teal-600 text-sm sm:text-base lg:text-xl font-medium font-['Montserrat']">Affiliate</div>
-    </div>
+    </a>
     
     <!-- Visit Blog Button -->
     <div class="h-10 sm:h-12 lg:h-16 px-3 sm:px-6 lg:px-8 py-1 sm:py-2 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 flex justify-center items-center">
