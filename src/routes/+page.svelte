@@ -10,12 +10,17 @@
 </script>
 
 <!-- RootCause Landing Page -->
-<div class="w-full h-auto relative bg-pure-white overflow-hidden">
+<div class="w-full h-auto bg-pure-white overflow-hidden">
+  <!-- Navigation Header -->
+  <div class="relative z-50 w-full px-4 sm:px-8 lg:px-16 pt-4 sm:pt-6 lg:pt-[77px]">
+    <Header />
+  </div>
+  
   <!-- Hero Section -->
-  <div class="w-full h-auto min-h-[800px] lg:h-[1431px] relative rounded-bl-[32px] rounded-br-[32px] lg:rounded-bl-[64px] lg:rounded-br-[64px] overflow-hidden">
+  <div class="w-full relative rounded-bl-[32px] rounded-br-[32px] lg:rounded-bl-[64px] lg:rounded-br-[64px] overflow-hidden">
     <!-- Decorative Grid Background -->
-    <div class="w-full h-[1431px] absolute opacity-20">
-      <div class="h-[1431px] absolute -left-[73px] top-0 inline-flex justify-start items-center gap-lg-24">
+    <div class="w-full absolute inset-0 opacity-20 pointer-events-none">
+      <div class="h-full absolute -left-[73px] top-0 inline-flex justify-start items-center gap-lg-24">
         {#each Array(22) as _, i}
           <div class="w-[1431px] self-stretch origin-top-left rotate-90 border-r border-teal-dark/20"></div>
         {/each}
@@ -27,79 +32,77 @@
       </div>
     </div>
     
-    <!-- Gradient Overlay -->
-    <div class="w-[1516px] h-[762px] absolute -left-[73px] top-[950px] bg-gradient-to-b from-white/0 to-white"></div>
-    
-    <!-- Hero Content -->
-    <div class="w-full absolute left-1/2 transform -translate-x-1/2 top-[120px] sm:top-[160px] lg:top-[217px] text-center px-4 sm:px-8 lg:px-16">
-      <div class="text-center lg:w-[1036px] lg:mx-auto text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">
-        <p>
-          Your Body Speaks <br> RootCause
-          <span class="text-teal-600"> Helps </span>
-          You Listen
+    <!-- Hero Content Container -->
+    <div class="relative z-10 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16">
+      
+      <!-- Hero Text -->
+      <div class="text-center pt-16 sm:pt-20 lg:pt-24 mb-8 lg:mb-12">
+        <div class="text-center lg:w-[1036px] lg:mx-auto text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">
+          <p>
+            Your Body Speaks <br> RootCause
+            <span class="text-teal-600"> Helps </span>
+            You Listen
+          </p>
+        </div>
+      </div>
+      
+      <!-- Subtitle -->
+      <div class="text-center mb-8 lg:mb-12">
+        <p class="text-black text-sm lg:text-xl font-normal font-['Nunito_Sans'] leading-snug lg:leading-7 lg:w-[884px] mx-auto">
+          Go beyond just managing your symptoms and start understanding them. RootCause gives you the tools to map the powerful connection between emotional trauma and your physical well-being.
         </p>
       </div>
       
-    </div>
-    
-    <div class="w-full absolute left-1/2 transform -translate-x-1/2 top-[280px] sm:top-[320px] lg:top-[398px] text-center px-4 sm:px-8 lg:px-16">
-      <p class="text-black text-sm lg:text-xl font-normal font-['Nunito_Sans'] leading-snug lg:leading-7 lg:w-[884px] mx-auto">
-        Go beyond just managing your symptoms and start understanding them. RootCause gives you the tools to map the powerful connection between emotional trauma and your physical well-being.
-      </p>
-    </div>
-    
-    <!-- CTA Buttons -->
-    <div class="w-full absolute left-1/2 transform -translate-x-1/2 top-[420px] sm:top-[460px] lg:top-[516px] flex flex-col sm:flex-row justify-center items-center gap-4 px-4 sm:px-8 lg:px-16">
-      <div class="w-full lg:w-[617px] flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-4 lg:gap-5">
-        <a href="https://apps.apple.com/fr/app/rootcause-emotion-body-link/id6740285911?l=en-GB" target="_blank" rel="noopener noreferrer" class="w-full lg:flex-1 lg:self-stretch px-4 lg:px-4 py-3 lg:py-2 bg-gradient-to-r from-teal-600 to-teal-900 rounded-full flex justify-center items-center gap-2.5">
-          <div class="w-6 h-6 relative overflow-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-              <path d="M12.524 2.8125C12.732 2.00692 13.202 1.29338 13.86 0.784213C14.518 0.275046 15.3267 -0.000833469 16.1587 1.89152e-06H16.2524C16.4513 1.89152e-06 16.6421 0.0790195 16.7827 0.219672C16.9234 0.360324 17.0024 0.55109 17.0024 0.750002C17.0024 0.948914 16.9234 1.13968 16.7827 1.28033C16.6421 1.42098 16.4513 1.5 16.2524 1.5H16.1587C15.6598 1.49996 15.1751 1.6657 14.7807 1.97116C14.3863 2.27662 14.1046 2.70449 13.9799 3.1875C13.9302 3.3802 13.8059 3.54525 13.6345 3.64634C13.4631 3.74744 13.2585 3.77629 13.0658 3.72656C12.8731 3.67684 12.7081 3.5526 12.607 3.38118C12.5059 3.20976 12.4771 3.0052 12.5268 2.8125H12.524ZM21.4368 15.8991C21.3805 15.7705 21.2896 15.6602 21.1743 15.5803C19.5833 14.4872 19.2524 12.6225 19.2524 11.25C19.2524 9.59344 20.5152 8.15063 21.268 7.43719C21.3421 7.3671 21.4011 7.28265 21.4414 7.189C21.4817 7.09535 21.5025 6.99446 21.5025 6.8925C21.5025 6.79054 21.4817 6.68966 21.4414 6.59601C21.4011 6.50235 21.3421 6.4179 21.268 6.34781C20.0793 5.22563 18.1105 4.5 16.2524 4.5C14.9176 4.50119 13.613 4.89683 12.5024 5.63719C11.2069 4.76847 9.64916 4.37832 8.09711 4.53385C6.54507 4.68938 5.09572 5.38086 3.99834 6.48938C3.34232 7.15912 2.82758 7.95387 2.48471 8.82643C2.14183 9.69899 1.97782 10.6316 2.00241 11.5688C2.03921 13.1506 2.39096 14.7093 3.03709 16.1537C3.68322 17.5981 4.61077 18.8992 5.76553 19.9809C6.46097 20.638 7.38223 21.0028 8.33897 21H16.559C17.0705 21.001 17.5767 20.8969 18.0463 20.6942C18.5159 20.4915 18.9389 20.1945 19.289 19.8216C19.9375 19.1236 20.4985 18.3491 20.9596 17.5153C21.6177 16.3125 21.5333 16.125 21.4368 15.8991Z" fill="white"/>
-            </svg>
-          </div>
-          <div class="text-center justify-start text-white text-base lg:text-xl font-medium font-['Montserrat'] leading-7">Download for iOS</div>
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.ayanadevstudio.rootcause" target="_blank" rel="noopener noreferrer" class="w-full lg:flex-1 lg:h-16 px-4 lg:px-4 py-3 lg:py-2 rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 flex justify-center items-center gap-2.5">
-          <div class="w-6 h-6 relative overflow-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-              <path d="M22.4832 11.2044L6.75003 2.20252C6.52067 2.06877 6.25992 1.99829 5.99441 1.99829C5.7289 1.99829 5.46815 2.06877 5.23878 2.20252C5.01281 2.33209 4.82532 2.51938 4.69552 2.74523C4.56571 2.97107 4.49825 3.22735 4.50003 3.48783V21.5122C4.49929 21.7724 4.56764 22.0282 4.69809 22.2533C4.82854 22.4785 5.01642 22.665 5.24253 22.7938C5.4719 22.9275 5.73265 22.998 5.99816 22.998C6.26367 22.998 6.52442 22.9275 6.75378 22.7938L22.4832 13.7938C22.7155 13.6664 22.9093 13.479 23.0443 13.251C23.1792 13.0231 23.2505 12.7631 23.2505 12.4981C23.2505 12.2332 23.1792 11.9732 23.0443 11.7452C22.9093 11.5173 22.7155 11.3299 22.4832 11.2025V11.2044ZM15 13.5603L16.7738 15.3341L8.47691 20.0835L15 13.5603ZM8.47503 4.91564L16.7747 9.66595L15 11.4397L8.47503 4.91564ZM18.1228 14.5625L16.0603 12.5L18.1228 10.4375L21.7257 12.5L18.1228 14.5625Z" fill="url(#paint0_linear_6945_72430)"/>
-              <defs>
-                <linearGradient id="paint0_linear_6945_72430" x1="4.5" y1="12.4981" x2="23.2505" y2="12.4981" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#2B9C8E"/>
-                  <stop offset="1" stop-color="#264653"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="text-center justify-start text-teal-600 text-base lg:text-xl font-medium font-['Montserrat'] leading-7">Download for Android</div>
-        </a>
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 lg:mb-12">
+        <div class="w-full lg:w-[617px] flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-4 lg:gap-5">
+          <a href="https://apps.apple.com/fr/app/rootcause-emotion-body-link/id6740285911?l=en-GB" target="_blank" rel="noopener noreferrer" class="w-full lg:flex-1 lg:self-stretch px-4 lg:px-4 py-3 lg:py-2 bg-gradient-to-r from-teal-600 to-teal-900 rounded-full flex justify-center items-center gap-2.5">
+            <div class="w-6 h-6 relative overflow-hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                <path d="M12.524 2.8125C12.732 2.00692 13.202 1.29338 13.86 0.784213C14.518 0.275046 15.3267 -0.000833469 16.1587 1.89152e-06H16.2524C16.4513 1.89152e-06 16.6421 0.0790195 16.7827 0.219672C16.9234 0.360324 17.0024 0.55109 17.0024 0.750002C17.0024 0.948914 16.9234 1.13968 16.7827 1.28033C16.6421 1.42098 16.4513 1.5 16.2524 1.5H16.1587C15.6598 1.49996 15.1751 1.6657 14.7807 1.97116C14.3863 2.27662 14.1046 2.70449 13.9799 3.1875C13.9302 3.3802 13.8059 3.54525 13.6345 3.64634C13.4631 3.74744 13.2585 3.77629 13.0658 3.72656C12.8731 3.67684 12.7081 3.5526 12.607 3.38118C12.5059 3.20976 12.4771 3.0052 12.5268 2.8125H12.524ZM21.4368 15.8991C21.3805 15.7705 21.2896 15.6602 21.1743 15.5803C19.5833 14.4872 19.2524 12.6225 19.2524 11.25C19.2524 9.59344 20.5152 8.15063 21.268 7.43719C21.3421 7.3671 21.4011 7.28265 21.4414 7.189C21.4817 7.09535 21.5025 6.99446 21.5025 6.8925C21.5025 6.79054 21.4817 6.68966 21.4414 6.59601C21.4011 6.50235 21.3421 6.4179 21.268 6.34781C20.0793 5.22563 18.1105 4.5 16.2524 4.5C14.9176 4.50119 13.613 4.89683 12.5024 5.63719C11.2069 4.76847 9.64916 4.37832 8.09711 4.53385C6.54507 4.68938 5.09572 5.38086 3.99834 6.48938C3.34232 7.15912 2.82758 7.95387 2.48471 8.82643C2.14183 9.69899 1.97782 10.6316 2.00241 11.5688C2.03921 13.1506 2.39096 14.7093 3.03709 16.1537C3.68322 17.5981 4.61077 18.8992 5.76553 19.9809C6.46097 20.638 7.38223 21.0028 8.33897 21H16.559C17.0705 21.001 17.5767 20.8969 18.0463 20.6942C18.5159 20.4915 18.9389 20.1945 19.289 19.8216C19.9375 19.1236 20.4985 18.3491 20.9596 17.5153C21.6177 16.3125 21.5333 16.125 21.4368 15.8991Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="text-center justify-start text-white text-base lg:text-xl font-medium font-['Montserrat'] leading-7">Download for iOS</div>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.ayanadevstudio.rootcause" target="_blank" rel="noopener noreferrer" class="w-full lg:flex-1 lg:h-16 px-4 lg:px-4 py-3 lg:py-2 rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 flex justify-center items-center gap-2.5">
+            <div class="w-6 h-6 relative overflow-hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M22.4832 11.2044L6.75003 2.20252C6.52067 2.06877 6.25992 1.99829 5.99441 1.99829C5.7289 1.99829 5.46815 2.06877 5.23878 2.20252C5.01281 2.33209 4.82532 2.51938 4.69552 2.74523C4.56571 2.97107 4.49825 3.22735 4.50003 3.48783V21.5122C4.49929 21.7724 4.56764 22.0282 4.69809 22.2533C4.82854 22.4785 5.01642 22.665 5.24253 22.7938C5.4719 22.9275 5.73265 22.998 5.99816 22.998C6.26367 22.998 6.52442 22.9275 6.75378 22.7938L22.4832 13.7938C22.7155 13.6664 22.9093 13.479 23.0443 13.251C23.1792 13.0231 23.2505 12.7631 23.2505 12.4981C23.2505 12.2332 23.1792 11.9732 23.0443 11.7452C22.9093 11.5173 22.7155 11.3299 22.4832 11.2025V11.2044ZM15 13.5603L16.7738 15.3341L8.47691 20.0835L15 13.5603ZM8.47503 4.91564L16.7747 9.66595L15 11.4397L8.47503 4.91564ZM18.1228 14.5625L16.0603 12.5L18.1228 10.4375L21.7257 12.5L18.1228 14.5625Z" fill="url(#paint0_linear_6945_72430)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_6945_72430" x1="4.5" y1="12.4981" x2="23.2505" y2="12.4981" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#2B9C8E"/>
+                    <stop offset="1" stop-color="#264653"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="text-center justify-start text-teal-600 text-base lg:text-xl font-medium font-['Montserrat'] leading-7">Download for Android</div>
+          </a>
+        </div>
       </div>
-    </div>
-    
-    <!-- Free Reports Badge -->
-    <div class="px-2 sm:px-3 lg:px-4 py-2 lg:py-2.5 absolute left-1/2 transform -translate-x-1/2 top-[580px] sm:top-[620px] lg:top-[628px] bg-teal-600/5 rounded-full outline outline-1 outline-offset-[-1px] outline-black/5 backdrop-blur-[2px] inline-flex justify-center items-center gap-1.5 sm:gap-2.5 max-w-[95%] sm:max-w-[90%]">
-      <img class="w-6 h-6 sm:w-8 sm:h-8" src="/RootCause.png" alt="RootCause icon" />
-      <div class="text-center justify-start text-black text-xs sm:text-sm lg:text-body-italic font-normal font-['Nunito_Sans'] italic leading-tight sm:leading-7 whitespace-nowrap">get 5 free health signal reports!</div>
-    </div>
-    
-    <!-- Video container with background image -->
-    <div class="hidden lg:block w-[1090px] h-96 absolute left-1/2 transform -translate-x-1/2 top-[718px] rounded-3xl">
-      <div class="w-[973px] h-[563px] left-[59px] top-[60px] absolute rounded-3xl shadow-[0px_25px_68px_0px_rgba(0,0,0,0.05)] outline outline-1 outline-offset-[-1px] outline-white overflow-hidden"
-           style="background-image: url('/hero-image-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="w-[973px] h-[563px] left-0 top-0 absolute bg-white/20 rounded-2xl blur-[2px]"></div>
-        <video 
-          class="w-[940px] h-[533px] left-[17px] top-[15px] absolute rounded-2xl object-cover"
-          autoplay 
-          muted 
-          loop 
-          playsinline
-          poster="/hero-image-bg.jpg"
-        >
-          <source src="https://cdn.shopify.com/videos/c/o/v/1b165b0df6cb43e1b59fd2f582f9c559.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      
+      <!-- Free Reports Badge -->
+      <div class="px-2 sm:px-3 lg:px-4 py-2 lg:py-2.5 mb-8 lg:mb-16 bg-teal-600/5 rounded-full outline outline-1 outline-offset-[-1px] outline-black/5 backdrop-blur-[2px] inline-flex justify-center items-center gap-1.5 sm:gap-2.5 max-w-[95%] sm:max-w-[90%]">
+        <img class="w-6 h-6 sm:w-8 sm:h-8" src="/RootCause.png" alt="RootCause icon" />
+        <div class="text-center justify-start text-black text-xs sm:text-sm lg:text-body-italic font-normal font-['Nunito_Sans'] italic leading-tight sm:leading-7 whitespace-nowrap">get 5 free health signal reports!</div>
       </div>
+      
+      <!-- Video container -->
+			<div class="frame-1171276493">
+				<div class="frame-1171276495">
+					<div class="rectangle-120" />
+					<video class="frame-1171276496" autoplay muted loop playsinline>
+						<source
+							src="https://cdn.shopify.com/videos/c/o/v/1b165b0df6cb43e1b59fd2f582f9c559.mp4"
+							type="video/mp4"
+						/>
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+      
     </div>
+    
   </div>
 
   <!-- Main Content Sections -->
@@ -238,25 +241,21 @@
       </div>
       
       <!-- Mobile Layout -->
-      <div class="w-96 inline-flex flex-col justify-start items-start gap-4 lg:hidden">
-        <div class="w-96 h-96 relative bg-teal-600/5 rounded-3xl overflow-hidden">
-          <div class="w-56 h-56 left-[163.56px] top-[58px] absolute origin-top-left rotate-[14.76deg] bg-emerald-50 rounded-2xl"></div>
-          <div class="w-56 h-56 left-[16px] top-[113.46px] absolute origin-top-left rotate-[-14.76deg] bg-emerald-50 rounded-2xl"></div>
-          <img class="w-60 h-72 left-[69.16px] top-[58px] absolute rounded-2xl" src="/discover.png" />
+      <div class="lg:hidden self-stretch inline-flex flex-col justify-start items-start gap-8">
+        <div class="self-stretch inline-flex flex-col justify-start items-start gap-4">
+          <img class="self-stretch h-56 rounded-2xl" src="/discover.png" alt="Discover screen" />
+          <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">The Seeker</div>
+          <div class="self-stretch justify-start text-black text-base font-normal font-['Nunito_Sans'] leading-snug">You're endlessly searching for answers to your chronic symptoms but keep hitting dead ends. You have a deep sense that your body is trying to tell you something, and you're ready to finally listen.</div>
         </div>
-        <div class="w-96 p-3 bg-teal-600/5 rounded-3xl flex flex-col justify-center items-start gap-4">
-          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
-            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-normal">The Medical Mystery</div>
-            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug"> You've been to every specialist and tried every test, but you're still searching for answers. You're ready for a new, empowering perspective.</div>
-          </div>
-          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
-            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-normal">The Conscious Seeker</div>
-            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug"> You already know your mind and body are profoundly connected. You practice yoga, meditation, or holistic health and need a tool to deepen that connection.</div>
-          </div>
-          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
-            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-snug">The GNM Explorer</div>
-            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug"> You're familiar with German New Medicine and want a structured, self-paced way to apply its principles to your own life for reflection and learning.</div>
-          </div>
+        <div class="self-stretch inline-flex flex-col justify-start items-start gap-4">
+          <img class="self-stretch h-56 rounded-2xl" src="/exploring-your-body-insight.png" alt="Exploring your body insight" />
+          <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">The Modern Healer</div>
+          <div class="self-stretch justify-start text-black text-base font-normal font-['Nunito_Sans'] leading-snug">You're a coach, therapist, or wellness practitioner who understands the mind-body connection. You're looking for a tool that empowers your clients to take an active role in their own healing journey.</div>
+        </div>
+        <div class="self-stretch inline-flex flex-col justify-start items-start gap-4">
+          <img class="self-stretch h-56 rounded-2xl" src="/share-healing.svg" alt="Share healing journey" />
+          <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">The Health-Conscious Individual</div>
+          <div class="self-stretch justify-start text-black text-base font-normal font-['Nunito_Sans'] leading-snug">You're proactive about your health and believe in a holistic approach. You're tired of surface-level solutions and want to understand the deeper story behind your physical well-being.</div>
         </div>
       </div>
 
@@ -298,29 +297,17 @@
       </div>
       
       <!-- Mobile Layout -->
-      <div class="w-96 inline-flex flex-col justify-start items-start gap-4 lg:hidden">
-        <div class="w-96 h-96 relative bg-teal-600/5 rounded-3xl overflow-hidden">
-          <div class="w-56 h-56 left-[131.19px] top-[82px] absolute bg-emerald-50 rounded-2xl"></div>
-          <div class="w-56 h-56 left-[41.19px] top-[82px] absolute bg-emerald-50 rounded-2xl"></div>
-          <img class="w-60 h-72 left-[71px] top-[47.84px] absolute rounded-3xl" src="/exploring-your-body-insight.png" />
+      <div class="lg:hidden self-stretch inline-flex flex-col justify-start items-start gap-8">
+        <div class="self-stretch inline-flex flex-col justify-start items-start gap-4">
+          <img class="self-stretch h-56 rounded-2xl" src="/exploring-your-body-insight.png" alt="Exploring your body insight" />
+          <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">The Modern Healer</div>
+          <div class="self-stretch justify-start text-black text-base font-normal font-['Nunito_Sans'] leading-snug">You're a coach, therapist, or wellness practitioner who understands the mind-body connection. You're looking for a tool that empowers your clients to take an active role in their own healing journey.</div>
         </div>
-        
-        <div class="w-96 p-3 bg-teal-600/5 rounded-3xl flex flex-col justify-center items-start gap-4">
-          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
-            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-normal">Rooted in Wisdom</div>
-            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug"> We offer GNM-inspired insights—not medical advice—to serve as a powerful self-awareness tool.</div>
-          </div>
-          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
-            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-normal">Compassion First</div>
-            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">We start by validating your experience, not dismissing it. Your pain is real, and it has a message.</div>
-          </div>
-          <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
-            <div class="self-stretch justify-start text-black text-xl font-bold font-['Nunito_Sans'] leading-snug">Personal Support Tools</div>
-            <div class="self-stretch justify-start text-black text-sm font-medium font-['Nunito_Sans'] leading-snug">Gentle affirmations and guided journaling features support your emotional journey alongside your physical one.</div>
-          </div>
+        <div class="self-stretch inline-flex flex-col justify-start items-start gap-4">
+          <img class="self-stretch h-56 rounded-2xl" src="/share-healing.svg" alt="Share healing journey" />
+          <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">The Health-Conscious Individual</div>
+          <div class="self-stretch justify-start text-black text-base font-normal font-['Nunito_Sans'] leading-snug">You're proactive about your health and believe in a holistic approach. You're tired of surface-level solutions and want to understand the deeper story behind your physical well-being.</div>
         </div>
-
-        
       </div>
 
       <!-- Desktop Layout -->
@@ -656,9 +643,52 @@
 
   <!-- Footer -->
   <Footer />
-
-  <!-- Navigation Header -->
-  <div class="absolute left-0 top-4 sm:top-6 lg:top-[77px] z-50 w-full px-4 sm:px-8 lg:px-16">
-    <Header />
-  </div>
 </div>
+
+<style>
+	.rectangle-120 {
+		width: 973px;
+		height: 563px;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		background: rgba(255, 255, 255, 0.2);
+		box-shadow: 4px 4px 4px;
+		border-radius: 16px;
+		filter: blur(2px);
+	}
+
+	.frame-1171276496 {
+		width: 940px;
+		height: 533px;
+		left: 17px;
+		top: 15px;
+		position: absolute;
+		border-radius: 16px;
+	}
+
+	.frame-1171276495 {
+		width: 973px;
+		height: 563px;
+		left: 59px;
+		top: 60px;
+		position: absolute;
+		box-shadow: 0px 25px 68px rgba(0, 0, 0, 0.05);
+		overflow: hidden;
+		border-radius: 26px;
+		outline: 1px white solid;
+		outline-offset: -1px;
+	}
+
+	.frame-1171276493 {
+		width: 1090px;
+		height: 385px;
+		position: relative;
+		border-radius: 24px;
+		background-image: url('/hero-image-bg.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 250px; /* Space for the overflowing video */
+	}
+</style>
