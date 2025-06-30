@@ -5,6 +5,7 @@
 	const blogPosts = [
 		{
 			id: 1,
+			slug: "understanding-german-new-medicine",
 			title: "Understanding German New Medicine: A New Perspective on Healing",
 			content: "In recent years, there's been a growing movement toward understanding the emotional roots of physical illness. One framework that's gaining momentum among holistic health practitioners and wellness seekers is German New Medicine (GNM) — a revolutionary approach that sees symptoms not as malfunctions, but as meaningful biological responses.<br/><br/>German New Medicine is based on the discoveries of Dr. Ryke Geerd Hamer, who identified a profound connection between emotional shocks and physical symptoms. According to GNM, every disease originates from an unexpected emotional conflict — something sudden, dramatic, and deeply felt — which creates a biological response in the body.<br/>Rather than labeling symptoms as something to fight or suppress, GNM views them as part of a two-phase process of healing:",
 			date: "2024-12-15",
@@ -14,6 +15,7 @@
 		},
 		{
 			id: 2,
+			slug: "mind-body-connection",
 			title: "The Mind-Body Connection: How Emotions Shape Physical Health",
 			content: "The relationship between our emotional state and physical wellbeing is far more profound than most people realize. Every emotion we experience creates a cascade of biochemical changes throughout our body, influencing everything from our immune system to our digestive health.<br/><br/>When we experience chronic stress, unresolved trauma, or persistent emotional conflicts, our bodies respond with physical symptoms. These aren't random occurrences — they're meaningful communications from our body's wisdom.<br/>Understanding this connection empowers us to approach healing holistically, addressing not just the physical symptoms but the emotional roots that may be sustaining them.",
 			date: "2024-12-10",
@@ -23,6 +25,7 @@
 		},
 		{
 			id: 3,
+			slug: "starting-healing-journey",
 			title: "Starting Your Healing Journey: Listening to Your Body's Messages",
 			content: "Your body is constantly communicating with you, sending signals and messages through symptoms, sensations, and patterns. Learning to listen to these messages is the first step in any genuine healing journey.<br/><br/>Many of us have been conditioned to ignore or suppress our body's signals, viewing symptoms as inconveniences to be eliminated rather than valuable information to be understood. But what if your recurring headaches, digestive issues, or chronic pain are actually your body's way of highlighting unresolved emotional conflicts?<br/>This shift in perspective — from fighting symptoms to understanding them — opens up entirely new possibilities for healing and transformation.",
 			date: "2024-12-05",
@@ -57,7 +60,7 @@
 			<div class="flex flex-col gap-8">
 				{#each blogPosts as post}
 					<!-- Mobile Layout -->
-					<div class="lg:hidden w-full flex flex-col justify-center items-start gap-10">
+					<a href="/blog/{post.slug}" class="lg:hidden w-full flex flex-col justify-center items-start gap-10 cursor-pointer hover:opacity-90 transition-opacity">
 						<img class="self-stretch h-96 relative rounded-lg object-cover" src={post.image} alt={post.title} />
 						<div class="self-stretch flex flex-col justify-start items-end gap-6">
 							<div class="self-stretch flex flex-col justify-start items-start gap-4">
@@ -94,10 +97,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 
 					<!-- Desktop Layout -->
-					<div class="hidden lg:flex  justify-start items-center gap-10">
+					<a href="/blog/{post.slug}" class="hidden lg:flex  justify-start items-center gap-10 cursor-pointer hover:opacity-90 transition-opacity">
 						<img class="w-[500px] h-[416px] relative rounded-lg object-cover" src={post.image} alt={post.title} />
 						<div class="w-[660px] flex flex-col justify-start items-end gap-6">
 							<div class="self-stretch flex flex-col justify-start items-start gap-4">
@@ -134,7 +137,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				{/each}
 			</div>
 
