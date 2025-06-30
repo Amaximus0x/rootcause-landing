@@ -8,7 +8,7 @@
 <!-- RootCause Affiliate Page -->
 <div class="w-full h-auto relative bg-pure-white overflow-hidden">
 	<!-- Header -->
-	<div class="w-full px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+	<div class="w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px]">
 		<Header />
 	</div>
 
@@ -392,7 +392,9 @@
 				</div>
 				<div class="h-16 px-6 py-2 bg-gradient-to-r from-teal-600 to-teal-950 rounded-full inline-flex justify-center items-center gap-2.5">
 					<div class="w-6 h-6 relative overflow-hidden">
-						<div class="w-5 h-3.5 left-[2.25px] top-[4.50px] absolute bg-white"></div>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+							<path d="M19 0.0090332H1C0.801088 0.0090332 0.610322 0.088051 0.46967 0.228703C0.329018 0.369356 0.25 0.560121 0.25 0.759033V13.509C0.25 13.9069 0.408035 14.2884 0.68934 14.5697C0.970644 14.851 1.35218 15.009 1.75 15.009H18.25C18.6478 15.009 19.0294 14.851 19.3107 14.5697C19.592 14.2884 19.75 13.9069 19.75 13.509V0.759033C19.75 0.560121 19.671 0.369356 19.5303 0.228703C19.3897 0.088051 19.1989 0.0090332 19 0.0090332ZM7.25406 7.50903L1.75 12.5537V2.46435L7.25406 7.50903ZM8.36406 8.52622L9.48906 9.56216C9.62743 9.68918 9.80842 9.75965 9.99625 9.75965C10.1841 9.75965 10.3651 9.68918 10.5034 9.56216L11.6284 8.52622L17.0659 13.509H2.92844L8.36406 8.52622ZM12.7459 7.50903L18.25 2.46341V12.5547L12.7459 7.50903Z" fill="white"/>
+						  </svg>
 					</div>
 					<div class="text-center justify-start text-white text-xl font-medium font-['Montserrat'] leading-7">team@rootcause</div>
 				</div>

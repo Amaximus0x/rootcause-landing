@@ -41,7 +41,7 @@
 <!-- RootCause Blog Page -->
 <div class="w-full h-auto relative bg-pure-white overflow-hidden">
 	<!-- Header -->
-	<div class="w-full px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+	<div class="w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px]">
 		<Header />
 	</div>
 
