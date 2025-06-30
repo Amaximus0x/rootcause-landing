@@ -24,17 +24,18 @@
 				<!-- Mobile Layout -->
 				<div class="lg:hidden inline-flex flex-col justify-start items-start gap-8">
 					<div class="self-stretch flex flex-col justify-start items-start gap-4">
-						<div class="self-stretch justify-start">
-							<span class="text-black text-5xl font-bold font-['Nunito_Sans'] leading-[56px]"
-								>Share
-							</span>
-							<span class="text-teal-600 text-5xl font-bold font-['Nunito_Sans'] leading-[56px]"
-								>Healing<br />Earn</span
-							>
+						<div class="self-stretch justify-start space-y-2">
 							<span class="text-black text-5xl font-bold font-['Nunito_Sans'] leading-[56px]">
-								Generously</span
-							>
-						</div>
+							  Share
+							</span>
+							<span class="text-teal-600 text-5xl font-bold font-['Nunito_Sans'] leading-[56px]">
+							  Healing<br />Earn
+							</span>
+							<span class="text-black text-5xl font-bold font-['Nunito_Sans'] leading-[56px]">
+							  Generously
+							</span>
+						  </div>
+						  
 						<div
 							class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug"
 						>
