@@ -10,27 +10,101 @@
 </script>
 
 <!-- RootCause Landing Page -->
-<div class="w-full h-auto bg-pure-white overflow-hidden">
+<div class="w-full h-auto bg-pure-white overflow-hidden relative">
+  <!-- Decorative Grid Background - Covers entire top section including navigation -->
+  <div class="w-full absolute top-0 left-0 right-0 pointer-events-none" style="height: 100vh; z-index: 1;">
+    <div class="line-22"></div>
+    <div class="line-23"></div>
+    <div class="line-24"></div>
+    <div class="line-25"></div>
+    <div class="line-26"></div>
+    <div class="line-27"></div>
+    <div class="line-28"></div>
+    <div class="line-29"></div>
+    <div class="line-30"></div>
+    <div class="line-31"></div>
+    <div class="line-32"></div>
+    <div class="line-33"></div>
+    <div class="line-34"></div>
+    <div class="line-35"></div>
+    <div class="line-36"></div>
+    <div class="line-37"></div>
+    <div class="line-38"></div>
+    <div class="line-39"></div>
+    <div class="line-40"></div>
+    <div class="line-41"></div>
+    <div class="line-42"></div>
+    <div class="line-43"></div>
+    <div class="line-44"></div>
+    <div class="line-45"></div>
+    <div class="line-46"></div>
+    <div class="line-47"></div>
+    <div class="line-48"></div>
+    <div class="line-49"></div>
+    <div class="line-50"></div>
+    <div class="line-51"></div>
+    <div class="line-52"></div>
+    <div class="line-53"></div>
+    <div class="line-54"></div>
+    <div class="line-55"></div>
+    <div class="line-56"></div>
+    <div class="line-57"></div>
+    <div class="line-58"></div>
+    <div class="line-59"></div>
+    <div class="line-60"></div>
+    <div class="line-61"></div>
+    <div class="line-62"></div>
+    <div class="line-63"></div>
+    <div class="line-64"></div>
+    <div class="line-65"></div>
+    <div class="line-66"></div>
+    <div class="line-67"></div>
+    <div class="line-68"></div>
+    <div class="line-69"></div>
+    <div class="line-70"></div>
+    <div class="line-71"></div>
+    <div class="line-72"></div>
+    <div class="line-73"></div>
+    <div class="line-74"></div>
+    <div class="line-75"></div>
+    <div class="line-76"></div>
+    <div class="line-77"></div>
+    <div class="line-78"></div>
+    <div class="line-79"></div>
+    <div class="line-80"></div>
+    <div class="line-81"></div>
+    <div class="line-82"></div>
+    <div class="line-83"></div>
+    <div class="line-84"></div>
+    <div class="line-85"></div>
+    <div class="line-86"></div>
+    <div class="line-87"></div>
+    <div class="line-88"></div>
+    <div class="line-89"></div>
+    <div class="line-90"></div>
+    <div class="line-91"></div>
+    <div class="line-92"></div>
+    <div class="line-93"></div>
+    <div class="line-94"></div>
+    <div class="line-95"></div>
+    <div class="line-96"></div>
+    <div class="line-97"></div>
+    <div class="line-98"></div>
+    <div class="line-99"></div>
+    <div class="line-100"></div>
+    <div class="line-101"></div>
+    <div class="line-102"></div>
+    <div class="line-103"></div>
+    <div class="line-104"></div>
+  </div>
+  
   <!-- Navigation Header -->
   <div class="relative z-50 w-full px-4 sm:px-8 lg:px-16 pt-4 sm:pt-6 lg:pt-[77px]">
     <Header />
   </div>
   
   <!-- Hero Section -->
-  <div class="w-full relative rounded-bl-[32px] rounded-br-[32px] lg:rounded-bl-[64px] lg:rounded-br-[64px] overflow-hidden">
-    <!-- Decorative Grid Background -->
-    <div class="w-full absolute inset-0 opacity-20 pointer-events-none">
-      <div class="h-full absolute -left-[73px] top-0 inline-flex justify-start items-center gap-lg-24">
-        {#each Array(22) as _, i}
-          <div class="w-[1431px] self-stretch origin-top-left rotate-90 border-r border-teal-dark/20"></div>
-        {/each}
-      </div>
-      <div class="absolute -left-[283px] top-0 origin-top-left -rotate-90 inline-flex justify-start items-center gap-lg-24">
-        {#each Array(15) as _, i}
-          <div class="w-0 h-[2311px] origin-top-left rotate-90 border-r border-teal-dark/20"></div>
-        {/each}
-      </div>
-    </div>
+  <div class="w-full relative rounded-bl-[132px] rounded-br-[132px] lg:rounded-bl-[164px] lg:rounded-br-[164px] overflow-hidden">
     
     <!-- Hero Content Container -->
     <div class="relative z-10 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16">
@@ -690,5 +764,43 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		margin-bottom: 250px; /* Space for the overflowing video */
+	}
+
+	/* Grid Background Lines - 100px squares */
+	/* Vertical lines - every 100px starting from 0 */
+	.line-22 { left: 0px; } .line-23 { left: 100px; } .line-24 { left: 200px; } .line-25 { left: 300px; } .line-26 { left: 400px; }
+	.line-27 { left: 500px; } .line-28 { left: 600px; } .line-29 { left: 700px; } .line-30 { left: 800px; } .line-31 { left: 900px; }
+	.line-32 { left: 1000px; } .line-33 { left: 1100px; } .line-34 { left: 1200px; } .line-35 { left: 1300px; } .line-36 { left: 1400px; }
+	.line-37 { left: 1500px; } .line-38 { left: 1600px; } .line-39 { left: 1700px; } .line-40 { left: 1800px; }
+
+	.line-22, .line-23, .line-24, .line-25, .line-26, .line-27, .line-28, .line-29, .line-30, .line-31,
+	.line-32, .line-33, .line-34, .line-35, .line-36, .line-37, .line-38, .line-39, .line-40 {
+		width: 1px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		background: rgba(43, 156, 142, 0.05);
+	}
+
+	/* Horizontal lines - every 100px starting from 0 */
+	.line-51 { top: 0px; } .line-52 { top: 100px; } .line-53 { top: 200px; } .line-54 { top: 300px; } .line-55 { top: 400px; }
+	.line-56 { top: 500px; } .line-57 { top: 600px; } .line-58 { top: 700px; } .line-59 { top: 800px; } .line-60 { top: 900px; }
+
+	.line-51, .line-52, .line-53, .line-54, .line-55, .line-56, .line-57, .line-58, .line-59, .line-60 {
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		left: 0;
+		background: rgba(43, 156, 142, 0.05);
+	}
+
+	/* Hide unused lines */
+	.line-41, .line-42, .line-43, .line-44, .line-45, .line-46, .line-47, .line-48, .line-49, .line-50,
+	.line-61, .line-62, .line-63, .line-64, .line-65, .line-66, .line-67, .line-68, .line-69, .line-70,
+	.line-71, .line-72, .line-73, .line-74, .line-75, .line-76, .line-77, .line-78, .line-79, .line-80,
+	.line-81, .line-82, .line-83, .line-84, .line-85, .line-86, .line-87, .line-88, .line-89, .line-90,
+	.line-91, .line-92, .line-93, .line-94, .line-95, .line-96, .line-97, .line-98, .line-99, .line-100,
+	.line-101, .line-102, .line-103, .line-104 {
+		display: none;
 	}
 </style>
