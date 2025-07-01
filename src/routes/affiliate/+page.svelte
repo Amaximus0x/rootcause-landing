@@ -24,18 +24,13 @@
 				<!-- Mobile Layout -->
 				<div class="lg:hidden inline-flex flex-col justify-start items-start gap-8">
 					<div class="self-stretch flex flex-col justify-start items-start gap-4">
-						<div class="self-stretch justify-start space-y-2">
-							<span class="text-black text-5xl font-bold font-['Nunito_Sans'] leading-[56px]">
-							  Share
-							</span>
-							<span class="text-teal-600 text-5xl font-bold font-['Nunito_Sans'] leading-[56px]">
-							  Healing<br />Earn
-							</span>
-							<span class="text-black text-5xl font-bold font-['Nunito_Sans'] leading-[56px]">
-							  Generously
-							</span>
-						  </div>
-						  
+						<div class="self-stretch justify-start">
+							<span class="text-black text-5xl font-bold font-['Nunito_Sans'] leading-[56px]">Share </span>
+							<span class="text-teal-600 text-5xl font-bold font-['Nunito_Sans'] leading-[56px]">Healing</span>
+							<span class="text-black text-5xl font-bold font-['Nunito_Sans'] leading-[56px]"> </span>
+							<span class="text-teal-600 text-5xl font-bold font-['Nunito_Sans'] leading-[56px]">Earn</span>
+							<span class="text-black text-5xl font-bold font-['Nunito_Sans'] leading-[56px]"> Generously</span>
+						</div>
 						<div
 							class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug"
 						>
@@ -45,15 +40,15 @@
 						</div>
 					</div>
 					<div class="self-stretch flex flex-col justify-center items-start gap-5">
-						<div
-							class="self-stretch p-4 bg-gradient-to-r from-teal-600 to-teal-950 rounded-full inline-flex justify-center items-center gap-2.5"
+						<a href="/affiliate/apply"
+							class="self-stretch p-4 bg-gradient-to-r from-teal-600 to-teal-950 rounded-full inline-flex justify-center items-center gap-2.5 hover:from-teal-700 hover:to-teal-900 transition-all duration-200"
 						>
 							<div
 								class="text-center justify-start text-white text-base font-medium font-['Montserrat'] leading-7"
 							>
 								Apply Now
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
 
@@ -81,15 +76,15 @@
 							others, our affiliate program rewards you for doing just that.
 						</div>
 					</div>
-                    <div
-                        class="w-72 h-16 px-4 py-2 bg-gradient-to-r from-teal-600 to-teal-950 rounded-full inline-flex justify-center items-center gap-2.5"
+                    <a href="/affiliate/apply"
+                        class="w-72 h-16 px-4 py-2 bg-gradient-to-r from-teal-600 to-teal-950 rounded-full inline-flex justify-center items-center gap-2.5 hover:from-teal-700 hover:to-teal-900 transition-all duration-200"
                     >
                         <div
                             class="text-center justify-start text-white text-xl font-medium font-['Montserrat'] leading-7"
                         >
                             Apply Now
                         </div>
-                    </div>
+                    </a>
 				</div>
 			</div>
 
