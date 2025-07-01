@@ -110,7 +110,7 @@
     <div class="relative z-10 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16">
       
       <!-- Hero Text -->
-      <div class="text-center pt-16 sm:pt-20 lg:pt-24 mb-8 lg:mb-12">
+      <div class="text-center pt-16 sm:pt-20 lg:pt-6 mb-4 lg:mb-6.5">
         <div class="text-center lg:w-[1036px] lg:mx-auto text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">
           <p>
             Your Body Speaks <br> RootCause
@@ -121,7 +121,7 @@
       </div>
       
       <!-- Subtitle -->
-      <div class="text-center mb-8 lg:mb-12">
+      <div class="text-center mb-16">
         <p class="text-black text-sm lg:text-xl font-normal font-['Nunito_Sans'] leading-snug lg:leading-7 lg:w-[884px] mx-auto">
           Go beyond just managing your symptoms and start understanding them. RootCause gives you the tools to map the powerful connection between emotional trauma and your physical well-being.
         </p>
@@ -727,7 +727,6 @@
 		top: 0px;
 		position: absolute;
 		background: rgba(255, 255, 255, 0.2);
-		box-shadow: 4px 4px 4px;
 		border-radius: 16px;
 		filter: blur(2px);
 	}
@@ -747,7 +746,7 @@
 		left: 59px;
 		top: 60px;
 		position: absolute;
-		box-shadow: 0px 25px 68px rgba(0, 0, 0, 0.05);
+		
 		overflow: hidden;
 		border-radius: 26px;
 		outline: 1px white solid;
