@@ -7,18 +7,47 @@
 
 <!-- RootCause Affiliate Page -->
 <div class="w-full h-auto relative bg-pure-white overflow-hidden">
+	<!-- Decorative Grid Background - Covers entire top section including navigation -->
+	<div class="w-full absolute top-0 left-0 right-0 pointer-events-none" style="height: 100vh; z-index: 1;">
+		<div class="line-22"></div>
+		<div class="line-23"></div>
+		<div class="line-24"></div>
+		<div class="line-25"></div>
+		<div class="line-26"></div>
+		<div class="line-27"></div>
+		<div class="line-28"></div>
+		<div class="line-29"></div>
+		<div class="line-30"></div>
+		<div class="line-31"></div>
+		<div class="line-32"></div>
+		<div class="line-33"></div>
+		<div class="line-34"></div>
+		<div class="line-35"></div>
+		<div class="line-36"></div>
+		<div class="line-37"></div>
+		<div class="line-38"></div>
+		<div class="line-39"></div>
+		<div class="line-40"></div>
+		<div class="line-51"></div>
+		<div class="line-52"></div>
+		<div class="line-53"></div>
+		<div class="line-54"></div>
+		<div class="line-55"></div>
+		<div class="line-56"></div>
+		<div class="line-57"></div>
+		<div class="line-58"></div>
+		<div class="line-59"></div>
+		<div class="line-60"></div>
+	</div>
+
 	<!-- Header -->
-	<div class="w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px]">
+	<div class="w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px] relative z-50">
 		<Header />
 	</div>
 
 	<!-- Hero Section -->
-	<div
-		class="w-full h-auto relative bg-gradient-to-br from-teal-light to-white px-4 sm:px-8 lg:px-16 py-16 lg:py-24"
-	>
-		<div
-			class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16"
-		>
+	<div class="w-full h-auto relative bg-gradient-to-br from-teal-light to-white px-4 sm:px-8 lg:px-16 py-16 lg:py-24">
+		<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 relative">
 			<!-- Left Content -->
 			<div class="flex-1 max-w-2xl">
 				<!-- Mobile Layout -->
@@ -31,9 +60,7 @@
 							<span class="text-teal-600 text-5xl font-bold font-['Nunito_Sans'] leading-[56px]">Earn</span>
 							<span class="text-black text-5xl font-bold font-['Nunito_Sans'] leading-[56px]"> Generously</span>
 						</div>
-						<div
-							class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug"
-						>
+						<div class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug">
 							RootCause helps people uncover the emotional roots behind their recurring body signals
 							using a GNM-inspired approach. If you believe in our mission and want to share it with
 							others, our affiliate program rewards you for doing just that.
@@ -43,9 +70,7 @@
 						<a href="/affiliate/apply"
 							class="self-stretch p-4 bg-gradient-to-r from-teal-600 to-teal-950 rounded-full inline-flex justify-center items-center gap-2.5 hover:from-teal-700 hover:to-teal-900 transition-all duration-200"
 						>
-							<div
-								class="text-center justify-start text-white text-base font-medium font-['Montserrat'] leading-7"
-							>
+							<div class="text-center justify-start text-white text-base font-medium font-['Montserrat'] leading-7">
 								Apply Now
 							</div>
 						</a>
@@ -53,38 +78,26 @@
 				</div>
 
 				<!-- Desktop Layout -->
-				<div
-					class="hidden lg:flex w-[625px] flex-col justify-start items-start gap-16"
-				>
+				<div class="hidden lg:flex w-[625px] flex-col justify-start items-start gap-16">
 					<div class="self-stretch flex flex-col justify-start items-start gap-8">
 						<div class="w-[625px] justify-start">
-							<span class="text-black text-7xl font-bold font-['Nunito_Sans'] leading-[88px]"
-								>Share
-							</span>
-							<span class="text-teal-600 text-7xl font-bold font-['Nunito_Sans'] leading-[88px]"
-								>Healing<br />Earn</span
-							>
-							<span class="text-black text-7xl font-bold font-['Nunito_Sans'] leading-[88px]">
-								Generously</span
-							>
+							<span class="text-black text-7xl font-bold font-['Nunito_Sans'] leading-[88px]">Share </span>
+							<span class="text-teal-600 text-7xl font-bold font-['Nunito_Sans'] leading-[88px]">Healing<br />Earn</span>
+							<span class="text-black text-7xl font-bold font-['Nunito_Sans'] leading-[88px]"> Generously</span>
 						</div>
-						<div
-							class="self-stretch justify-start text-black text-xl font-normal font-['Nunito_Sans'] leading-7"
-						>
+						<div class="self-stretch justify-start text-black text-xl font-normal font-['Nunito_Sans'] leading-7">
 							RootCause helps people uncover the emotional roots behind their recurring body signals
 							using a GNM-inspired approach. If you believe in our mission and want to share it with
 							others, our affiliate program rewards you for doing just that.
 						</div>
 					</div>
-                    <a href="/affiliate/apply"
-                        class="w-72 h-16 px-4 py-2 bg-gradient-to-r from-teal-600 to-teal-950 rounded-full inline-flex justify-center items-center gap-2.5 hover:from-teal-700 hover:to-teal-900 transition-all duration-200"
-                    >
-                        <div
-                            class="text-center justify-start text-white text-xl font-medium font-['Montserrat'] leading-7"
-                        >
-                            Apply Now
-                        </div>
-                    </a>
+					<a href="/affiliate/apply"
+						class="w-72 h-16 px-4 py-2 bg-gradient-to-r from-teal-600 to-teal-950 rounded-full inline-flex justify-center items-center gap-2.5 hover:from-teal-700 hover:to-teal-900 transition-all duration-200"
+					>
+						<div class="text-center justify-start text-white text-xl font-medium font-['Montserrat'] leading-7">
+							Apply Now
+						</div>
+					</a>
 				</div>
 			</div>
 
@@ -403,3 +416,43 @@
 		<Footer />
 	</div>
 </div>
+
+<style>
+	/* Grid Background Lines - 100px squares */
+	/* Vertical lines - every 100px starting from 0 */
+	.line-22 { left: 0px; } .line-23 { left: 100px; } .line-24 { left: 200px; } .line-25 { left: 300px; } .line-26 { left: 400px; }
+	.line-27 { left: 500px; } .line-28 { left: 600px; } .line-29 { left: 700px; } .line-30 { left: 800px; } .line-31 { left: 900px; }
+	.line-32 { left: 1000px; } .line-33 { left: 1100px; } .line-34 { left: 1200px; } .line-35 { left: 1300px; } .line-36 { left: 1400px; }
+	.line-37 { left: 1500px; } .line-38 { left: 1600px; } .line-39 { left: 1700px; } .line-40 { left: 1800px; }
+
+	.line-22, .line-23, .line-24, .line-25, .line-26, .line-27, .line-28, .line-29, .line-30, .line-31,
+	.line-32, .line-33, .line-34, .line-35, .line-36, .line-37, .line-38, .line-39, .line-40 {
+		width: 1px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		background: rgba(43, 156, 142, 0.05);
+	}
+
+	/* Horizontal lines - every 100px starting from 0 */
+	.line-51 { top: 0px; } .line-52 { top: 100px; } .line-53 { top: 200px; } .line-54 { top: 300px; } .line-55 { top: 400px; }
+	.line-56 { top: 500px; } .line-57 { top: 600px; } .line-58 { top: 700px; } .line-59 { top: 800px; } .line-60 { top: 900px; }
+
+	.line-51, .line-52, .line-53, .line-54, .line-55, .line-56, .line-57, .line-58, .line-59, .line-60 {
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		left: 0;
+		background: rgba(43, 156, 142, 0.05);
+	}
+
+	/* Hide unused lines */
+	.line-41, .line-42, .line-43, .line-44, .line-45, .line-46, .line-47, .line-48, .line-49, .line-50,
+	.line-61, .line-62, .line-63, .line-64, .line-65, .line-66, .line-67, .line-68, .line-69, .line-70,
+	.line-71, .line-72, .line-73, .line-74, .line-75, .line-76, .line-77, .line-78, .line-79, .line-80,
+	.line-81, .line-82, .line-83, .line-84, .line-85, .line-86, .line-87, .line-88, .line-89, .line-90,
+	.line-91, .line-92, .line-93, .line-94, .line-95, .line-96, .line-97, .line-98, .line-99, .line-100,
+	.line-101, .line-102, .line-103, .line-104 {
+		display: none;
+	}
+</style>
