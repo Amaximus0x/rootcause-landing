@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Header, Footer, CategorySidebar } from '$lib';
+	import { Header, Footer, CategorySidebar, BlogCard } from '$lib';
 	
 	// Mock blog posts data
 	const blogPosts = [
@@ -56,32 +56,13 @@
 						<div class="blogs"><span class="blogs_span">Blogs</span></div>
 						<div class="frame-1171276567">
 							{#each blogPosts as post}
-								<a href="/blog/{post.slug}" class="frame-1171276564">
-									<img class="frame-1171276562" src={post.image} alt={post.title} />
-									<div class="frame-1171276563">
-										<div class="frame-1171276566">
-											<div class="frame-1171276581">
-												<div class="understanding-german-new-medicine-a-new-perspective-on-healing">
-													<span class="understandinggermannewmedicineanewperspectiveonhealing_span">{post.title}</span>
-												</div>
-												<div><span class="june232025_span">{post.date}</span></div>
-											</div>
-											<div class="in-recent-years-theres-been-a-growing-movement-toward-understanding-the-emotional-roots-of-physical-illness-one-framework-thats-gaining-momentum-among-holistic-health-practitioners-and-wellness-seekers-is-german-new-medicine-gnm-a-revolutionary-approach-that-sees-symptoms-not-as-malfunctions-but-as-meaningful-biological-responses-read-more">
-												<span class="inrecentyearstheresbeenagrowingmovementtowardunderstandingtheemotionalrootsofphysicalillnessoneframeworkthatsgainingmomentumamongholistichealthpractitionersandwellnessseekersisgermannewmedicinegnmarevolutionaryapproachthatseessymptomsnotasmalfunctionsbutasmeaningfulbiologicalresponsesreadmore_span_01">{post.content} </span>
-												<span class="inrecentyearstheresbeenagrowingmovementtowardunderstandingtheemotionalrootsofphysicalillnessoneframeworkthatsgainingmomentumamongholistichealthpractitionersandwellnessseekersisgermannewmedicinegnmarevolutionaryapproachthatseessymptomsnotasmalfunctionsbutasmeaningfulbiologicalresponsesreadmore_span_02">Read more...</span>
-											</div>
-										</div>
-										<div class="frame-1171276565">
-											<div><span class="share_span">Share</span></div>
-											<div class="frame-1171276532">
-												<div class="linkedinlogo"><div class="vector"></div></div>
-												<div class="facebooklogo"><div class="vector_01"></div></div>
-												<div class="instagramlogo"><div class="vector_02"></div></div>
-												<div class="xlogo"><div class="vector_03"></div></div>
-											</div>
-										</div>
-									</div>
-								</a>
+								<BlogCard 
+									title={post.title}
+									date={post.date}
+									content={post.content}
+									image={post.image}
+									slug={post.slug}
+								/>
 							{/each}
 						</div>
 					</div>
@@ -114,167 +95,6 @@
 
 .blogs {
     text-align: center;
-}
-
-.frame-1171276562 {
-    width: 500px;
-    height: 328px;
-    position: relative;
-    background: #BBBBBB;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-.understandinggermannewmedicineanewperspectiveonhealing_span {
-    color: black;
-    font-size: 24px;
-    font-family: Nunito Sans;
-    font-weight: 700;
-    line-height: 32px;
-    word-wrap: break-word;
-}
-
-.understanding-german-new-medicine-a-new-perspective-on-healing {
-    flex: 1 1 0;
-}
-
-.june232025_span {
-    color: #7C7C7C;
-    font-size: 16px;
-    font-family: Nunito Sans;
-    font-weight: 400;
-    line-height: 24px;
-    word-wrap: break-word;
-}
-
-.inrecentyearstheresbeenagrowingmovementtowardunderstandingtheemotionalrootsofphysicalillnessoneframeworkthatsgainingmomentumamongholistichealthpractitionersandwellnessseekersisgermannewmedicinegnmarevolutionaryapproachthatseessymptomsnotasmalfunctionsbutasmeaningfulbiologicalresponsesreadmore_span_01 {
-    color: black;
-    font-size: 16px;
-    font-family: Nunito Sans;
-    font-weight: 400;
-    line-height: 24px;
-    word-wrap: break-word;
-}
-
-.inrecentyearstheresbeenagrowingmovementtowardunderstandingtheemotionalrootsofphysicalillnessoneframeworkthatsgainingmomentumamongholistichealthpractitionersandwellnessseekersisgermannewmedicinegnmarevolutionaryapproachthatseessymptomsnotasmalfunctionsbutasmeaningfulbiologicalresponsesreadmore_span_02 {
-    color: #2B9C8E;
-    font-size: 16px;
-    font-family: Nunito Sans;
-    font-weight: 600;
-    line-height: 24px;
-    word-wrap: break-word;
-}
-
-.share_span {
-    color: black;
-    font-size: 16px;
-    font-family: Nunito Sans;
-    font-weight: 400;
-    line-height: 24px;
-    word-wrap: break-word;
-}
-
-.vector {
-    width: 19.50px;
-    height: 19.50px;
-    left: 2.25px;
-    top: 2.25px;
-    position: absolute;
-    background: #2B9C8E;
-}
-
-.vector_01 {
-    width: 19.50px;
-    height: 19.43px;
-    left: 2.25px;
-    top: 2.25px;
-    position: absolute;
-    background: #2B9C8E;
-}
-
-.vector_02 {
-    width: 19.50px;
-    height: 19.50px;
-    left: 2.25px;
-    top: 2.25px;
-    position: absolute;
-    background: #2B9C8E;
-}
-
-.vector_03 {
-    width: 16.50px;
-    height: 18px;
-    left: 3.75px;
-    top: 3px;
-    position: absolute;
-    background: #2B9C8E;
-}
-
-.frame-1171276581 {
-    align-self: stretch;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 8px;
-    display: inline-flex;
-}
-
-.linkedinlogo, .facebooklogo, .instagramlogo, .xlogo {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    overflow: hidden;
-}
-
-.frame-1171276566 {
-    align-self: stretch;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 16px;
-    display: flex;
-}
-
-.frame-1171276532 {
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-    display: flex;
-}
-
-.frame-1171276565 {
-    align-self: stretch;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 16px;
-    display: inline-flex;
-}
-
-.frame-1171276563 {
-    flex: 1 1 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    gap: 24px;
-    display: inline-flex;
-}
-
-.frame-1171276564 {
-    align-self: stretch;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 16px;
-    display: inline-flex;
-    cursor: pointer;
-    transition: opacity 0.2s;
-    margin-bottom: 88px;
-}
-
-.frame-1171276564:hover {
-    opacity: 0.9;
-}
-
-.frame-1171276564:last-child {
-    margin-bottom: 0;
 }
 
 .frame-1171276567 {

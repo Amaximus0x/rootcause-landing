@@ -9,7 +9,7 @@
   <div class="flex items-center gap-2 sm:gap-4">
     <!-- Affiliate Button -->
     <a href="/affiliate" class="h-10 sm:h-12 lg:h-16 px-3 sm:px-6 lg:px-8 py-1 sm:py-2 bg-white rounded-full flex justify-center items-center hover:shadow-md transition-all duration-300">
-      <div class="text-center text-teal-600 text-sm sm:text-base lg:text-xl font-medium font-['Montserrat']">Affiliate</div>
+      <div class="text-center text-teal-600 text-sm sm:text-base lg:text-xl font-medium font-['Montserrat']">Affiliates</div>
     </a>
     
     <!-- Visit Blog Button -->
