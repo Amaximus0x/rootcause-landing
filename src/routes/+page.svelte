@@ -99,7 +99,7 @@
   </div>
   
   <!-- Navigation Header -->
-  <div class="relative z-50 w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px]">
+  <div class="relative z-50 w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px] lg:pl-[88px] lg:pr-[87px]">
     <Header />
   </div>
   

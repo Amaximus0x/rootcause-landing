@@ -41,9 +41,9 @@
 	</div>
 
 	<!-- Header -->
-	<div class="w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px] relative z-50">
+	<div class="relative z-50 w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px] lg:pl-[88px] lg:pr-[87px]">
 		<Header />
-	</div>
+	  </div>
 
 	<!-- Hero Section -->
 	<div class="w-full h-auto relative bg-gradient-to-br from-teal-light to-white px-4 sm:px-8 lg:px-16 py-16 lg:py-24">

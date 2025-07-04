@@ -41,9 +41,9 @@
 <!-- RootCause Blog Page -->
 <div class="w-full h-auto relative bg-pure-white overflow-hidden">
 	<!-- Header -->
-	<div class="w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px]">
+	<div class="relative z-50 w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px] lg:pl-[88px] lg:pr-[87px]">
 		<Header />
-	</div>
+	  </div>
 
 	<!-- Main Content -->
 	<div class="w-full flex justify-center items-start py-8">
@@ -69,7 +69,7 @@
 				</div>
 
 				<!-- Category Sidebar -->
-				<div class="hidden lg:block w-80 flex-shrink-0">
+				<div class="hidden lg:block lg:mt-[112px] flex-shrink-0">
 					<CategorySidebar />
 				</div>
 

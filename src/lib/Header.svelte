@@ -8,13 +8,13 @@
   <!-- Navigation -->
   <div class="flex items-center gap-2 sm:gap-4">
     <!-- Affiliate Button -->
-    <a href="/affiliate" class="h-10 sm:h-12 lg:h-16 px-3 sm:px-6 lg:px-8 py-1 sm:py-2 bg-white rounded-full flex justify-center items-center hover:shadow-md transition-all duration-300">
-      <div class="text-center text-teal-600 text-sm sm:text-base lg:text-xl font-medium font-['Montserrat']">Affiliates</div>
+    <a href="/affiliate" class="h-10 sm:h-12 lg:h-16 px-3 sm:px-6 lg:px-8 py-1 sm:py-2 bg-white rounded-full flex justify-center items-center transition-all duration-300">
+      <div class="text-center font-['Montserrat'] text-sm sm:text-base lg:text-xl font-medium leading-7" style="background: linear-gradient(90deg, #2B9C8E 0%, #264653 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Affiliates</div>
     </a>
     
     <!-- Visit Blog Button -->
-    <a href="/blog" class="h-10 sm:h-12 lg:h-16 px-3 sm:px-6 lg:px-8 py-1 sm:py-2 bg-white rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 flex justify-center items-center hover:shadow-md transition-all duration-300">
-      <div class="text-center text-teal-600 text-sm sm:text-base lg:text-xl font-medium font-['Montserrat']">Visit Blog</div>
+    <a href="/blog" class="h-10 sm:h-12 lg:h-16 px-3 sm:px-6 lg:px-8 py-1 sm:py-2 bg-white rounded-full flex justify-center items-center transition-all duration-300" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
+      <div class="text-center font-['Montserrat'] text-sm sm:text-base lg:text-xl font-medium leading-7" style="background: linear-gradient(90deg, #2B9C8E 0%, #264653 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Visit Blog</div>
     </a>
   </div>
 </div> 
