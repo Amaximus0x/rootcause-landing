@@ -74,6 +74,7 @@ export default {
         
         // Small Text Variants
         'small-medium': ['14px', { lineHeight: '22px', fontWeight: '500' }],
+        'small-italic': ['14px', { lineHeight: '28px', fontWeight: '400', fontStyle: 'italic' }],
         'small': ['14px', { lineHeight: '22px', fontWeight: '400' }],
         'small-montserrat': ['14px', { lineHeight: '22px', fontWeight: '400' }],
       },

@@ -157,8 +157,8 @@
       
       <!-- Free Reports Badge -->
       <div class="px-2 sm:px-3 lg:px-4 py-2 lg:py-2.5 mb-8 lg:mb-16 bg-teal-600/5 rounded-full outline outline-1 outline-offset-[-1px] outline-black/5 backdrop-blur-[2px] inline-flex justify-center items-center gap-1.5 sm:gap-2.5 max-w-[95%] sm:max-w-[90%]">
-        <img class="w-6 h-6 sm:w-8 sm:h-8" src="/RootCause.png" alt="RootCause icon" />
-        <div class="text-center justify-start text-black text-xs sm:text-sm lg:text-body-italic font-normal font-['Nunito_Sans'] italic leading-tight sm:leading-7 whitespace-nowrap">get 5 free health signal reports!</div>
+        <img class="w-8 h-8" src="/RootCause-PNG.png" alt="RootCause icon" />
+        <div class="text-center justify-start text-black text-sm sm:text-sm lg:text-base font-normal font-['Nunito_Sans'] italic leading-tight sm:leading-7 whitespace-nowrap">get 5 free health signal reports!</div>
       </div>
       
       <!-- Video container -->
@@ -185,7 +185,7 @@
     <!-- Testimonials Section -->
     <section class="self-stretch flex flex-col justify-start items-center gap-8 lg:gap-lg-32">
       <div class="w-full flex flex-col justify-start items-center gap-4 lg:gap-sm-8">
-        <div class="self-stretch text-center justify-start text-black text-2xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-10">Why Holistic Experts Are Talking About RootCause</div>
+        <div class="self-stretch text-center justify-start text-black text-h2 lg:text-h1-md font-fontFamily-nunito">Why Holistic Experts Are Talking About RootCause</div>
         <div class="self-stretch lg:w-[611px] text-center justify-start text-black text-sm lg:text-base font-normal font-['Nunito_Sans'] leading-snug mx-auto">Discover the app featured in wellness communities for its revolutionary, compassionate, and GNM-grounded approach to mind-body health.</div>
       </div>
       
