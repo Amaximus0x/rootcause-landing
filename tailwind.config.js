@@ -64,6 +64,7 @@ export default {
         
         // Heading 3 Variants
         'h3-nunito': ['20px', { lineHeight: '28px', fontWeight: '400' }],
+        'h3-nunito-bold': ['20px', { lineHeight: '28px', fontWeight: '700' }],
         'h3-montserrat': ['20px', { lineHeight: '28px', fontWeight: '500' }],
         
         // Body Text Variants

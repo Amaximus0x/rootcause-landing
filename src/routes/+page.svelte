@@ -430,73 +430,73 @@
     <!-- Features Section -->
     <section class="self-stretch flex flex-col justify-start items-center gap-8 lg:gap-lg-16">
       <div class="self-stretch flex flex-col justify-start items-center gap-2 lg:gap-4">
-        <div class="self-stretch text-center justify-start text-black text-2xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-10">Feature Highlights</div>
+        <div class="self-stretch text-center justify-start text-black font-nunito text-h2 lg:text-h1-md">Feature Highlights</div>
       </div>
       
       <!-- Responsive container that switches from vertical (mobile) to horizontal (desktop) -->
       <div class="w-full lg:self-stretch flex flex-col lg:flex-row lg:h-64 justify-center lg:justify-start items-center lg:items-center gap-4">
         <!-- Body Signal Tracker -->
-        <div class="w-full lg:flex-1 h-32 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
+        <div class="w-full lg:flex-1 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
           <div class="w-8 h-8 relative overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
               <path d="M29 26C29 26.2652 28.8946 26.5196 28.7071 26.7071C28.5196 26.8946 28.2652 27 28 27H4C3.73478 27 3.48043 26.8946 3.29289 26.7071C3.10536 26.5196 3 26.2652 3 26C3 25.7348 3.10536 25.4804 3.29289 25.2929C3.48043 25.1054 3.73478 25 4 25H5V17C5 16.7348 5.10536 16.4804 5.29289 16.2929C5.48043 16.1054 5.73478 16 6 16H9C9.26522 16 9.51957 16.1054 9.70711 16.2929C9.89464 16.4804 10 16.7348 10 17V25H12V11C12 10.7348 12.1054 10.4804 12.2929 10.2929C12.4804 10.1054 12.7348 10 13 10H17C17.2652 10 17.5196 10.1054 17.7071 10.2929C17.8946 10.4804 18 10.7348 18 11V25H20V5C20 4.73478 20.1054 4.48043 20.2929 4.29289C20.4804 4.10536 20.7348 4 21 4H26C26.2652 4 26.5196 4.10536 26.7071 4.29289C26.8946 4.48043 27 4.73478 27 5V25H28C28.2652 25 28.5196 25.1054 28.7071 25.2929C28.8946 25.4804 29 25.7348 29 26Z" fill="#800080"/>
             </svg>
           </div>
           <div class="self-stretch flex flex-col justify-start items-start gap-2">
-            <div class="self-stretch justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">Body Signal Tracker</div>
-            <div class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug">Log symptoms and the emotional context to see the full picture.</div>
+            <div class="self-stretch justify-start text-black text-h3-nunito-bold lg:text-h2 font-nunito">Body Signal Tracker</div>
+            <div class="self-stretch justify-start text-black text-small font-nunito">Log symptoms and the emotional context to see the full picture.</div>
           </div>
         </div>
         
         <!-- Insight Reports -->
-        <div class="w-full lg:flex-1 h-32 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
+        <div class="w-full lg:flex-1 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
           <div class="w-8 h-8 relative overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
               <path d="M27.3075 10.2925L20.3075 3.2925C20.2145 3.19967 20.1042 3.12605 19.9828 3.07586C19.8614 3.02568 19.7313 2.9999 19.6 3H7.59998C7.06954 3 6.56083 3.21071 6.18576 3.58579C5.81069 3.96086 5.59998 4.46957 5.59998 5V27C5.59998 27.5304 5.81069 28.0391 6.18576 28.4142C6.56083 28.7893 7.06954 29 7.59998 29H25.6C26.1304 29 26.6391 28.7893 27.0142 28.4142C27.3893 28.0391 27.6 27.5304 27.6 27V11C27.6001 10.8686 27.5743 10.7385 27.5241 10.6172C27.4739 10.4958 27.4003 10.3854 27.3075 10.2925ZM20.6 22H12.6C12.3348 22 12.0804 21.8946 11.8929 21.7071C11.7053 21.5196 11.6 21.2652 11.6 21C11.6 20.7348 11.7053 20.4804 11.8929 20.2929C12.0804 20.1054 12.3348 20 12.6 20H20.6C20.8652 20 21.1195 20.1054 21.3071 20.2929C21.4946 20.4804 21.6 20.7348 21.6 21C21.6 21.2652 21.4946 21.5196 21.3071 21.7071C21.1195 21.8946 20.8652 22 20.6 22ZM20.6 18H12.6C12.3348 18 12.0804 17.8946 11.8929 17.7071C11.7053 17.5196 11.6 17.2652 11.6 17C11.6 16.7348 11.7053 16.4804 11.8929 16.2929C12.0804 16.1054 12.3348 16 12.6 16H20.6C20.8652 16 21.1195 16.1054 21.3071 16.2929C21.4946 16.4804 21.6 16.7348 21.6 17C21.6 17.2652 21.4946 17.5196 21.3071 17.7071C21.1195 17.8946 20.8652 18 20.6 18ZM19.6 11V5.5L25.1 11H19.6Z" fill="#0000FF"/>
             </svg>
           </div>
           <div class="self-stretch flex flex-col justify-start items-start gap-2">
-            <div class="self-stretch justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">Insight Reports</div>
-            <div class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug">Get GNM-style analysis tailored to your unique experience and history.</div>
+            <div class="self-stretch justify-start text-black text-h3-nunito-bold lg:text-h2 font-nunito">Insight Reports</div>
+            <div class="self-stretch justify-start text-black text-small font-nunito">Get GNM-style analysis tailored to your unique experience and history.</div>
           </div>
         </div>
         
         <!-- Daily Affirmations -->
-        <div class="w-full lg:flex-1 h-32 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
+        <div class="w-full lg:flex-1 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
           <div class="w-8 h-8 relative overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
               <path d="M26.9312 15.6826L12.9312 30.6826C12.7829 30.8409 12.5871 30.9467 12.3733 30.984C12.1595 31.0213 11.9395 30.988 11.7463 30.8892C11.5531 30.7904 11.3973 30.6315 11.3023 30.4364C11.2074 30.2413 11.1785 30.0206 11.22 29.8076L13.0525 20.6414L5.84875 17.9364C5.69404 17.8785 5.55607 17.7832 5.44718 17.659C5.33828 17.5348 5.26185 17.3855 5.22471 17.2246C5.18756 17.0637 5.19087 16.896 5.23433 16.7366C5.27778 16.5773 5.36004 16.4312 5.47375 16.3114L19.4737 1.31136C19.6221 1.15303 19.8179 1.04725 20.0317 1.00998C20.2454 0.972711 20.4655 1.00598 20.6587 1.10476C20.8519 1.20354 21.0077 1.36248 21.1027 1.55759C21.1976 1.75269 21.2265 1.97338 21.185 2.18636L19.3475 11.3626L26.5512 14.0639C26.7048 14.1221 26.8417 14.2173 26.9497 14.341C27.0578 14.4647 27.1337 14.6131 27.1707 14.7732C27.2078 14.9332 27.2049 15.0998 27.1623 15.2585C27.1196 15.4171 27.0386 15.5628 26.9262 15.6826H26.9312Z" fill="#FFD700"/>
             </svg>
           </div>
           <div class="self-stretch flex flex-col justify-start items-start gap-2">
-            <div class="self-stretch justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">Daily Affirmations</div>
-            <div class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug">Receive affirmations auto-generated based on your symptom patterns to support healing.</div>
+            <div class="self-stretch justify-start text-black text-h3-nunito-bold lg:text-h2 font-nunito text-nowrap">Daily Affirmations</div>
+            <div class="self-stretch justify-start text-black text-small font-nunito">Receive affirmations auto-generated based on your symptom patterns to support healing.</div>
           </div>
         </div>
         
         <!-- Healing Journal -->
-        <div class="w-full lg:flex-1 h-32 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
+        <div class="w-full lg:flex-1 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
           <div class="w-8 h-8 relative overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
               <path d="M26.8 4H6.80005C6.26962 4 5.76091 4.21071 5.38584 4.58579C5.01076 4.96086 4.80005 5.46957 4.80005 6V26C4.80005 26.5304 5.01076 27.0391 5.38584 27.4142C5.76091 27.7893 6.26962 28 6.80005 28H26.8C27.3305 28 27.8392 27.7893 28.2143 27.4142C28.5893 27.0391 28.8 26.5304 28.8 26V6C28.8 5.46957 28.5893 4.96086 28.2143 4.58579C27.8392 4.21071 27.3305 4 26.8 4ZM10.8 26H6.80005V6H10.8V26ZM22.8 19H14.8C14.5348 19 14.2805 18.8946 14.0929 18.7071C13.9054 18.5196 13.8 18.2652 13.8 18C13.8 17.7348 13.9054 17.4804 14.0929 17.2929C14.2805 17.1054 14.5348 17 14.8 17H22.8C23.0653 17 23.3196 17.1054 23.5072 17.2929C23.6947 17.4804 23.8 17.7348 23.8 18C23.8 18.2652 23.6947 18.5196 23.5072 18.7071C23.3196 18.8946 23.0653 19 22.8 19ZM22.8 15H14.8C14.5348 15 14.2805 14.8946 14.0929 14.7071C13.9054 14.5196 13.8 14.2652 13.8 14C13.8 13.7348 13.9054 13.4804 14.0929 13.2929C14.2805 13.1054 14.5348 13 14.8 13H22.8C23.0653 13 23.3196 13.1054 23.5072 13.2929C23.6947 13.4804 23.8 13.7348 23.8 14C23.8 14.2652 23.6947 14.5196 23.5072 14.7071C23.3196 14.8946 23.0653 15 22.8 15Z" fill="#FFA500"/>
             </svg>
           </div>
           <div class="self-stretch flex flex-col justify-start items-start gap-2">
-            <div class="self-stretch justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">Healing Journal</div>
-            <div class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug">A private space to reflect, process emotions, and build resilience. (Coming Soon!)</div>
+            <div class="self-stretch justify-start text-black text-h3-nunito-bold lg:text-h2 font-nunito">Healing Journal</div>
+            <div class="self-stretch justify-start text-black text-small font-nunito">A private space to reflect, process emotions, and build resilience. (Coming Soon!)</div>
           </div>
         </div>
         
         <!-- Pattern Log -->
-        <div class="w-full lg:flex-1 h-32 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
+        <div class="w-full lg:flex-1 lg:h-auto lg:self-stretch p-4 bg-teal-600/5 rounded-2xl flex flex-col justify-between items-start overflow-hidden">
           <div class="w-8 h-8 relative overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
               <path d="M30.4 7V15C30.4001 15.1979 30.3416 15.3914 30.2317 15.556C30.1218 15.7206 29.9656 15.8489 29.7828 15.9246C29.5999 16.0004 29.3987 16.0202 29.2047 15.9815C29.0106 15.9429 28.8323 15.8475 28.6925 15.7075L25.4 12.4138L18.1075 19.7075C18.0146 19.8005 17.9043 19.8742 17.7829 19.9246C17.6615 19.9749 17.5314 20.0008 17.4 20.0008C17.2686 20.0008 17.1384 19.9749 17.017 19.9246C16.8956 19.8742 16.7853 19.8005 16.6925 19.7075L12.4 15.4137L4.10747 23.7075C3.91983 23.8951 3.66533 24.0006 3.39997 24.0006C3.13461 24.0006 2.88011 23.8951 2.69247 23.7075C2.50483 23.5199 2.39941 23.2654 2.39941 23C2.39941 22.7346 2.50483 22.4801 2.69247 22.2925L11.6925 13.2925C11.7853 13.1995 11.8956 13.1258 12.017 13.0754C12.1384 13.0251 12.2686 12.9992 12.4 12.9992C12.5314 12.9992 12.6615 13.0251 12.7829 13.0754C12.9043 13.1258 13.0146 13.1995 13.1075 13.2925L17.4 17.5863L23.9862 11L20.6925 7.7075C20.5525 7.56764 20.4571 7.38939 20.4184 7.19531C20.3798 7.00122 20.3996 6.80003 20.4753 6.61721C20.5511 6.43439 20.6794 6.27815 20.844 6.16828C21.0086 6.05841 21.2021 5.99984 21.4 6H29.4C29.6652 6 29.9195 6.10536 30.1071 6.29289C30.2946 6.48043 30.4 6.73478 30.4 7Z" fill="#008000"/>
             </svg>
           </div>
           <div class="self-stretch flex flex-col justify-start items-start gap-2">
-            <div class="self-stretch justify-start text-black text-xl lg:text-2xl font-bold font-['Nunito_Sans'] leading-7 lg:leading-loose">Pattern Log</div>
-            <div class="self-stretch justify-start text-black text-sm font-normal font-['Nunito_Sans'] leading-snug">Monitor your progress and see how your physical symptoms shift as you resolve emotional conflicts. (Coming Soon!)</div>
+            <div class="self-stretch justify-start text-black text-h3-nunito-bold lg:text-h2 font-nunito">Pattern Log</div>
+            <div class="self-stretch justify-start text-black text-small font-nunito">Monitor your progress and see how your physical symptoms shift as you resolve emotional conflicts. (Coming Soon!)</div>
           </div>
         </div>
       </div>
@@ -504,7 +504,7 @@
 
     <!-- Pricing Section -->
     <section class="self-stretch flex flex-col justify-start items-center gap-4 lg:gap-6">
-      <h2 class="self-stretch text-center justify-start text-black text-2xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-10">Choose Your Right Plan</h2>
+      <h2 class="self-stretch text-center justify-start text-black font-nunito text-h2 lg:text-h1-md">Choose Your Right Plan</h2>
       
       <!-- Responsive container that switches from vertical (mobile) to horizontal (desktop) -->
       <div class="w-full lg:w-[1247px] flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-4 lg:gap-2">
