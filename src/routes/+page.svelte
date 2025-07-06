@@ -326,34 +326,47 @@
     <section class="self-stretch flex flex-col justify-start items-center gap-8">
       <div class="self-stretch inline-flex flex-col justify-start items-center gap-4">
         <div class="self-stretch text-center justify-start text-black text-h2 lg:text-h1-md">Who Is Rootcause For?</div>
-        <div class="w-[611px] text-center justify-start text-black text-small lg:text-small-lg italic">If This Sounds Like You, You're in the Right Place.</div>
+        <div class="w-full lg:w-[611px] text-center justify-start text-black text-small lg:text-small-lg italic">If This Sounds Like You, You're in the Right Place.</div>
       </div>
       
+      <!-- Responsive container that switches from vertical (mobile) to horizontal (desktop) -->
+      <div class="w-full flex flex-col lg:flex-row justify-start items-center lg:items-stretch gap-4 lg:gap-8">
+        <!-- Right column with image - First on mobile, Last on desktop -->
+        <div class="w-full lg:w-1/2 self-stretch relative bg-teal-600/5 rounded-3xl overflow-hidden min-h-[400px] lg:min-h-0 order-first lg:order-last">
+          <!-- Mobile layout background rectangles -->
+          <div class="w-[217.70px] h-[225.95px] left-[163.56px] top-[58px] absolute origin-top-left rotate-[15deg] bg-[#E7F4F3] rounded-2xl lg:hidden"></div>
+          <div class="w-[217.70px] h-[225.95px] left-[16px] top-[113.46px] absolute origin-top-left rotate-[-15deg] bg-[#E7F4F3] rounded-2xl lg:hidden"></div>
+          
+          <!-- Desktop layout background rectangles -->
+          <div class="hidden lg:block w-[343px] h-[356px] left-0 top-[132px] absolute origin-top-left rotate-[-15deg] bg-[#E7F4F3] rounded-3xl"></div>
+          <div class="hidden lg:block w-[343px] h-[356px] left-[190.71px] top-[43px] absolute origin-top-left rotate-[15deg] bg-[#E7F4F3] rounded-tl-3xl rounded-bl-3xl rounded-br-3xl"></div>
+          
+          <!-- Mobile layout image -->
+          <div class="w-[247.67px] h-[278px] left-[69.16px] top-[58px] absolute rounded-2xl overflow-hidden lg:hidden">
+            <img class="w-full h-full object-cover rounded-2xl" src="/discover.png" alt="Discover RootCause" />
+          </div>
+          
+          <!-- Desktop layout image -->
+          <div class="hidden lg:block w-[347px] h-[385px] left-[91px] top-[90px] absolute rounded-3xl overflow-hidden">
+            <div data-property-1="Frame 1171276530" class="w-[343px] h-[613px] left-0 top-[-90px] absolute">
+              <img class="w-[343px] h-[385px] left-0 top-[90px] absolute rounded-3xl" src="/discover.png" alt="Discover RootCause" />
+            </div>
+          </div>
+        </div>
 
-      <!-- Desktop Layout -->
-      <div class="flex flex-col lg:flex-row justify-start items-start gap-8">
-        <div class="w-[390px] p-3 lg:w-[601px] lg:p-8 bg-teal-600/5 rounded-3xl inline-flex flex-col justify-center items-start gap-4">
+        <!-- Left column with text content - Last on mobile, First on desktop -->
+        <div class="w-full lg:w-1/2 p-3 lg:p-8 bg-teal-600/5 rounded-3xl flex flex-col justify-center items-start gap-4 order-last lg:order-first">
           <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
             <div class="self-stretch justify-start text-black text-h2-italic lg:text-h2-italic-lg italic font-nunito">The Medical Mystery</div>
-            <div class="self-stretch justify-start text-black text-small-medium lg:text-body-medium font-nunito"> You've been to every specialist and tried every test, but you're still searching for answers. You're ready for a new, empowering perspective.</div>
+            <div class="self-stretch justify-start text-black text-small-medium lg:text-body-medium font-nunito">You've been to every specialist and tried every test, but you're still searching for answers. You're ready for a new, empowering perspective.</div>
           </div>
           <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
             <div class="self-stretch justify-start text-black text-h2-italic lg:text-h2-italic-lg italic font-nunito">The Conscious Seeker</div>
-            <div class="self-stretch justify-start text-black text-small-medium lg:text-body-medium font-nunito"> You already know your mind and body are profoundly connected. You practice yoga, meditation, or holistic health and need a tool to deepen that connection.</div>
+            <div class="self-stretch justify-start text-black text-small-medium lg:text-body-medium font-nunito">You already know your mind and body are profoundly connected. You practice yoga, meditation, or holistic health and need a tool to deepen that connection.</div>
           </div>
           <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
             <div class="self-stretch justify-start text-black text-h2-italic lg:text-h2-italic-lg italic font-nunito">The GNM Explorer</div>
-            <div class="self-stretch justify-start text-black text-small-medium lg:text-body-medium font-nunito"> You're familiar with German New Medicine and want a structured, self-paced way to apply its principles to your own life for reflection and learning.</div>
-          </div>
-        </div>
-        
-        <div class="w-[390px] lg:w-[601px] self-stretch relative bg-teal-600/5 rounded-3xl overflow-hidden">
-          <div class="w-80 h-[356px] left-[39.50px] top-[126.41px] absolute origin-top-left rotate-[-14.76deg] bg-[#E7F4F3] rounded-3xl"></div>
-          <div class="w-80 h-[356px] left-[230.21px] top-[39.01px] absolute origin-top-left rotate-[14.76deg] bg-[#E7F4F3] rounded-tl-3xl rounded-bl-3xl rounded-br-3xl"></div>
-          <div class="w-80 h-96 left-[130.50px] top-[86px] absolute rounded-3xl overflow-hidden">
-            <div data-property-1="Frame 1171276530" class="w-80 h-[613px] left-0 top-[-90px] absolute">
-              <img class="w-80 h-96 left-0 top-[90px] absolute rounded-3xl" src="/discover.png" />
-            </div>
+            <div class="self-stretch justify-start text-black text-small-medium lg:text-body-medium font-nunito">You're familiar with German New Medicine and want a structured, self-paced way to apply its principles to your own life for reflection and learning.</div>
           </div>
         </div>
       </div>
@@ -387,9 +400,9 @@
           <div class="w-60 h-80 left-[293.50px] top-[150px] absolute bg-[#E7F4F3] rounded-3xl"></div>
           <div class="w-60 h-80 left-[58.50px] top-[138px] absolute bg-[#E7F4F3] rounded-3xl"></div>
           <div class="w-96 h-[488px] left-[94.50px] top-[44px] absolute">
-              <div data-property-1="Screenshot 2024-12-30 at 7.17.56 PM" class="w-96 h-[459px] left-[19px] top-[19px] absolute">
-                  <img class="w-80 h-96 left-[16.97px] top-[17.49px] absolute rounded-3xl" src="/exploring-your-body-insight.png" />
-              </div>
+            <div data-property-1="Screenshot 2024-12-30 at 7.17.56 PM" class="w-96 h-[459px] left-[19px] top-[19px] absolute">
+                <img class="w-80 h-96 left-[16.97px] top-[17.49px] absolute rounded-3xl" src="/exploring-your-body-insight.png" />
+            </div>
           </div>
       </div>
 
