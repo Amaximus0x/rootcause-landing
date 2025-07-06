@@ -59,7 +59,8 @@ export default {
         
         // Heading 2 Variants
         'h2': ['24px', { lineHeight: '32px', fontWeight: '700' }],
-        'h2-italic': ['24px', { lineHeight: '32px', fontWeight: '700', fontStyle: 'italic' }],
+        'h2-italic': ['20px', { lineHeight: '28px', fontWeight: '700', fontStyle: 'italic' }],
+        'h2-italic-lg': ['24px', { lineHeight: '32px', fontWeight: '700', fontStyle: 'italic' }],
         
         // Heading 3 Variants
         'h3-nunito': ['20px', { lineHeight: '28px', fontWeight: '400' }],
@@ -76,6 +77,7 @@ export default {
         'small-medium': ['14px', { lineHeight: '22px', fontWeight: '500' }],
         'small-italic': ['14px', { lineHeight: '28px', fontWeight: '400', fontStyle: 'italic' }],
         'small': ['14px', { lineHeight: '22px', fontWeight: '400' }],
+        'small-lg': ['16px', { lineHeight: '22px', fontWeight: '400' }],
         'small-montserrat': ['14px', { lineHeight: '22px', fontWeight: '400' }],
       },
       
