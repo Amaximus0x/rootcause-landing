@@ -325,8 +325,8 @@
     <!-- Who Is RootCause For Section -->
     <section class="self-stretch flex flex-col justify-start items-center gap-8">
       <div class="self-stretch inline-flex flex-col justify-start items-center gap-4">
-        <div class="self-stretch text-center justify-start text-black text-h2 lg:text-h1-md">Who Is Rootcause For?</div>
-        <div class="w-full lg:w-[611px] text-center justify-start text-black text-small lg:text-small-lg italic">If This Sounds Like You, You're in the Right Place.</div>
+        <div class="self-stretch text-center font-nunito justify-start text-black text-h2 lg:text-h1-md">Who Is Rootcause For?</div>
+        <div class="w-full lg:w-[611px] text-center justify-start font-nunito text-black text-small lg:text-small-lg italic">If This Sounds Like You, You're in the Right Place.</div>
       </div>
       
       <!-- Responsive container that switches from vertical (mobile) to horizontal (desktop) -->
@@ -338,8 +338,8 @@
           <div class="w-[217.70px] h-[225.95px] left-[16px] top-[113.46px] absolute origin-top-left rotate-[-15deg] bg-[#E7F4F3] rounded-2xl lg:hidden"></div>
           
           <!-- Desktop layout background rectangles -->
-          <div class="hidden lg:block w-[343px] h-[356px] left-0 top-[132px] absolute origin-top-left rotate-[-15deg] bg-[#E7F4F3] rounded-3xl"></div>
-          <div class="hidden lg:block w-[343px] h-[356px] left-[190.71px] top-[43px] absolute origin-top-left rotate-[15deg] bg-[#E7F4F3] rounded-tl-3xl rounded-bl-3xl rounded-br-3xl"></div>
+          <div class="hidden lg:block w-[343px] h-[356px] left-[50px] top-[120px] absolute origin-top-left rotate-[-15deg] bg-[#E7F4F3] rounded-3xl"></div>
+          <div class="hidden lg:block w-[343px] h-[356px] left-[240px] top-[33px] absolute origin-top-left rotate-[15deg] bg-[#E7F4F3] rounded-tl-3xl rounded-bl-3xl rounded-br-3xl"></div>
           
           <!-- Mobile layout image -->
           <div class="w-[247.67px] h-[278px] left-[69.16px] top-[58px] absolute rounded-2xl overflow-hidden lg:hidden">
@@ -347,7 +347,7 @@
           </div>
           
           <!-- Desktop layout image -->
-          <div class="hidden lg:block w-[347px] h-[385px] left-[91px] top-[90px] absolute rounded-3xl overflow-hidden">
+          <div class="hidden lg:block w-[347px] h-[385px] left-[140px] top-[80px] absolute rounded-3xl overflow-hidden">
             <div data-property-1="Frame 1171276530" class="w-[343px] h-[613px] left-0 top-[-90px] absolute">
               <img class="w-[343px] h-[385px] left-0 top-[90px] absolute rounded-3xl" src="/discover.png" alt="Discover RootCause" />
             </div>
@@ -376,58 +376,56 @@
     <!-- Who Is RootCause Differences Section -->
     <section class="self-stretch flex flex-col justify-start items-center gap-8">
       <div class="self-stretch inline-flex flex-col justify-start items-center gap-4">
-        <div class="self-stretch text-center justify-start text-black text-4xl font-bold font-['Nunito_Sans'] leading-10">Who Is Rootcause Differences</div>
-        <div class="w-[611px] text-center justify-start text-black text-base font-normal font-['Nunito_Sans'] italic leading-snug">More Than an App—It's a New Perspective.</div>
+        <div class="self-stretch text-center justify-start text-black font-nunito text-h2 lg:text-h1-md">Who Is Rootcause Differences</div>
+        <div class="w-full lg:w-[611px] text-center justify-start text-black font-nunito text-small lg:text-small-lg italic">More Than an App—It's a New Perspective.</div>
       </div>
       
-      <!-- Mobile Layout -->
-      <div class="lg:hidden self-stretch inline-flex flex-col justify-start items-start gap-8">
-        <div class="self-stretch inline-flex flex-col justify-start items-start gap-4">
-          <img class="self-stretch h-56 rounded-2xl" src="/exploring-your-body-insight.png" alt="Exploring your body insight" />
-          <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">The Modern Healer</div>
-          <div class="self-stretch justify-start text-black text-base font-normal font-['Nunito_Sans'] leading-snug">You're a coach, therapist, or wellness practitioner who understands the mind-body connection. You're looking for a tool that empowers your clients to take an active role in their own healing journey.</div>
-        </div>
-        <div class="self-stretch inline-flex flex-col justify-start items-start gap-4">
-          <img class="self-stretch h-56 rounded-2xl" src="/share-healing.svg" alt="Share healing journey" />
-          <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">The Health-Conscious Individual</div>
-          <div class="self-stretch justify-start text-black text-base font-normal font-['Nunito_Sans'] leading-snug">You're proactive about your health and believe in a holistic approach. You're tired of surface-level solutions and want to understand the deeper story behind your physical well-being.</div>
-        </div>
-      </div>
-
-      <!-- Desktop Layout -->
-      <div class="hidden lg:inline-flex justify-start items-start gap-8">
-        <div class="w-[601px] self-stretch relative bg-teal-600/5 rounded-3xl">
-          <div class="w-60 h-80 left-[293.50px] top-[150px] absolute bg-[#E7F4F3] rounded-3xl"></div>
-          <div class="w-60 h-80 left-[58.50px] top-[138px] absolute bg-[#E7F4F3] rounded-3xl"></div>
-          <div class="w-96 h-[488px] left-[94.50px] top-[44px] absolute">
+      <!-- Responsive container that switches from vertical (mobile) to horizontal (desktop) -->
+      <div class="w-full flex flex-col lg:flex-row justify-start items-center lg:items-stretch gap-4 lg:gap-8">
+        <!-- Image container - First in both mobile and desktop -->
+        <div class="w-full lg:w-1/2 self-stretch relative bg-teal-600/5 rounded-3xl overflow-hidden min-h-[400px] lg:min-h-0">
+          <!-- Mobile layout background rectangles -->
+          <div class="w-[217.70px] h-[225.95px] left-[163.56px] top-[58px] absolute origin-top-left rotate-[15deg] bg-[#E7F4F3] rounded-2xl lg:hidden"></div>
+          <div class="w-[217.70px] h-[225.95px] left-[16px] top-[113.46px] absolute origin-top-left rotate-[-15deg] bg-[#E7F4F3] rounded-2xl lg:hidden"></div>
+          
+          <!-- Desktop layout background rectangles -->
+          <div class="hidden lg:block w-60 h-80 left-[293.50px] top-[150px] absolute bg-[#E7F4F3] rounded-3xl"></div>
+          <div class="hidden lg:block w-60 h-80 left-[58.50px] top-[138px] absolute bg-[#E7F4F3] rounded-3xl"></div>
+          
+          <!-- Mobile layout image -->
+          <div class="w-[247.67px] h-[278px] left-[69.16px] top-[58px] absolute rounded-2xl overflow-hidden lg:hidden">
+            <img class="w-full h-full object-cover rounded-2xl" src="/exploring-your-body-insight.png" alt="Exploring your body insight" />
+          </div>
+          
+          <!-- Desktop layout image -->
+          <div class="hidden lg:block w-96 h-[488px] left-[94.50px] top-[44px] absolute">
             <div data-property-1="Screenshot 2024-12-30 at 7.17.56 PM" class="w-96 h-[459px] left-[19px] top-[19px] absolute">
-                <img class="w-80 h-96 left-[16.97px] top-[17.49px] absolute rounded-3xl" src="/exploring-your-body-insight.png" />
+              <img class="w-80 h-96 left-[16.97px] top-[17.49px] absolute rounded-3xl" src="/exploring-your-body-insight.png" alt="Exploring your body insight" />
             </div>
           </div>
-      </div>
+        </div>
 
-        <div class="w-[601px] p-8 bg-teal-600/5 rounded-3xl inline-flex flex-col justify-center items-start gap-4">
+        <!-- Content container - Second in both mobile and desktop -->
+        <div class="w-full lg:w-1/2 p-3 lg:p-8 bg-teal-600/5 rounded-3xl flex flex-col justify-center items-start gap-4">
           <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
-            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Rooted in Wisdom</div>
-            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug"> We offer GNM-inspired insights—not medical advice—to serve as a powerful self-awareness tool.</div>
+            <div class="self-stretch justify-start text-black text-h2-italic lg:text-h2-italic-lg italic font-nunito">Rooted in Wisdom</div>
+            <div class="self-stretch justify-start text-black text-small-medium lg:text-body-medium font-nunito">We offer GNM-inspired insights—not medical advice—to serve as a powerful self-awareness tool.</div>
           </div>
           <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
-            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Compassion First</div>
-            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug">We start by validating your experience, not dismissing it. Your pain is real, and it has a message.</div>
+            <div class="self-stretch justify-start text-black text-h2-italic lg:text-h2-italic-lg italic font-nunito">Compassion First</div>
+            <div class="self-stretch justify-start text-black text-small-medium lg:text-body-medium font-nunito">We start by validating your experience, not dismissing it. Your pain is real, and it has a message.</div>
           </div>
           <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
-            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Pattern Recognition</div>
-            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug">Go beyond one-off symptoms. Our tools help you understand the triggers that keep your issues recurring.</div>
+            <div class="self-stretch justify-start text-black text-h2-italic lg:text-h2-italic-lg italic font-nunito">Pattern Recognition</div>
+            <div class="self-stretch justify-start text-black text-small-medium lg:text-body-medium font-nunito">Go beyond one-off symptoms. Our tools help you understand the triggers that keep your issues recurring.</div>
           </div>
           <div class="self-stretch p-4 bg-white rounded-2xl flex flex-col justify-center items-center gap-2 overflow-hidden">
-            <div class="self-stretch justify-start text-black text-2xl font-bold font-['Nunito_Sans'] leading-loose">Personal Support Tools</div>
-            <div class="self-stretch justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-snug"> Gentle affirmations and guided journaling features support your emotional journey alongside your physical one.</div>
+            <div class="self-stretch justify-start text-black text-h2-italic lg:text-h2-italic-lg italic font-nunito">Personal Support Tools</div>
+            <div class="self-stretch justify-start text-black text-small-medium lg:text-body-medium font-nunito">Gentle affirmations and guided journaling features support your emotional journey alongside your physical one.</div>
           </div>
         </div>
-        
-       
       </div>
-    </section> 
+    </section>
 
     <!-- Features Section -->
     <section class="self-stretch flex flex-col justify-start items-center gap-8 lg:gap-lg-16">
