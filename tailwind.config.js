@@ -57,6 +57,7 @@ export default {
         'h1-lg': ['68px', { lineHeight: '78px', fontWeight: '700' }],
         'h1-md': ['36px', { lineHeight: '44px', fontWeight: '700' }],
         'h1-sm': ['36px', { lineHeight: '32px', fontWeight: '700' }],
+        'h1-sm-nunito': ['32px', { lineHeight: '44px', fontWeight: '700', fontFamily: 'Nunito' }],
         'h1-xs': ['26px', { lineHeight: '32px', fontWeight: '700' }],
         
         // Heading 2 Variants

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Header, Footer } from '$lib';
+  import { onMount } from 'svelte';
   
   // Pricing plan selection state
   let selectedPlan: string = 'monthly'; // default to monthly plan to match Figma
@@ -11,6 +12,26 @@
     'monthly': false,
     'yearly': false
   };
+
+  // Track screen size for responsive behavior
+  let isLargeScreen = false;
+
+  onMount(() => {
+    // Initial check
+    checkScreenSize();
+    
+    // Add resize listener
+    window.addEventListener('resize', checkScreenSize);
+    
+    // Cleanup
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  });
+
+  function checkScreenSize() {
+    isLargeScreen = window.innerWidth >= 1024; // 1024px is the default Tailwind 'lg' breakpoint
+  }
   
   function selectPlan(planType: string): void {
     selectedPlan = planType;
@@ -534,11 +555,11 @@
                   <div class="justify-start text-white text-small-bold lg:text-body-bold font-nunito">Free Plan</div>
                 </div>
                 <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                  <div class="flex-1 justify-start text-black text-small lg:text-small-montserrat-regular font-montserrat">Enjoy 5 free reports to uncover the emotional roots of your symptoms. Perfect for getting started on your wellness journey!</div>
+                  <div class="flex-1 justify-start text-black text-small-montserrat-regular lg:text-small-montserrat font-montserrat">Enjoy 5 free reports to uncover the emotional roots of your symptoms. Perfect for getting started on your wellness journey!</div>
                 </div>
               </div>
               <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                <div class="flex-1 justify-start text-black text-h1-sm lg:text-h1-md">Free to Try</div>
+                <div class="flex-1 justify-start text-black text-h1-sm-nunito lg:text-h1-md font-nunito">Free to Try</div>
               </div>
             </div>
           </div>
@@ -560,9 +581,9 @@
             <!-- Top Section - Always Visible -->
             <div class="self-stretch flex flex-col justify-start items-start gap-4">
               <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
-                <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Pay-as-you-go</div>
+                <div class="justify-start text-white text-small-bold lg:text-body-bold font-nunito">Pay-as-you-go</div>
               </div>
-              <div class="self-stretch justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">
+              <div class="self-stretch justify-start text-black text-small-montserrat-regular lg:text-small-montserrat font-montserrat">
                 • Flexibility for occasional users.<br/>
                 • Unlock individual insights whenever you need them.<br/>
                 • Perfect for those seeking quick targeted guidance.
@@ -571,13 +592,13 @@
 
             <!-- Price Section - Always Visible -->
             <div class="self-stretch">
-              <div class="self-stretch px-2 pb-4 border-b border-black/5 flex justify-between items-center gap-2.5">
+              <div class="self-stretch px-2 pb-[13px] border-b border-black/5 flex justify-between items-center gap-2.5">
                 <div class="flex-1 justify-start">
                   <span class="text-black text-h1-sm lg:text-h1-md font-nunito">$0.99</span>
                   <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/report</span>
                 </div>
                 <button 
-                  class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-black/5 transition-colors"
+                  class="w-8 h-8 flex items-center justify-center transition-colors lg:hidden"
                   on:click={(e) => toggleCardExpansion('payg', e)}
                 >
                   <svg 
@@ -594,13 +615,13 @@
             </div>
 
             <!-- Bundle Section - Only Visible When Expanded -->
-            <div class="self-stretch pb-2 lg:pb-4 flex flex-col justify-start items-start gap-4 {!expandedCards['payg'] ? 'hidden' : ''}">
+            <div class="self-stretch pb-2 lg:pb-4 mt-[-16px ] flex flex-col justify-start items-start gap-4 {!expandedCards['payg'] && !isLargeScreen ? 'hidden' : ''}">
               <div class="self-stretch flex flex-col justify-start items-start gap-4">
                 <div class="self-stretch px-2 py-1 bg-teal-600/5 rounded-2xl outline outline-1 outline-offset-[-1px] outline-teal-600/50 inline-flex justify-center items-center gap-2.5">
                   <div class="flex-1 justify-start text-black text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Get a bundle of 10 reports for just $4.99</div>
                 </div>
                 <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Save 50% with this bundle - Ideal for deeper exploration without a subscription.</div>
+                  <div class="flex-1 justify-start text-black text-small-montserrat-regular lg:text-small-montserrat font-montserrat">Save 50% with this bundle - Ideal for deeper exploration without a subscription.</div>
                 </div>
                 <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
                   <div class="flex-1 justify-start">
@@ -631,22 +652,22 @@
             <!-- Top Section - Always Visible -->
             <div class="self-stretch flex flex-col justify-start items-start gap-4">
               <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
-                <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Monthly Subscription</div>
+                <div class="justify-start text-white text-small-bold lg:text-body-bold font-nunito">Monthly Subscription</div>
               </div>
-              <div class="self-stretch justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">
+              <div class="self-stretch justify-start text-black text-small-montserrat-regular lg:text-small-montserrat lg:pr-3 font-montserrat">
                 Enjoy up to 50 insights per month - plenty to support your wellness journey. Ideal for those seeking consistent, proactive support.
               </div>
             </div>
 
             <!-- Price Section - Always Visible -->
-            <div class="self-stretch">
+            <div class="self-stretch mt-[-60px]">
               <div class="self-stretch px-2 pb-4 border-b border-black/5 flex justify-between items-center gap-2.5">
                 <div class="flex-1 justify-start">
                   <span class="text-black text-h1-sm lg:text-h1-md font-nunito">$9.99</span>
                   <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/month</span>
                 </div>
                 <button 
-                  class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-black/5 transition-colors"
+                  class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-black/5 transition-colors lg:hidden"
                   on:click={(e) => toggleCardExpansion('monthly', e)}
                 >
                   <svg 
@@ -663,10 +684,10 @@
             </div>
 
             <!-- Additional Features Section - Only Visible When Expanded -->
-            <div class="self-stretch pb-2 lg:pb-4 flex flex-col justify-start items-start gap-4 {!expandedCards['monthly'] ? 'hidden' : ''}">
+            <div class="self-stretch pb-2 lg:pb-4 flex flex-col justify-start items-start gap-4 {!expandedCards['monthly'] && !isLargeScreen ? 'hidden' : ''}">
               <div class="self-stretch flex flex-col justify-start items-start gap-4">
                 <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">
+                  <div class="flex-1 justify-start text-black text-small-montserrat-regular lg:text-small-montserrat font-montserrat ">
                     • Detailed emotional-physical health reports<br/>
                     • Custom affirmations for personalized healing<br/>
                     • Additional reports are just $0.29 each.
@@ -695,12 +716,12 @@
             <!-- Top Section - Always Visible -->
             <div class="self-stretch flex flex-col justify-start items-start gap-3">
               <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
-                <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Yearly Subscription</div>
+                <div class="justify-start text-white text-small-bold lg:text-body-bold font-nunito">Yearly Subscription</div>
               </div>
               <div class="self-stretch px-2 py-1 bg-teal-600/5 rounded-2xl outline outline-1 outline-offset-[-1px] outline-teal-600/50 inline-flex justify-center items-center gap-2.5">
                 <div class="flex-1 justify-start text-black text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Save over 70% compared to pay-as-you-go.</div>
               </div>
-              <div class="self-stretch justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug px-2">
+              <div class="self-stretch justify-start text-black px-2 text-small-montserrat-regular lg:text-small-montserrat font-montserrat">
                 Perfect for dedicated individuals seeking long-term growth and healing.
               </div>
             </div>
@@ -713,7 +734,7 @@
                   <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/year</span>
                 </div>
                 <button 
-                  class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-black/5 transition-colors"
+                  class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-black/5 transition-colors lg:hidden"
                   on:click={(e) => toggleCardExpansion('yearly', e)}
                 >
                   <svg 
@@ -730,10 +751,10 @@
             </div>
 
             <!-- Additional Features Section - Only Visible When Expanded -->
-            <div class="self-stretch pb-2 lg:pb-4 flex flex-col justify-start items-start gap-4 {!expandedCards['yearly'] ? 'hidden' : ''}">
+            <div class="self-stretch pb-2 lg:pb-4 flex flex-col justify-start items-start gap-4 {!expandedCards['yearly'] && !isLargeScreen ? 'hidden' : ''}">
               <div class="self-stretch flex flex-col justify-start items-start gap-4">
                 <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">
+                  <div class="flex-1 justify-start text-black text-small-montserrat-regular lg:text-small-montserrat font-montserrat">
                     • Unlimited insights annually for comprehensive, year-round support.<br/>
                     • Detailed emotional-physical health reports<br/>
                     • Custom affirmations for personalized healing<br/>

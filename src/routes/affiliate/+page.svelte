@@ -46,7 +46,7 @@
 	  </div>
 
 	<!-- Hero Section -->
-	<div class="w-full h-auto relative bg-gradient-to-br from-teal-light to-white px-4 sm:px-8 lg:px-16 py-16 lg:py-24">
+	<div class="w-full h-auto relative  px-4 sm:px-8 lg:px-16 py-16 lg:py-24">
 		<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 relative">
 			<!-- Left Content -->
 			<div class="flex-1 max-w-2xl">
