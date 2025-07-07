@@ -4,8 +4,21 @@
   // Pricing plan selection state
   let selectedPlan: string = 'monthly'; // default to monthly plan to match Figma
   
+  // Track expanded state for plan cards
+  let expandedCards: { [key: string]: boolean } = {
+    'free': false,
+    'payg': false,
+    'monthly': false,
+    'yearly': false
+  };
+  
   function selectPlan(planType: string): void {
     selectedPlan = planType;
+  }
+
+  function toggleCardExpansion(cardType: string, event: MouseEvent): void {
+    event.stopPropagation(); // Prevent card selection when clicking expand button
+    expandedCards[cardType] = !expandedCards[cardType];
   }
 </script>
 
@@ -512,27 +525,27 @@
         <!-- Free Plan -->
         <div 
           class="w-full lg:flex-1 lg:self-stretch h-96 lg:h-auto p-2 rounded-2xl outline outline-2 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'free' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
-          style="background: {selectedPlan === 'free' ? 'linear-gradient(352deg, #E6FFFA 37.55%, #C3FFF8 130.98%)' : 'linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%)'}"
+          style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%)"
           on:click={() => selectPlan('free')}>
           <div class="self-stretch flex flex-col justify-start items-start gap-4">
             <div class="self-stretch lg:h-64 pb-4 border-b border-black/5 flex flex-col justify-between items-start">
               <div class="self-stretch flex flex-col justify-start items-start gap-4 lg:gap-4">
                 <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
-                  <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Free Plan</div>
+                  <div class="justify-start text-white text-small-bold lg:text-body-bold font-nunito">Free Plan</div>
                 </div>
                 <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Enjoy 5 free reports to uncover the emotional roots of your symptoms. Perfect for getting started on your wellness journey!</div>
+                  <div class="flex-1 justify-start text-black text-small lg:text-small-montserrat-regular font-montserrat">Enjoy 5 free reports to uncover the emotional roots of your symptoms. Perfect for getting started on your wellness journey!</div>
                 </div>
               </div>
               <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                <div class="flex-1 justify-start text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10">Free to Try</div>
+                <div class="flex-1 justify-start text-black text-h1-sm lg:text-h1-md">Free to Try</div>
               </div>
             </div>
           </div>
           <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
-            <button class="self-stretch px-8 py-2 lg:py-3 {selectedPlan === 'free' ? 'bg-teal-600 text-white' : 'bg-white'} rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 inline-flex justify-center items-center gap-2.5">
-              <div class="text-center justify-start {selectedPlan === 'free' ? 'text-white' : 'text-teal-600'} text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
-                {selectedPlan === 'free' ? 'Selected - Free Plan' : 'Get Started for free'}
+            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
+              <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
+                Get Started for free
               </div>
             </button>
           </div>
@@ -540,50 +553,70 @@
 
         <!-- Pay-as-you-go Plan -->
         <div 
-          class="w-full lg:flex-1 lg:self-stretch h-96 lg:h-auto p-2 rounded-2xl outline outline-2 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'payg' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
-          style="background: {selectedPlan === 'payg' ? 'linear-gradient(352deg, #E6FFFA 37.55%, #C3FFF8 130.98%)' : 'linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%)'}"
+          class="w-full lg:flex-1 lg:self-stretch {expandedCards['payg'] ? 'h-auto' : 'h-64'} lg:h-auto p-2 rounded-2xl outline outline-2 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'payg' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
+          style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%)"
           on:click={() => selectPlan('payg')}>
-          <div class="self-stretch flex flex-col justify-start items-start gap-4">
-            <div class="self-stretch pb-4 border-b border-black/5 flex flex-col justify-start items-start gap-4 lg:gap-8">
-              <div class="self-stretch flex flex-col justify-start items-start gap-4">
-                <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
-                  <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Pay-as-you-go</div>
-                </div>
-                <div class="self-stretch justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">
-                  • Flexibility for occasional users.<br/>
-                  • Unlock individual insights whenever you need them.<br/>
-                  • Perfect for those seeking quick targeted guidance.
-                </div>
+          <div class="self-stretch flex-1 flex flex-col justify-between items-start gap-8">
+            <!-- Top Section - Always Visible -->
+            <div class="self-stretch flex flex-col justify-start items-start gap-4">
+              <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
+                <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Pay-as-you-go</div>
               </div>
-              <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                <div class="flex-1 justify-start">
-                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10">$0.9</span>
-                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10 tracking-[2.88px] lg:tracking-[3.60px]">9</span>
-                  <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/report</span>
-                </div>
+              <div class="self-stretch justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">
+                • Flexibility for occasional users.<br/>
+                • Unlock individual insights whenever you need them.<br/>
+                • Perfect for those seeking quick targeted guidance.
               </div>
             </div>
-            <div class="self-stretch pb-2 lg:pb-4 flex flex-col justify-start items-start gap-4">
-              <div class="self-stretch flex flex-col justify-start items-start gap-2">
+
+            <!-- Price Section - Always Visible -->
+            <div class="self-stretch">
+              <div class="self-stretch px-2 pb-4 border-b border-black/5 flex justify-between items-center gap-2.5">
+                <div class="flex-1 justify-start">
+                  <span class="text-black text-h1-sm lg:text-h1-md font-nunito">$0.99</span>
+                  <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/report</span>
+                </div>
+                <button 
+                  class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-black/5 transition-colors"
+                  on:click={(e) => toggleCardExpansion('payg', e)}
+                >
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    class="w-6 h-6 transform transition-transform {expandedCards['payg'] ? 'rotate-180' : ''}" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Bundle Section - Only Visible When Expanded -->
+            <div class="self-stretch pb-2 lg:pb-4 flex flex-col justify-start items-start gap-4 {!expandedCards['payg'] ? 'hidden' : ''}">
+              <div class="self-stretch flex flex-col justify-start items-start gap-4">
                 <div class="self-stretch px-2 py-1 bg-teal-600/5 rounded-2xl outline outline-1 outline-offset-[-1px] outline-teal-600/50 inline-flex justify-center items-center gap-2.5">
                   <div class="flex-1 justify-start text-black text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Get a bundle of 10 reports for just $4.99</div>
                 </div>
                 <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
                   <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Save 50% with this bundle - Ideal for deeper exploration without a subscription.</div>
                 </div>
-              </div>
-              <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                <div class="flex-1 justify-start">
-                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10">$0.49</span>
-                  <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/report</span>
+                <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
+                  <div class="flex-1 justify-start">
+                    <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10">$0.49</span>
+                    <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/report</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- Button Section -->
           <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
-            <button class="self-stretch px-8 py-2 lg:py-3 {selectedPlan === 'payg' ? 'bg-teal-600 text-white' : 'bg-white'} rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 inline-flex justify-center items-center gap-2.5">
-              <div class="text-center justify-start {selectedPlan === 'payg' ? 'text-white' : 'text-teal-600'} text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
-                {selectedPlan === 'payg' ? 'Selected - Pay-as-you-go' : 'Get Started for free'}
+            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
+              <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
+                Get Started for free
               </div>
             </button>
           </div>
@@ -591,30 +624,48 @@
 
         <!-- Monthly Subscription Plan -->
         <div 
-          class="w-full lg:flex-1 lg:self-stretch h-96 lg:h-auto p-2 rounded-2xl outline outline-2 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'monthly' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
-          style="background: {selectedPlan === 'monthly' ? 'linear-gradient(352deg, #E6FFFA 37.55%, #C3FFF8 130.98%)' : 'linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%)'}"
+          class="w-full lg:flex-1 lg:self-stretch {expandedCards['monthly'] ? 'h-auto' : 'h-64'} lg:h-auto p-2 rounded-2xl outline outline-2 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'monthly' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
+          style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%)"
           on:click={() => selectPlan('monthly')}>
-          <div class="self-stretch flex flex-col justify-start items-start gap-4">
-            <div class="self-stretch lg:h-64 pb-4 border-b border-black/5 flex flex-col justify-between items-start">
-              <div class="self-stretch flex flex-col justify-start items-start gap-4">
-                <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
-                  <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Monthly Subscription</div>
-                </div>
-                <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Enjoy up to 50 insights per month - plenty to support your wellness journey. Ideal for those seeking consistent, proactive support.</div>
-                </div>
+          <div class="self-stretch flex-1 flex flex-col justify-between items-start gap-8">
+            <!-- Top Section - Always Visible -->
+            <div class="self-stretch flex flex-col justify-start items-start gap-4">
+              <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
+                <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Monthly Subscription</div>
               </div>
-              <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                <div class="flex-1 justify-start">
-                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10">$9.9</span>
-                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10 tracking-[2.88px] lg:tracking-[3.60px]">9</span>
-                  <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/month</span>
-                </div>
+              <div class="self-stretch justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">
+                Enjoy up to 50 insights per month - plenty to support your wellness journey. Ideal for those seeking consistent, proactive support.
               </div>
             </div>
-            <div class="self-stretch h-28 lg:pb-4 lg:h-auto flex flex-col justify-start items-start gap-4">
-              <div class="self-stretch flex flex-col justify-start items-start gap-2">
-                <div class="self-stretch inline-flex justify-center items-center gap-2.5">
+
+            <!-- Price Section - Always Visible -->
+            <div class="self-stretch">
+              <div class="self-stretch px-2 pb-4 border-b border-black/5 flex justify-between items-center gap-2.5">
+                <div class="flex-1 justify-start">
+                  <span class="text-black text-h1-sm lg:text-h1-md font-nunito">$9.99</span>
+                  <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/month</span>
+                </div>
+                <button 
+                  class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-black/5 transition-colors"
+                  on:click={(e) => toggleCardExpansion('monthly', e)}
+                >
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    class="w-6 h-6 transform transition-transform {expandedCards['monthly'] ? 'rotate-180' : ''}" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Additional Features Section - Only Visible When Expanded -->
+            <div class="self-stretch pb-2 lg:pb-4 flex flex-col justify-start items-start gap-4 {!expandedCards['monthly'] ? 'hidden' : ''}">
+              <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
                   <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">
                     • Detailed emotional-physical health reports<br/>
                     • Custom affirmations for personalized healing<br/>
@@ -624,10 +675,12 @@
               </div>
             </div>
           </div>
+
+          <!-- Button Section -->
           <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
-            <button class="self-stretch px-8 py-2 lg:py-3 {selectedPlan === 'monthly' ? 'bg-teal-600 text-white' : 'bg-white'} rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 inline-flex justify-center items-center gap-2.5">
-              <div class="text-center justify-start {selectedPlan === 'monthly' ? 'text-white' : 'text-teal-600'} text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
-                {selectedPlan === 'monthly' ? 'Selected - Monthly Plan' : 'Get Started for free'}
+            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
+              <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
+                Get Started for free
               </div>
             </button>
           </div>
@@ -635,33 +688,51 @@
 
         <!-- Yearly Subscription Plan -->
         <div 
-          class="w-full lg:flex-1 lg:self-stretch h-96 lg:h-auto p-2 rounded-2xl outline outline-2 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'yearly' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
-          style="background: {selectedPlan === 'yearly' ? 'linear-gradient(352deg, #E6FFFA 37.55%, #C3FFF8 130.98%)' : 'linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%)'}"
+          class="w-full lg:flex-1 lg:self-stretch {expandedCards['yearly'] ? 'h-auto' : 'h-[280px]'} lg:h-auto p-2 rounded-2xl outline outline-2 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'yearly' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
+          style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%);"
           on:click={() => selectPlan('yearly')}>
-          <div class="self-stretch flex flex-col justify-start items-start gap-4">
-            <div class="self-stretch lg:h-64 pb-4 border-b border-black/5 flex flex-col justify-between items-start">
-              <div class="self-stretch flex flex-col justify-start items-start gap-4">
-                <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
-                  <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Yearly Subscription</div>
-                </div>
-                <div class="self-stretch px-2 py-1 lg:px-0 lg:py-0 lg:flex lg:flex-col lg:gap-2 bg-teal-600/5 lg:bg-transparent rounded-2xl lg:rounded-none outline outline-1 lg:outline-none outline-offset-[-1px] outline-teal-600/50 inline-flex lg:block justify-center items-center gap-2.5">
-                  <div class="flex-1 lg:w-72 lg:px-2 lg:py-1 lg:bg-teal-600/5 lg:rounded-2xl lg:outline lg:outline-1 lg:outline-offset-[-1px] lg:outline-teal-600/50 lg:inline-flex lg:justify-center lg:items-center lg:gap-2.5 justify-start text-black text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Save over 70% compared to pay-as-you-go.</div>
-                </div>
-                <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                  <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">Perfect for dedicated individuals seeking long-term growth and healing.</div>
-                </div>
+          <div class="self-stretch flex-1 flex flex-col justify-between items-start gap-6">
+            <!-- Top Section - Always Visible -->
+            <div class="self-stretch flex flex-col justify-start items-start gap-3">
+              <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
+                <div class="justify-start text-white text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Yearly Subscription</div>
               </div>
-              <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
-                <div class="flex-1 justify-start">
-                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10">$99.9</span>
-                  <span class="text-black text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-10 tracking-[2.88px] lg:tracking-[3.60px]">9</span>
-                  <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/year</span>
-                </div>
+              <div class="self-stretch px-2 py-1 bg-teal-600/5 rounded-2xl outline outline-1 outline-offset-[-1px] outline-teal-600/50 inline-flex justify-center items-center gap-2.5">
+                <div class="flex-1 justify-start text-black text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Save over 70% compared to pay-as-you-go.</div>
+              </div>
+              <div class="self-stretch justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug px-2">
+                Perfect for dedicated individuals seeking long-term growth and healing.
               </div>
             </div>
-            <div class="self-stretch lg:pb-4 flex flex-col justify-start items-start gap-4">
-              <div class="self-stretch flex flex-col justify-start items-start gap-2">
-                <div class="self-stretch inline-flex justify-center items-center gap-2.5">
+
+            <!-- Price Section - Always Visible -->
+            <div class="self-stretch">
+              <div class="self-stretch px-2 pb-4 border-b border-black/5 flex justify-between items-center gap-2.5">
+                <div class="flex-1 justify-start">
+                  <span class="text-black text-h1-sm lg:text-h1-md font-nunito">$99.99</span>
+                  <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/year</span>
+                </div>
+                <button 
+                  class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-black/5 transition-colors"
+                  on:click={(e) => toggleCardExpansion('yearly', e)}
+                >
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    class="w-6 h-6 transform transition-transform {expandedCards['yearly'] ? 'rotate-180' : ''}" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Additional Features Section - Only Visible When Expanded -->
+            <div class="self-stretch pb-2 lg:pb-4 flex flex-col justify-start items-start gap-4 {!expandedCards['yearly'] ? 'hidden' : ''}">
+              <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
                   <div class="flex-1 justify-start text-black text-xs lg:text-sm font-normal font-['Montserrat'] leading-tight lg:leading-snug">
                     • Unlimited insights annually for comprehensive, year-round support.<br/>
                     • Detailed emotional-physical health reports<br/>
@@ -672,10 +743,12 @@
               </div>
             </div>
           </div>
+
+          <!-- Button Section -->
           <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
-            <button class="self-stretch px-8 py-2 lg:py-3 {selectedPlan === 'yearly' ? 'bg-teal-600 text-white' : 'bg-white'} rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 inline-flex justify-center items-center gap-2.5">
-              <div class="text-center justify-start {selectedPlan === 'yearly' ? 'text-white' : 'text-teal-600'} text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
-                {selectedPlan === 'yearly' ? 'Selected - Yearly Plan' : 'Get Started for free'}
+            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
+              <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
+                Get Started for free
               </div>
             </button>
           </div>
@@ -685,7 +758,7 @@
 
     <!-- Final CTA Section -->
     <section class="flex flex-col justify-start items-center gap-4 lg:gap-6 mb-[45px] lg:mb-[119px]">
-      <div class="self-stretch lg:w-[965px] text-center justify-start text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">
+      <div class="self-stretch lg:w-[965px] text-center justify-start text-h1-xs lg:text-h1-lg font-nunito">
         Your Symptoms Tell a Story. It's 
         <span class="text-teal-600"> Time </span>
         to 
@@ -693,7 +766,7 @@
         It
       </div>
       
-      <div class="self-stretch lg:w-[884px] text-center justify-start text-black text-sm lg:text-xl font-normal font-['Nunito_Sans'] leading-snug lg:leading-7">
+      <div class="self-stretch lg:w-[884px] text-center justify-start text-black text-small lg:h3-nunito font-nunito">
         Start understanding the emotional narrative behind your physical experiences. Download NOW and get 5 free health signal reports!
       </div>
       <div class="w-full lg:w-[617px] flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-4 lg:gap-5">

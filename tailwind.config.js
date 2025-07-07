@@ -56,6 +56,8 @@ export default {
         'h1-xl': ['77px', { lineHeight: '78px', fontWeight: '700' }],
         'h1-lg': ['68px', { lineHeight: '78px', fontWeight: '700' }],
         'h1-md': ['36px', { lineHeight: '44px', fontWeight: '700' }],
+        'h1-sm': ['36px', { lineHeight: '32px', fontWeight: '700' }],
+        'h1-xs': ['26px', { lineHeight: '32px', fontWeight: '700' }],
         
         // Heading 2 Variants
         'h2': ['24px', { lineHeight: '32px', fontWeight: '700' }],
@@ -76,10 +78,12 @@ export default {
         
         // Small Text Variants
         'small-medium': ['14px', { lineHeight: '22px', fontWeight: '500' }],
+        'small-bold': ['14px', { lineHeight: '22px', fontWeight: '700' }],
         'small-italic': ['14px', { lineHeight: '28px', fontWeight: '400', fontStyle: 'italic' }],
         'small': ['14px', { lineHeight: '22px', fontWeight: '400' }],
         'small-lg': ['16px', { lineHeight: '22px', fontWeight: '400' }],
         'small-montserrat': ['14px', { lineHeight: '22px', fontWeight: '400' }],
+        'small-montserrat-regular': ['12px', { lineHeight: '20px', fontWeight: '400' }],
       },
       
       // Custom Spacing (based on design system tokens)
