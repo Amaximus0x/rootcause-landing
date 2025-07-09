@@ -196,10 +196,17 @@
       </div>
       
       <!-- Video container -->
-			<div class="frame-1171276493">
-				<div class="frame-1171276495">
-					<div class="rectangle-120" />
-					<video class="frame-1171276496" autoplay muted loop playsinline>
+			<div class="relative mb-16 lg:mb-[250px]">
+				<!-- Background image container -->
+				<div class="w-[390px] h-[188px] lg:w-[1090px] lg:h-[385px] rounded-2xl overflow-hidden mx-auto" style="background-image: url('/hero-image-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+				</div>
+				
+				<!-- Video container positioned to overlap background -->
+				<div class="absolute top-[24px] left-1/2 transform -translate-x-1/2 w-[350px] h-[205px] lg:w-[973px] lg:h-[563px] rounded-xl lg:rounded-[26px] shadow-[0px_25px_68px_0px_rgba(0,0,0,0.05)] outline outline-[0.50px] outline-offset-[-0.50px] outline-white overflow-hidden">
+					<!-- Background blur effect -->
+					<div class="absolute inset-0 bg-white/20 blur-sm rounded-xl lg:rounded-[26px]"></div>
+					<!-- Video element -->
+					<video class="absolute top-[7px] left-[7px] lg:top-[15px] lg:left-[17px] w-[336px] h-[191px] lg:w-[940px] lg:h-[533px] rounded-lg lg:rounded-2xl z-10" autoplay muted loop playsinline>
 						<source
 							src="https://cdn.shopify.com/videos/c/o/v/1b165b0df6cb43e1b59fd2f582f9c559.mp4"
 							type="video/mp4"
@@ -297,7 +304,7 @@
         <div class="self-stretch p-4 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
           <div class="self-stretch inline-flex justify-start items-start gap-2.5">
             <div class="p-1.5 bg-teal-600/5 rounded-full flex justify-start items-center gap-2.5">
-              <img class="w-12 h-12" src="/gif-3.gif" alt="gif-3" />
+              <img class="w-12 h-12 object-cover" src="/gif-3.gif" alt="gif-3" />
             </div>
             <div class="flex-1 justify-start text-black text-h2-italic lg:text-h2-italic-lg italic font-nunito">I'm Tired of Being Told It's 'All in My Head.</div>
           </div>
@@ -822,51 +829,6 @@
 </div>
 
 <style>
-	.rectangle-120 {
-		width: 973px;
-		height: 563px;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		background: rgba(255, 255, 255, 0.2);
-		border-radius: 16px;
-		filter: blur(2px);
-	}
-
-	.frame-1171276496 {
-		width: 940px;
-		height: 533px;
-		left: 17px;
-		top: 15px;
-		position: absolute;
-		border-radius: 16px;
-	}
-
-	.frame-1171276495 {
-		width: 973px;
-		height: 563px;
-		left: 59px;
-		top: 60px;
-		position: absolute;
-		
-		overflow: hidden;
-		border-radius: 26px;
-		outline: 1px white solid;
-		outline-offset: -1px;
-	}
-
-	.frame-1171276493 {
-		width: 1090px;
-		height: 385px;
-		position: relative;
-		border-radius: 24px;
-		background-image: url('/hero-image-bg.jpg');
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		margin-bottom: 250px; /* Space for the overflowing video */
-	}
-
 	/* Grid Background Lines - 100px squares */
 	/* Vertical lines - every 100px starting from 0 */
 	.line-22 { left: 0px; } .line-23 { left: 100px; } .line-24 { left: 200px; } .line-25 { left: 300px; } .line-26 { left: 400px; }
