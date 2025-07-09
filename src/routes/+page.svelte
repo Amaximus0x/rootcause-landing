@@ -144,10 +144,10 @@
     <div class="relative z-10 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-16">
       
       <!-- Hero Text -->
-      <div class="text-center pt-16 sm:pt-20 lg:pt-6 mb-4 lg:mb-6.5">
-        <div class="text-center lg:w-[1036px] lg:mx-auto text-2xl lg:text-7xl font-bold font-['Nunito_Sans'] leading-loose lg:leading-[78px]">
+      <div class="text-center pt-[30px] lg:pt-6 mb-4 lg:mb-6.5">
+        <div class="text-center lg:w-[1036px] lg:mx-auto text-h1-xs lg:text-h1-xl font-nunito">
           <p>
-            Your Body Speaks <br> RootCause
+            Your Body Speaks RootCause
             <span class="text-teal-600"> Helps </span>
             You Listen
           </p>
@@ -156,7 +156,7 @@
       
       <!-- Subtitle -->
       <div class="text-center mb-16">
-        <p class="text-black text-sm lg:text-xl font-normal font-['Nunito_Sans'] leading-snug lg:leading-7 lg:w-[884px] mx-auto">
+        <p class="text-black text-small lg:h3-nunito font-nunito lg:w-[884px] mx-auto">
           Go beyond just managing your symptoms and start understanding them. RootCause gives you the tools to map the powerful connection between emotional trauma and your physical well-being.
         </p>
       </div>
@@ -170,7 +170,7 @@
                 <path d="M12.524 2.8125C12.732 2.00692 13.202 1.29338 13.86 0.784213C14.518 0.275046 15.3267 -0.000833469 16.1587 1.89152e-06H16.2524C16.4513 1.89152e-06 16.6421 0.0790195 16.7827 0.219672C16.9234 0.360324 17.0024 0.55109 17.0024 0.750002C17.0024 0.948914 16.9234 1.13968 16.7827 1.28033C16.6421 1.42098 16.4513 1.5 16.2524 1.5H16.1587C15.6598 1.49996 15.1751 1.6657 14.7807 1.97116C14.3863 2.27662 14.1046 2.70449 13.9799 3.1875C13.9302 3.3802 13.8059 3.54525 13.6345 3.64634C13.4631 3.74744 13.2585 3.77629 13.0658 3.72656C12.8731 3.67684 12.7081 3.5526 12.607 3.38118C12.5059 3.20976 12.4771 3.0052 12.5268 2.8125H12.524ZM21.4368 15.8991C21.3805 15.7705 21.2896 15.6602 21.1743 15.5803C19.5833 14.4872 19.2524 12.6225 19.2524 11.25C19.2524 9.59344 20.5152 8.15063 21.268 7.43719C21.3421 7.3671 21.4011 7.28265 21.4414 7.189C21.4817 7.09535 21.5025 6.99446 21.5025 6.8925C21.5025 6.79054 21.4817 6.68966 21.4414 6.59601C21.4011 6.50235 21.3421 6.4179 21.268 6.34781C20.0793 5.22563 18.1105 4.5 16.2524 4.5C14.9176 4.50119 13.613 4.89683 12.5024 5.63719C11.2069 4.76847 9.64916 4.37832 8.09711 4.53385C6.54507 4.68938 5.09572 5.38086 3.99834 6.48938C3.34232 7.15912 2.82758 7.95387 2.48471 8.82643C2.14183 9.69899 1.97782 10.6316 2.00241 11.5688C2.03921 13.1506 2.39096 14.7093 3.03709 16.1537C3.68322 17.5981 4.61077 18.8992 5.76553 19.9809C6.46097 20.638 7.38223 21.0028 8.33897 21H16.559C17.0705 21.001 17.5767 20.8969 18.0463 20.6942C18.5159 20.4915 18.9389 20.1945 19.289 19.8216C19.9375 19.1236 20.4985 18.3491 20.9596 17.5153C21.6177 16.3125 21.5333 16.125 21.4368 15.8991Z" fill="white"/>
               </svg>
             </div>
-            <div class="text-center justify-start text-white text-base lg:text-xl font-medium font-['Montserrat'] leading-7">Download for iOS</div>
+            <div class="text-center justify-start text-white text-body-montserrat lg:h3-montserrat font-montserrat">Download for iOS</div>
           </a>
           <a href="https://play.google.com/store/apps/details?id=com.ayanadevstudio.rootcause" target="_blank" rel="noopener noreferrer" class="w-full lg:flex-1 lg:h-16 px-4 lg:px-4 py-3 lg:py-2 rounded-full outline outline-1 outline-offset-[-1px] outline-teal-600 flex justify-center items-center gap-2.5">
             <div class="w-6 h-6 relative overflow-hidden">
@@ -184,15 +184,15 @@
                 </defs>
               </svg>
             </div>
-            <div class="text-center justify-start text-teal-600 text-base lg:text-xl font-medium font-['Montserrat'] leading-7">Download for Android</div>
-          </a>
+              <div class="text-center justify-start text-teal-600 text-body-montserrat lg:h3-montserrat font-montserrat">Download for Android</div>
+            </a>
         </div>
       </div>
       
       <!-- Free Reports Badge -->
       <div class="px-2 sm:px-3 lg:px-4 py-2 lg:py-2.5 mb-8 lg:mb-16 bg-teal-600/5 rounded-full outline outline-1 outline-offset-[-1px] outline-black/5 backdrop-blur-[2px] inline-flex justify-center items-center gap-1.5 sm:gap-2.5 max-w-[95%] sm:max-w-[90%]">
         <img class="w-8 h-8" src="/RootCause-PNG.png" alt="RootCause icon" />
-        <div class="text-center justify-start text-black text-sm sm:text-sm lg:text-base font-normal font-nunito italic leading-tight sm:leading-7 whitespace-nowrap">get 5 free health signal reports!</div>
+        <div class="text-center justify-start text-black text-small-italic lg:text-body-italic font-nunito italic whitespace-nowrap">get 5 free health signal reports!</div>
       </div>
       
       <!-- Video container -->
@@ -220,7 +220,7 @@
     <section class="self-stretch flex flex-col justify-start items-center gap-8 lg:gap-lg-32">
       <div class="w-full flex flex-col justify-start items-center gap-4 lg:gap-sm-8">
         <div class="self-stretch text-center justify-start text-black text-h2 lg:text-h1-md font-nunito">Why Holistic Experts Are Talking About RootCause</div>
-        <div class="self-stretch lg:w-[611px] text-center justify-start text-black text-sm lg:text-base font-normal font-nunito leading-snug mx-auto">Discover the app featured in wellness communities for its revolutionary, compassionate, and GNM-grounded approach to mind-body health.</div>
+        <div class="self-stretch lg:w-[611px] text-center justify-start text-black text-small lg:text-small-lg font-nunito italic mx-auto">Discover the app featured in wellness communities for its revolutionary, compassionate, and GNM-grounded approach to mind-body health.</div>
       </div>
       
       <div class="self-stretch grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-lg-16">
@@ -232,7 +232,7 @@
               </svg>
             </div>
           </div>
-          <div class="flex-1 justify-start text-black text-lg font-medium font-['Nunito_Sans'] leading-relaxed">4.8★ rating from the medically unheard</div>
+          <div class="flex-1 justify-start text-black text-body-lg font-nunito">4.8★ rating from the medically unheard</div>
         </div>
         
         <div class="self-stretch h-20 lg:h-auto p-4 bg-teal-600/5 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 inline-flex justify-center items-center gap-4 overflow-hidden">
@@ -243,7 +243,7 @@
               </svg>
             </div>
           </div>
-          <div class="flex-1 justify-start text-black text-lg font-medium font-['Nunito_Sans'] leading-relaxed">Recommended by holistic health practitioners</div>
+          <div class="flex-1 justify-start text-black text-body-lg font-nunito">Recommended by holistic health practitioners</div>
         </div>
         
         <div class="self-stretch h-20 lg:h-auto p-4 bg-teal-600/5 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 inline-flex justify-center items-center gap-4 overflow-hidden">
@@ -254,7 +254,7 @@
               </svg>
             </div>
           </div>
-          <div class="flex-1 justify-start text-black text-lg font-medium font-['Nunito_Sans'] leading-relaxed">Rooted in German New Medicine wisdom</div>
+          <div class="flex-1 justify-start text-black text-body-lg font-nunito">Rooted in German New Medicine wisdom</div>
         </div>
         
         <div class="self-stretch h-20 lg:h-auto p-4 bg-teal-600/5 rounded-2xl outline outline-1 outline-offset-[-1px] outline-black/5 inline-flex justify-center items-center gap-4 overflow-hidden">
@@ -265,7 +265,7 @@
               </svg>
             </div>
           </div>
-          <div class="flex-1 justify-start text-black text-lg font-medium font-['Nunito_Sans'] leading-relaxed">Downloaded in 25 Countries</div>
+          <div class="flex-1 justify-start text-black text-body-lg font-nunito">Downloaded in 25 Countries</div>
         </div>
       </div>
     </section>
@@ -541,11 +541,11 @@
       <h2 class="self-stretch text-center justify-start text-black font-nunito text-h2 lg:text-h1-md">Choose Your Right Plan</h2>
       
       <!-- Responsive container that switches from vertical (mobile) to horizontal (desktop) -->
-      <div class="w-full lg:w-[1247px] flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-4 lg:gap-2">
+      <div class="w-full lg:w-[1247px] flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-3 lg:gap-2">
         
         <!-- Free Plan -->
         <div 
-          class="w-full lg:flex-1 lg:self-stretch h-96 lg:h-auto p-2 rounded-2xl outline outline-2 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'free' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
+          class="w-full lg:flex-1 lg:self-stretch h-auto lg:h-auto p-3 rounded-xl outline outline-1 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'free' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
           style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%)"
           on:click={() => selectPlan('free')}>
           <div class="self-stretch flex flex-col justify-start items-start gap-4">
@@ -564,7 +564,7 @@
             </div>
           </div>
           <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
-            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
+            <button class="self-stretch px-6 py-2 lg:py-3 bg-white rounded-xl inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
               <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
                 Get Started for free
               </div>
@@ -574,10 +574,10 @@
 
         <!-- Pay-as-you-go Plan -->
         <div 
-          class="w-full lg:flex-1 lg:self-stretch {expandedCards['payg'] ? 'h-auto' : 'h-64'} lg:h-auto p-2 rounded-2xl outline outline-2 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'payg' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
+          class="w-full lg:flex-1 lg:self-stretch {expandedCards['payg'] ? 'h-auto' : 'h-80'} lg:h-auto p-3 rounded-xl outline outline-1 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'payg' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
           style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%)"
           on:click={() => selectPlan('payg')}>
-          <div class="self-stretch flex-1 flex flex-col justify-between items-start gap-8">
+          <div class="self-stretch flex-1 flex flex-col justify-between items-start gap-4 lg:gap-8">
             <!-- Top Section - Always Visible -->
             <div class="self-stretch flex flex-col justify-start items-start gap-4">
               <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
@@ -592,7 +592,7 @@
 
             <!-- Price Section - Always Visible -->
             <div class="self-stretch">
-              <div class="self-stretch px-2 pb-[13px] border-b border-black/5 flex justify-between items-center gap-2.5">
+              <div class="self-stretch px-2 py-3 border-b border-black/5 flex justify-between items-center gap-2.5">
                 <div class="flex-1 justify-start">
                   <span class="text-black text-h1-sm lg:text-h1-md font-nunito">$0.99</span>
                   <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/report</span>
@@ -617,7 +617,7 @@
             <!-- Bundle Section - Only Visible When Expanded -->
             <div class="self-stretch pb-2 lg:pb-4 mt-[-16px ] flex flex-col justify-start items-start gap-4 {!expandedCards['payg'] && !isLargeScreen ? 'hidden' : ''}">
               <div class="self-stretch flex flex-col justify-start items-start gap-4">
-                <div class="self-stretch px-2 py-1 bg-teal-600/5 rounded-2xl outline outline-1 outline-offset-[-1px] outline-teal-600/50 inline-flex justify-center items-center gap-2.5">
+                <div class="self-stretch px-2 py-1 bg-teal-600/5 rounded-xl outline outline-1 outline-offset-[-1px] outline-teal-600/50 inline-flex justify-center items-center gap-2.5">
                   <div class="flex-1 justify-start text-black text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Get a bundle of 10 reports for just $4.99</div>
                 </div>
                 <div class="self-stretch px-2 inline-flex justify-center items-center gap-2.5">
@@ -634,8 +634,8 @@
           </div>
 
           <!-- Button Section -->
-          <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
-            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
+          <div class="self-stretch pt-3 lg:pt-4 mt-3 lg:mt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
+            <button class="self-stretch px-6 py-2 lg:py-3 bg-white rounded-xl inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
               <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
                 Get Started for free
               </div>
@@ -645,10 +645,10 @@
 
         <!-- Monthly Subscription Plan -->
         <div 
-          class="w-full lg:flex-1 lg:self-stretch {expandedCards['monthly'] ? 'h-auto' : 'h-64'} lg:h-auto p-2 rounded-2xl outline outline-2 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'monthly' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
+          class="w-full lg:flex-1 lg:self-stretch {expandedCards['monthly'] ? 'h-auto' : 'h-80'} lg:h-auto p-3 rounded-xl outline outline-1 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'monthly' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
           style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%)"
           on:click={() => selectPlan('monthly')}>
-          <div class="self-stretch flex-1 flex flex-col justify-between items-start gap-8">
+          <div class="self-stretch flex-1 flex flex-col justify-between items-start gap-4 lg:gap-8">
             <!-- Top Section - Always Visible -->
             <div class="self-stretch flex flex-col justify-start items-start gap-4">
               <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
@@ -660,8 +660,8 @@
             </div>
 
             <!-- Price Section - Always Visible -->
-            <div class="self-stretch mt-[-60px]">
-              <div class="self-stretch px-2 pb-4 border-b border-black/5 flex justify-between items-center gap-2.5">
+            <div class="self-stretch lg:mt-[-60px]">
+              <div class="self-stretch px-2 py-3 border-b border-black/5 flex justify-between items-center gap-2.5">
                 <div class="flex-1 justify-start">
                   <span class="text-black text-h1-sm lg:text-h1-md font-nunito">$9.99</span>
                   <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/month</span>
@@ -698,8 +698,8 @@
           </div>
 
           <!-- Button Section -->
-          <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
-            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
+          <div class="self-stretch pt-3 lg:pt-4 mt-3 lg:mt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
+            <button class="self-stretch px-6 py-2 lg:py-3 bg-white rounded-xl inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
               <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
                 Get Started for free
               </div>
@@ -709,16 +709,16 @@
 
         <!-- Yearly Subscription Plan -->
         <div 
-          class="w-full lg:flex-1 lg:self-stretch {expandedCards['yearly'] ? 'h-auto' : 'h-[280px]'} lg:h-auto p-2 rounded-2xl outline outline-2 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'yearly' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
+          class="w-full lg:flex-1 lg:self-stretch {expandedCards['yearly'] ? 'h-auto' : 'h-80'} lg:h-auto p-3 rounded-xl outline outline-1 outline-offset-[-1px] flex flex-col justify-between items-start overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg {selectedPlan === 'yearly' ? 'outline-teal-600 bg-teal-50' : 'outline-black/5'}" 
           style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%);"
           on:click={() => selectPlan('yearly')}>
-          <div class="self-stretch flex-1 flex flex-col justify-between items-start gap-6">
+          <div class="self-stretch flex-1 flex flex-col justify-between items-start gap-4">
             <!-- Top Section - Always Visible -->
             <div class="self-stretch flex flex-col justify-start items-start gap-3">
               <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-lg inline-flex justify-center items-center gap-2.5">
                 <div class="justify-start text-white text-small-bold lg:text-body-bold font-nunito">Yearly Subscription</div>
               </div>
-              <div class="self-stretch px-2 py-1 bg-teal-600/5 rounded-2xl outline outline-1 outline-offset-[-1px] outline-teal-600/50 inline-flex justify-center items-center gap-2.5">
+              <div class="self-stretch px-2 py-1 bg-teal-600/5 rounded-xl outline outline-1 outline-offset-[-1px] outline-teal-600/50 inline-flex justify-center items-center gap-2.5">
                 <div class="flex-1 justify-start text-black text-sm lg:text-base font-bold font-['Nunito_Sans'] leading-snug lg:leading-normal">Save over 70% compared to pay-as-you-go.</div>
               </div>
               <div class="self-stretch justify-start text-black px-2 text-small-montserrat-regular lg:text-small-montserrat font-montserrat">
@@ -728,7 +728,7 @@
 
             <!-- Price Section - Always Visible -->
             <div class="self-stretch">
-              <div class="self-stretch px-2 pb-4 border-b border-black/5 flex justify-between items-center gap-2.5">
+              <div class="self-stretch px-2 py-3 border-b border-black/5 flex justify-between items-center gap-2.5">
                 <div class="flex-1 justify-start">
                   <span class="text-black text-h1-sm lg:text-h1-md font-nunito">$99.99</span>
                   <span class="text-neutral-500 text-base lg:text-xl font-bold font-['Nunito_Sans'] leading-10">/year</span>
@@ -766,8 +766,8 @@
           </div>
 
           <!-- Button Section -->
-          <div class="self-stretch pt-2 lg:pt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
-            <button class="self-stretch px-8 py-2 lg:py-3 bg-white rounded-full inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
+          <div class="self-stretch pt-3 lg:pt-4 mt-3 lg:mt-4 border-t border-black/5 flex flex-col justify-start items-start gap-2.5">
+            <button class="self-stretch px-6 py-2 lg:py-3 bg-white rounded-xl inline-flex justify-center items-center gap-2.5" style="background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #2B9C8E 0%, #264653 100%) border-box; border: 1px solid transparent;">
               <div class="text-center justify-start text-teal-600 text-sm lg:text-base font-medium font-['Montserrat'] leading-snug lg:leading-7">
                 Get Started for free
               </div>
