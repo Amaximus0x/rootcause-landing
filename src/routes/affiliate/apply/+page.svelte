@@ -144,7 +144,7 @@
 	  </div>
 
 	<!-- Main Content -->
-	<div class="w-full flex justify-center items-start pt-8 pb-16">
+	<div class="w-full flex justify-center items-start pt-8">
 		<div class="w-full max-w-2xl px-4 sm:px-6 lg:px-8">
 			<div class="flex flex-col justify-start items-center gap-8">
 				<!-- Header Section -->
@@ -244,7 +244,7 @@
 	</div>
 
 	<!-- Footer -->
-	<div class="w-full mt-16">
+	<div class="w-full mt-10">
 		<Footer />
 	</div>
 </div> 
