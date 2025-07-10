@@ -53,6 +53,7 @@ export default {
       // Custom Font Sizes with Line Heights (based on design tokens)
       fontSize: {
         // Heading 1 Variants
+        'h1-bold': ['77px', { lineHeight: '88px', fontWeight: '700' }],
         'h1-xl': ['77px', { lineHeight: '78px', fontWeight: '700' }],
         'h1-lg': ['68px', { lineHeight: '78px', fontWeight: '700' }],
         'h1-md': ['36px', { lineHeight: '44px', fontWeight: '700' }],
@@ -69,6 +70,8 @@ export default {
         'h3-nunito': ['20px', { lineHeight: '28px', fontWeight: '400' }],
         'h3-nunito-bold': ['20px', { lineHeight: '28px', fontWeight: '700' }],
         'h3-montserrat': ['20px', { lineHeight: '28px', fontWeight: '500' }],
+        'h3-semibold': ['20px', { lineHeight: '24px', fontWeight: '600' }],
+        'h3-semibold-lg': ['24px', { lineHeight: '28px', fontWeight: '600' }],
         
         // Body Text Variants
         'body-lg': ['18px', { lineHeight: '26px', fontWeight: '500' }],
