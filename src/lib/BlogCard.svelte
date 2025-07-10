@@ -17,7 +17,7 @@
 				<div><span class="date-span">{date}</span></div>
 			</div>
 			<div class="content-container">
-				<span class="content-span">{content} </span>
+				<span class="content-span text-ellipsis overflow-hidden line-clamp-6">{content} </span>
 				<span class="read-more-span">Read more...</span>
 			</div>
 		</div>

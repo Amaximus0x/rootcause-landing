@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Header, Footer, CategorySidebar } from '$lib';
+	import { Header, Footer, CategorySidebar, BlogCard } from '$lib';
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
 	
@@ -98,6 +98,19 @@ This shift in perspective — from fighting symptoms to understanding them — o
 	// Get other blog posts for "Keep reading" section (excluding current post)
 	const otherBlogPosts = allBlogPosts.filter(post => post.slug !== currentSlug);
 
+	// Mobile sidebar state
+	let isMobileSidebarOpen = false;
+	
+	// Toggle mobile sidebar
+	function toggleMobileSidebar() {
+		isMobileSidebarOpen = !isMobileSidebarOpen;
+	}
+	
+	// Close sidebar when clicking outside
+	function closeSidebar() {
+		isMobileSidebarOpen = false;
+	}
+
 	function goBack() {
 		goto('/blog');
 	}
@@ -106,22 +119,60 @@ This shift in perspective — from fighting symptoms to understanding them — o
 <!-- RootCause Blog Details Page -->
 <div class="w-full h-auto relative bg-pure-white overflow-hidden">
 	<!-- Header -->
-	<div class="w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px]">
+	<div class="relative z-30 w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px] lg:pl-[88px] lg:pr-[87px]">
 		<Header />
 	</div>
 
+	<!-- Mobile Sidebar Toggle Button - positioned with Blogs title -->
+	<div class="lg:hidden w-full max-w-7xl mx-auto px-4 pt-8 relative z-30">
+		<div class="flex items-center justify-between mb-8">
+			<button 
+				on:click={toggleMobileSidebar}
+				class="w-8 h-8 flex items-center justify-center transition-all duration-300 relative z-60"
+				aria-label="Toggle categories menu"
+			>
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+				<path d="M27 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V25C3 25.5304 3.21071 26.0391 3.58579 26.4142C3.96086 26.7893 4.46957 27 5 27H27C27.5304 27 28.0391 26.7893 28.4142 26.4142C28.7893 26.0391 29 25.5304 29 25V7C29 6.46957 28.7893 5.96086 28.4142 5.58579C28.0391 5.21071 27.5304 5 27 5ZM5 19H7C7.26522 19 7.51957 18.8946 7.70711 18.7071C7.89464 18.5196 8 18.2652 8 18C8 17.7348 7.89464 17.4804 7.70711 17.2929C7.51957 17.1054 7.26522 17 7 17H5V15H7C7.26522 15 7.51957 14.8946 7.70711 14.7071C7.89464 14.5196 8 14.2652 8 14C8 13.7348 7.89464 13.4804 7.70711 13.2929C7.51957 13.1054 7.26522 13 7 13H5V11H7C7.26522 11 7.51957 10.8946 7.70711 10.7071C7.89464 10.5196 8 10.2652 8 10C8 9.73478 7.89464 9.48043 7.70711 9.29289C7.51957 9.10536 7.26522 9 7 9H5V7H10V25H5V19ZM27 25H12V7H27V25Z" fill="#2B9C8E"/>
+			  </svg>
+			</button>
+			
+			<span class="text-black text-h2 font-nunito">Blogs</span>
+			
+			<!-- Empty div for spacing -->
+			<div class="w-10"></div>
+		</div>
+	</div>
+
+	<!-- Mobile Sidebar Overlay -->
+	{#if isMobileSidebarOpen}
+		<div 
+			class="lg:hidden fixed inset-0 bg-black/10 backdrop-blur-[4px] z-40 transition-all duration-300"
+			on:click={closeSidebar}
+			role="button"
+			tabindex="0"
+			on:keydown={(e) => e.key === 'Escape' && closeSidebar()}
+		></div>
+	{/if}
+
+	<!-- Mobile Sidebar -->
+	<div class="lg:hidden fixed top-0 left-0 h-full w-[280px] bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out {isMobileSidebarOpen ? 'translate-x-0' : '-translate-x-full'}">
+		<div class="flex flex-col h-full pt-8 ">
+			
+			
+			<!-- Sidebar Content -->
+			<div class="flex-1 pl-5 pb-6 overflow-y-auto ">
+				<CategorySidebar />
+			</div>
+		</div>
+	</div>
+
 	<!-- Main Content -->
-	<div class="w-full flex justify-center items-start py-8">
+	<div class="w-full flex justify-center items-start lg:pt-8">
 		<div class="w-full max-w-7xl mx-auto px-4">
 			
-			<!-- Back Button -->
-			<div class="mb-8">
-				<a href="/blog" class="inline-flex items-center gap-2 text-black hover:text-teal-600 transition-colors">
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-					<span class="text-base font-medium font-['Nunito_Sans']">Back to Blog</span>
-				</a>
+			<!-- Desktop Blogs Title -->
+			<div class="hidden lg:block text-center mb-16">
+				<span class="text-black text-h1-md font-nunito">Blogs</span>
 			</div>
 
 			<!-- Main Content Area with Sidebar -->
@@ -130,12 +181,31 @@ This shift in perspective — from fighting symptoms to understanding them — o
 				<!-- Blog Post Content -->
 				<div class="flex-1">
 					<article class="w-full">
+						
+
+						<!-- Back Button and Title Row -->
+						<div class="w-full flex items-center gap-2.5 lg:gap-4 mb-10">
+							<a href="/blog" aria-label="Back to Blog">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-8 h-8 hidden lg:block">
+									<path d="M28.5002 16C28.5002 16.3978 28.3422 16.7794 28.0609 17.0607C27.7796 17.342 27.398 17.5 27.0002 17.5H8.62521L15.0652 23.9388C15.347 24.2206 15.5053 24.6027 15.5053 25.0013C15.5053 25.3998 15.347 25.782 15.0652 26.0638C14.7834 26.3456 14.4012 26.5039 14.0027 26.5039C13.6042 26.5039 13.222 26.3456 12.9402 26.0638L3.94021 17.0638C3.80037 16.9244 3.68941 16.7588 3.6137 16.5765C3.53799 16.3942 3.49902 16.1987 3.49902 16.0013C3.49902 15.8038 3.53799 15.6084 3.6137 15.426C3.68941 15.2437 3.80037 15.0781 3.94021 14.9388L12.9402 5.93876C13.0797 5.79923 13.2454 5.68855 13.4277 5.61304C13.61 5.53752 13.8054 5.49866 14.0027 5.49866C14.2 5.49866 14.3954 5.53752 14.5777 5.61304C14.76 5.68855 14.9257 5.79923 15.0652 5.93876C15.2047 6.07829 15.3154 6.24393 15.3909 6.42624C15.4664 6.60854 15.5053 6.80393 15.5053 7.00126C15.5053 7.19858 15.4664 7.39398 15.3909 7.57628C15.3154 7.75858 15.2047 7.92423 15.0652 8.06376L8.62521 14.5H27.0002C27.398 14.5 27.7796 14.658 28.0609 14.9393C28.3422 15.2207 28.5002 15.6022 28.5002 16Z" fill="black"/>
+								  </svg>
+
+								  <!-- Mobile back arrow -->
+								  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 block lg:hidden" fill="none">
+									<path d="M21.3749 12C21.3749 12.2984 21.2564 12.5845 21.0454 12.7955C20.8344 13.0065 20.5483 13.125 20.2499 13.125H6.46866L11.2987 17.9541C11.51 18.1654 11.6287 18.4521 11.6287 18.7509C11.6287 19.0498 11.51 19.3365 11.2987 19.5478C11.0873 19.7592 10.8007 19.8779 10.5018 19.8779C10.2029 19.8779 9.91625 19.7592 9.70491 19.5478L2.95491 12.7978C2.85003 12.6933 2.76681 12.5691 2.71003 12.4324C2.65325 12.2956 2.62402 12.149 2.62402 12.0009C2.62402 11.8529 2.65325 11.7063 2.71003 11.5695C2.76681 11.4328 2.85003 11.3086 2.95491 11.2041L9.70491 4.45407C9.80956 4.34942 9.93379 4.26641 10.0705 4.20978C10.2072 4.15314 10.3538 4.12399 10.5018 4.12399C10.6498 4.12399 10.7963 4.15314 10.9331 4.20978C11.0698 4.26641 11.194 4.34942 11.2987 4.45407C11.4033 4.55872 11.4863 4.68295 11.543 4.81968C11.5996 4.95641 11.6287 5.10295 11.6287 5.25094C11.6287 5.39894 11.5996 5.54548 11.543 5.68221C11.4863 5.81894 11.4033 5.94317 11.2987 6.04782L6.46866 10.875H20.2499C20.5483 10.875 20.8344 10.9935 21.0454 11.2045C21.2564 11.4155 21.3749 11.7016 21.3749 12Z" fill="black"/>
+								  </svg>
+								
+							</a>
+							
+							<h1 class="text-black text-lg sm:text-xl lg:text-3xl font-bold font-['Nunito_Sans'] leading-tight flex-1">{blogPost.title}</h1>
+						</div>
+
 						<!-- Featured Image -->
-						<img class="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover rounded-lg mb-8" src={blogPost.featuredImage} alt={blogPost.title} />
+						<img class="w-full h-[134px] lg:h-[416px] object-cover rounded-lg mb-8" src={blogPost.featuredImage} alt={blogPost.title} />
 						
 						<!-- Post Header -->
 						<div class="mb-8">
-							<h1 class="text-black text-2xl sm:text-3xl lg:text-4xl font-bold font-['Nunito_Sans'] leading-tight mb-4">{blogPost.title}</h1>
+							<!-- Post Meta -->
 							<div class="flex flex-col sm:flex-row sm:items-center gap-4 text-gray-600">
 								<span class="text-sm font-medium">{blogPost.date}</span>
 								<span class="hidden sm:block">•</span>
@@ -146,17 +216,17 @@ This shift in perspective — from fighting symptoms to understanding them — o
 						</div>
 
 						<!-- Post Content -->
-						<div class="prose prose-lg max-w-none mb-12">
+						<div class="prose prose-lg max-w-none mb-6">
 							<div class="text-black text-base font-normal font-['Nunito_Sans'] leading-relaxed">
 								{@html blogPost.content}
 							</div>
 						</div>
 
 						<!-- Share Section -->
-						<div class="border-t border-gray-200 pt-8 mb-12">
-							<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+						<div class=" mb-12">
+							<div class="flex justify-end">
 								<div class="flex items-center gap-4">
-									<span class="text-black text-base font-normal font-['Nunito_Sans']">Share this article:</span>
+									<span class="text-black text-base font-normal font-['Nunito_Sans']">Share</span>
 									<div class="flex items-center gap-3">
 										<!-- LinkedIn -->
 										<div class="w-6 h-6 relative overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
@@ -187,23 +257,18 @@ This shift in perspective — from fighting symptoms to understanding them — o
 							</div>
 						</div>
 
-						<!-- Related Posts -->
-						<div class="border-t border-gray-200 pt-12">
-							<h2 class="text-black text-2xl font-bold font-['Nunito_Sans'] mb-8">Related Articles</h2>
-							<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+						<!-- Keep reading -->
+						<div class=" pt-12">
+							<h2 class="text-black text-2xl font-bold font-['Nunito_Sans'] mb-8">Keep reading</h2>
+							<div class="flex flex-col">
 								{#each otherBlogPosts as post}
-									<a href="/blog/{post.slug}" class="group cursor-pointer">
-										<img class="w-full h-48 object-cover rounded-lg mb-4 group-hover:opacity-90 transition-opacity" src={post.featuredImage} alt={post.title} />
-										<div class="space-y-2">
-											<h3 class="text-black text-lg font-bold font-['Nunito_Sans'] leading-tight group-hover:text-teal-600 transition-colors">{post.title}</h3>
-											<p class="text-gray-600 text-sm font-normal font-['Nunito_Sans'] leading-relaxed">{post.content}</p>
-											<div class="flex items-center gap-2 text-xs text-gray-500">
-												<span>{post.date}</span>
-												<span>•</span>
-												<span>{post.readTime}</span>
-											</div>
-										</div>
-									</a>
+									<BlogCard 
+										title={post.title}
+										date={post.date}
+										content={post.content}
+										image={post.featuredImage}
+										slug={post.slug}
+									/>
 								{/each}
 							</div>
 						</div>
