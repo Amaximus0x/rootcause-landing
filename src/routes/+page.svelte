@@ -162,7 +162,7 @@
       </div>
       
       <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 lg:mb-12">
+      <div class="w-full flex flex-col md:flex-row justify-center items-center gap-4 mb-8 lg:mb-12">
         <div class="w-full lg:w-[617px] flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-4 lg:gap-5">
           <a href="https://apps.apple.com/fr/app/rootcause-emotion-body-link/id6740285911?l=en-GB" target="_blank" rel="noopener noreferrer" class="w-full lg:flex-1 lg:self-stretch px-4 lg:px-4 py-3 lg:py-2 bg-gradient-to-r from-teal-600 to-teal-900 rounded-full flex justify-center items-center gap-2.5">
             <div class="w-6 h-6 relative overflow-hidden">
@@ -223,7 +223,7 @@
   <!-- Main Content Sections -->
   <div class="w-full mt-8 sm:mt-12 lg:mt-[56px] flex flex-col justify-center items-center gap-16 sm:gap-20 lg:gap-xl-112 px-4 sm:px-8 lg:px-16 xl:px-24">
     
-    <!-- Testimonials Section -->
+    <!--Why Talking About RootCause Section -->
     <section class="self-stretch flex flex-col justify-start items-center gap-8 lg:gap-lg-32">
       <div class="w-full flex flex-col justify-start items-center gap-4 lg:gap-sm-8">
         <div class="self-stretch text-center justify-start text-black text-h2 lg:text-h1-md font-nunito">Why Holistic Experts Are Talking About RootCause</div>
@@ -538,6 +538,51 @@
           <div class="self-stretch flex flex-col justify-start items-start gap-2">
             <div class="self-stretch justify-start text-black text-h3-nunito-bold lg:text-h2 font-nunito">Pattern Log</div>
             <div class="self-stretch justify-start text-black text-small font-nunito">Monitor your progress and see how your physical symptoms shift as you resolve emotional conflicts. (Coming Soon!)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="self-stretch flex flex-col justify-start items-center gap-[15px] lg:gap-6">
+      <div class="self-stretch text-center justify-start text-black font-nunito text-h2 lg:text-h1-md">
+        Testimonials
+      </div>
+      
+      <!-- Testimonial Cards Container - Scrollable on mobile, row on desktop -->
+      <div class="w-full overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div class="flex flex-row gap-4 min-w-max lg:min-w-0 lg:w-full lg:justify-center">
+          <!-- Testimonial Card 1 -->
+          <div class="w-[341px] lg:w-auto lg:flex-1 pt-[14px] gap-4 bg-teal-600/5 rounded-2xl flex flex-col ">
+            <div class="flex flex-col justify-start items-start px-4 gap-2">
+              <h3 class="text-black text-body-bold lg:text-h2-italic-lg italic font-nunito">-Amy</h3>
+              <p class="h-[120px] lg:h-[110px] text-black text-small-medium lg:text-body-medium font-nunito leading-5">
+                When I finally listened to my friend's podcast about her son's passing, I felt the grief choke me in the car. I even developed a sore throat. RootCause helped me see that this was my body's healing phase, and that insight brought me real comfort.
+              </p>
+            </div>
+            <div class="h-[14px] w-full bg-teal-600 rounded-b-2xl"></div>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div class="w-[341px] lg:w-auto lg:flex-1 pt-[14px] gap-4 bg-teal-600/5 rounded-2xl flex flex-col">
+            <div class="flex flex-col justify-start items-start px-4 gap-2">
+              <h3 class="text-black text-body-bold lg:text-h2-italic-lg italic font-nunito">-Ashley</h3>
+              <p class="h-[120px] lg:h-[110px] text-black text-small-medium lg:text-body-medium font-nunito leading-5">
+                This is such an amazing tool especially for newbies in the GNM world or even people who don't truly know what it is yet! I absolutely love it.
+              </p>
+            </div>
+            <div class="h-[14px] w-full bg-teal-600 rounded-b-2xl"></div>
+          </div>
+          
+          <!-- Testimonial Card 3 -->
+          <div class="w-[341px] lg:w-auto lg:flex-1 pt-[14px] gap-4 bg-teal-600/5 rounded-2xl flex flex-col ">
+            <div class="flex flex-col justify-start items-start px-4 gap-2">
+              <h3 class="text-black text-body-bold lg:text-h2-italic-lg italic font-nunito">-Briana</h3>
+              <p class="h-[120px] lg:h-[110px] text-black text-small-medium lg:text-body-medium font-nunito leading-5">
+                The app has been great to use. I would love to recommend this to others on my podcast.
+              </p>
+            </div>
+            <div class="h-[14px] w-full bg-teal-600 rounded-b-2xl"></div>
           </div>
         </div>
       </div>
