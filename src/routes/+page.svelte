@@ -147,7 +147,7 @@
       <div class="text-center pt-[30px] lg:pt-6 mb-4 lg:mb-6.5">
         <div class="text-center lg:w-[1036px] lg:mx-auto text-h1-xs lg:text-h1-xl font-nunito">
           <p>
-            Your Body Speaks RootCause
+            Your Body Speaks <br> RootCause
             <span class="text-teal-600"> Helps </span>
             You Listen
           </p>
@@ -156,7 +156,7 @@
       
       <!-- Subtitle -->
       <div class="text-center mb-16">
-        <p class="text-black text-small lg:h3-nunito font-nunito lg:w-[884px] mx-auto">
+        <p class="text-black text-small lg:text-h3-nunito font-nunito lg:w-[884px] mx-auto">
           Go beyond just managing your symptoms and start understanding them. RootCause gives you the tools to map the powerful connection between emotional trauma and your physical well-being.
         </p>
       </div>
@@ -306,7 +306,7 @@
             <div class="p-1.5 bg-teal-600/5 rounded-full flex justify-start items-center gap-2.5">
               <img class="w-12 h-12 object-cover" src="/gif-3.gif" alt="gif-3" />
             </div>
-            <div class="flex-1 justify-start text-black text-h2-italic lg:text-h2-italic-lg italic font-nunito">I'm Tired of Being Told It's 'All in My Head.</div>
+            <div class="flex-1 justify-start text-black text-h2-italic lg:text-h2-italic-lg italic font-nunito">I'm Tired of Being Told It's All in My Head.</div>
           </div>
           <div class="self-stretch justify-start text-black text-small-medium font-nunito">Your pain is real. Your exhaustion is real. Your symptoms are real. Being dismissed with "it's just stress" isn't a diagnosis—it's medical gaslighting. You deserve to be heard, validated, and given real answers about what your body is trying to tell you.</div>
         </div>
@@ -317,7 +317,7 @@
     <section class="self-stretch inline-flex flex-col justify-start items-center gap-8">
       <div class="self-stretch flex flex-col justify-start items-center gap-4">
         <div class="self-stretch text-center justify-start text-black text-h2 lg:text-h1-md font-nunito">How It Works</div>
-        <div class="w-[611px] text-center justify-start text-black text-body-italic font-nunito italic">From Symptom to Insight in Minutes</div>
+        <div class="w-[611px] text-center justify-start text-black text-body-italic font-nunito italic">From Symptom to Insights in Minutes</div>
       </div>
       <div class="self-stretch p-3 lg:p-8 bg-teal-600/5 rounded-3xl flex flex-col justify-center items-start gap-4">
         <div class="self-stretch bg-teal-600/5 rounded-2xl inline-flex justify-center items-center gap-4 overflow-hidden">
@@ -471,7 +471,7 @@
     <!-- Features Section -->
     <section class="self-stretch flex flex-col justify-start items-center gap-8 lg:gap-lg-16">
       <div class="self-stretch flex flex-col justify-start items-center gap-2 lg:gap-4">
-        <div class="self-stretch text-center justify-start text-black font-nunito text-h2 lg:text-h1-md">Feature Highlights</div>
+        <div class="self-stretch text-center justify-start text-black font-nunito text-h2 lg:text-h1-md">Feature Highlight</div>
       </div>
       
       <!-- Responsive container that switches from vertical (mobile) to horizontal (desktop) -->
@@ -830,7 +830,8 @@
     </section>
 
     <!-- Final CTA Section -->
-    <section class="flex flex-col justify-start items-center gap-4 lg:gap-6 mb-[45px] lg:mb-[119px]">
+    <section class="flex flex-col justify-start items-center gap-8 lg:gap-12 mb-[45px] lg:mb-[119px]">
+      <div class="flex flex-col justify-start items-center gap-4 lg:gap-6">
       <div class="self-stretch lg:w-[965px] text-center justify-start text-h1-xs lg:text-h1-lg font-nunito">
         Your Symptoms Tell a Story. It's 
         <span class="text-teal-600"> Time </span>
@@ -839,8 +840,9 @@
         It
       </div>
       
-      <div class="self-stretch lg:w-[884px] text-center justify-start text-black text-small lg:h3-nunito font-nunito">
+      <div class="self-stretch lg:w-[884px] text-center justify-start text-black text-small lg:text-h3-nunito font-nunito">
         Start understanding the emotional narrative behind your physical experiences. Download NOW and get 5 free health signal reports!
+      </div>
       </div>
       <div class="w-full lg:w-[617px] flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-center gap-4 lg:gap-5">
         <a href="https://apps.apple.com/fr/app/rootcause-emotion-body-link/id6740285911?l=en-GB" target="_blank" rel="noopener noreferrer" class="w-full lg:flex-1 lg:self-stretch px-4 lg:px-4 py-3 lg:py-2 bg-gradient-to-r from-teal-600 to-teal-900 rounded-full flex justify-center items-center gap-2.5">
