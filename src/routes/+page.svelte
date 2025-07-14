@@ -601,7 +601,7 @@
           style="background: linear-gradient(352deg, #FFF 37.55%, #C3FFF8 130.98%)"
           on:click={() => selectPlan('free')}>
           <div class="self-stretch flex flex-col justify-start items-start gap-4">
-            <div class="self-stretch lg:h-64 pb-4 border-b border-black/5 flex flex-col justify-between items-start gap-8 lg:gap-auto">
+            <div class="self-stretch lg:h-[267px] pb-4 border-b border-black/5 flex flex-col justify-between items-start gap-8 lg:gap-auto">
               <div class="self-stretch flex flex-col justify-start items-start gap-4 lg:gap-4">
                 <div class="px-2.5 py-1 lg:py-2 bg-teal-600 rounded-[9px] inline-flex justify-center items-center gap-2.5">
                   <div class="justify-start text-white text-small-bold lg:text-body-bold font-nunito">Free Plan</div>
@@ -713,7 +713,7 @@
             </div>
 
             <!-- Price Section - Always Visible -->
-            <div class="self-stretch lg:mt-[-60px]">
+            <div class="self-stretch lg:mt-[-41px]">
               <div class="self-stretch px-2 py-3 border-b border-black/5 flex justify-between items-center gap-2.5">
                 <div class="flex-1 justify-start">
                   <span class="text-black text-h1-sm lg:text-h1-md font-nunito">$9.99</span>
@@ -780,7 +780,7 @@
             </div>
 
             <!-- Price Section - Always Visible -->
-            <div class="self-stretch">
+            <div class="self-stretch lg:mt-[-41px]">
               <div class="self-stretch px-2 py-3 border-b border-black/5 flex justify-between items-center gap-2.5">
                 <div class="flex-1 justify-start">
                   <span class="text-black text-h1-sm lg:text-h1-md font-nunito">$99.99</span>
