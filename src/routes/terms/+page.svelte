@@ -26,7 +26,6 @@
   <div class="w-full relative">
     <div class="max-w-4xl mx-auto px-4 py-8 font-nunito">
       <h1 class="text-h1-md text-teal mb-8">END USER LICENSE AGREEMENT</h1>
-      <p class="text-small-medium italic mb-8">Last updated December 05, 2024</p>
 
       <div class="space-y-6">
         <p class="text-body-medium">RootCause is licensed to you ("End-User") by Ayana Wellness LLC, located at 30 N Gould St Ste R, Sheridan, Wyoming 82801, United States ("Licensor"), for use only under the terms of this License Agreement. VAT Number: EIN 82-3528044.</p>
@@ -39,7 +38,7 @@
 
         <p class="text-body-medium">RootCause, when purchased or downloaded through the Services, is licensed to you for use only under the terms of this License Agreement. The Licensor reserves all rights not expressly granted to you. RootCause is to be used on devices that operate with Apple's operating systems ("iOS" and "macOS") or Google's operating system ("Android").</p>
 
-        <div class="my-8">
+        <!-- <div class="my-8">
           <h2 class="text-h2 mb-4">TABLE OF CONTENTS</h2>
           <ul class="list-decimal ml-6 space-y-2 text-body-medium">
             <li>The Application</li>
@@ -60,7 +59,7 @@
             <li>Applicable Law</li>
             <li>Miscellaneous</li>
           </ul>
-        </div>
+        </div> -->
 
         <section>
           <h2 class="text-h2 mb-4">1. The Application</h2>
