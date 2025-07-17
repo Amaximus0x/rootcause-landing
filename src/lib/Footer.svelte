@@ -5,7 +5,7 @@
     <img class="w-64 h-20" src="/rootcause-side.png" alt="RootCause logo" />
     <!-- Mobile Navigation -->
     <nav class="flex flex-col justify-start items-center gap-4 lg:hidden">
-      <a href="#terms" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Terms and Conditions</a>
+      <a href="/terms" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Terms of Use</a>
       <a href="#contact" class="w-36 h-6 text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Contact</a>
       <a href="/affiliate" class="w-36 h-6 text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Affiliate</a>
       <a href="#privacy" class="w-36 h-6 text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Privacy Policy</a>
@@ -15,7 +15,7 @@
       <a href="#contact" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Contact</a>
       <a href="/affiliate" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Affiliate</a>
       <a href="#privacy" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Privacy Policy</a>
-      <a href="#terms" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Terms and Conditions</a>
+      <a href="/terms" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">Terms of Use</a>
       <a href="/blog" class="text-center justify-start text-black text-base font-medium font-['Nunito_Sans'] leading-normal">News Letter</a>
     </nav>
   </div>
