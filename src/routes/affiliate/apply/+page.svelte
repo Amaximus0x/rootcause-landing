@@ -137,29 +137,29 @@
 </script>
 
 <!-- RootCause Affiliate Apply Page -->
-<div class="w-full h-auto relative bg-pure-white overflow-hidden">
+<div class="relative w-full h-auto overflow-hidden bg-pure-white">
 	<!-- Header -->
 	<div class="relative z-50 w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-[77px] lg:pl-[88px] lg:pr-[87px]">
 		<Header />
 	  </div>
 
 	<!-- Main Content -->
-	<div class="w-full flex justify-center items-start pt-8">
+	<div class="flex items-start justify-center w-full pt-8">
 		<div class="w-full max-w-2xl px-4 sm:px-6 lg:px-8">
-			<div class="flex flex-col justify-start items-center gap-8">
+			<div class="flex flex-col items-center justify-start gap-8">
 				<!-- Header Section -->
-				<div class="flex flex-col justify-start items-center gap-4">
+				<div class="flex flex-col items-center justify-start gap-4">
 					<div class="text-center">
 						<span class="text-black text-4xl lg:text-[53px] font-bold font-['Nunito_Sans'] lg:leading-[62px] leading-tight">Apply Now</span>
 					</div>
-					<div class="text-center max-w-lg">
+					<div class="max-w-lg text-center">
 						<span class="text-gray-500 text-base lg:text-[18px] font-normal font-['Nunito_Sans'] lg:leading-[27px] leading-relaxed">We'd love to know what inspires you to share our work.</span>
 					</div>
 				</div>
 
 				<!-- Form Section -->
-				<div class="w-full flex flex-col justify-start items-center gap-6">
-					<div class="w-full flex flex-col justify-start items-start gap-4">
+				<div class="flex flex-col items-center justify-start w-full gap-6">
+					<div class="flex flex-col items-start justify-start w-full gap-4">
 						<!-- Name Input -->
 						<div class="w-full">
 							<input
@@ -207,22 +207,22 @@
 					</div>
 
 										<!-- Submit Button -->
-					<div class="w-full flex flex-col justify-start items-start gap-2">
+					<div class="flex flex-col items-start justify-start w-full gap-2">
 						<div class="flex justify-start">
-							<button 
-								class="px-8 py-4 {isFormValid && !isSubmitting ? 'bg-black/10 hover:bg-black/20' : 'bg-gray-200'} rounded-full inline-flex justify-center items-center gap-2 transition-colors group disabled:opacity-50 disabled:cursor-not-allowed"
+							<button
+								class="px-8 py-4 {!isSubmitting ? 'bg-gradient-to-r from-teal-600 to-teal-950 hover:from-teal-700 hover:to-teal-900' : 'bg-gray-200'} rounded-full inline-flex justify-center items-center gap-2 transition-all duration-200 group  disabled:cursor-not-allowed"
 								on:click={handleSubmit}
 								disabled={isSubmitting || !isFormValid}
 								title={!isFormValid ? 'Please fill in all fields correctly to submit' : 'Submit your affiliate application'}
 							>
 							{#if isSubmitting}
-								<div class="w-4 h-4 border-2 border-gray-500 border-t-transparent rounded-full animate-spin"></div>
-								<span class="text-gray-500 text-[16px] font-semibold font-['Nunito_Sans']">Sending...</span>
+								<div class="w-4 h-4 border-2 border-white rounded-full border-t-transparent animate-spin"></div>
+								<span class="text-white text-[16px] font-semibold font-['Nunito_Sans']">Sending...</span>
 							{:else}
-								<span class="text-gray-500 text-[16px] font-semibold font-['Nunito_Sans'] group-hover:text-gray-600">Send</span>
-								<div class="w-4 h-4 relative overflow-hidden">
+								<span class="text-white text-[16px] font-semibold font-['Nunito_Sans']">Send</span>
+								<div class="relative w-4 h-4 overflow-hidden">
 									<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-										<path d="M14.5298 4.76908V11.9634C14.5298 12.1835 14.4423 12.3947 14.2867 12.5503C14.131 12.706 13.9199 12.7935 13.6997 12.7935C13.4795 12.7935 13.2684 12.706 13.1127 12.5503C12.957 12.3947 12.8696 12.1835 12.8696 11.9634V6.77518L5.43248 14.2109C5.27654 14.3668 5.06503 14.4544 4.84449 14.4544C4.62395 14.4544 4.41244 14.3668 4.2565 14.2109C4.10055 14.0549 4.01294 13.8434 4.01294 13.6229C4.01294 13.4024 4.10055 13.1908 4.2565 13.0349L11.6936 5.59919H6.5054C6.28524 5.59919 6.0741 5.51173 5.91843 5.35605C5.76275 5.20038 5.67529 4.98923 5.67529 4.76908C5.67529 4.54892 5.76275 4.33777 5.91843 4.1821C6.0741 4.02642 6.28524 3.93896 6.5054 3.93896H13.6997C13.9199 3.93896 14.131 4.02642 14.2867 4.1821C14.4423 4.33777 14.5298 4.54892 14.5298 4.76908Z" fill="#7C7C7C"/>
+										<path d="M14.5298 4.76908V11.9634C14.5298 12.1835 14.4423 12.3947 14.2867 12.5503C14.131 12.706 13.9199 12.7935 13.6997 12.7935C13.4795 12.7935 13.2684 12.706 13.1127 12.5503C12.957 12.3947 12.8696 12.1835 12.8696 11.9634V6.77518L5.43248 14.2109C5.27654 14.3668 5.06503 14.4544 4.84449 14.4544C4.62395 14.4544 4.41244 14.3668 4.2565 14.2109C4.10055 14.0549 4.01294 13.8434 4.01294 13.6229C4.01294 13.4024 4.10055 13.1908 4.2565 13.0349L11.6936 5.59919H6.5054C6.28524 5.59919 6.0741 5.51173 5.91843 5.35605C5.76275 5.20038 5.67529 4.98923 5.67529 4.76908C5.67529 4.54892 5.76275 4.33777 5.91843 4.1821C6.0741 4.02642 6.28524 3.93896 6.5054 3.93896H13.6997C13.9199 3.93896 14.131 4.02642 14.2867 4.1821C14.4423 4.33777 14.5298 4.54892 14.5298 4.76908Z" fill="white"/>
 									</svg>
 								</div>
 							{/if}
